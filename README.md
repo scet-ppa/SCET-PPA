@@ -1,5 +1,4 @@
-### Hi there 👋
-
+Projeto para a realização de um sistema de controle de estágio e tcc. 
 <!--
 **scet-ppa/SCET-PPA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
