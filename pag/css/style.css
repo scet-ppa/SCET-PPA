@@ -1,0 +1,36 @@
+body{
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    background: #D1D4E4;
+}
+
+.container{
+        /* espaço do login */
+    position: absolute;
+    width: 944px;
+    height: 635px;
+    left: 248px;
+    top: 50px;
+
+    background: #F5F8F3;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.cont{
+        /* conteiner verde */
+    position: absolute;
+    width: 384px;
+    height: 635px;
+
+    margin: 0;
+
+    background: #008080;
+    border-radius: 16px 0px 0px 16px;
+
+}
+
