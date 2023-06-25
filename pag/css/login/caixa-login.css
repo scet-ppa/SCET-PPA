@@ -1,9 +1,8 @@
 .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     min-height: 100vh;
-    top: 850px;
+    top: 175px;
+    left: 110px;
     /*margin-top: 25%;;
     margin-left: 25%;*/
     flex-direction: column;
@@ -14,8 +13,8 @@
 .box-input{
     position: relative;
     width: 380px;
-    top: -125px;
 }
+
 
 .box-input input{
     border: 3px solid #008080;
@@ -23,7 +22,7 @@
     padding: 20px;
     background: #F5F8F3;    ;
     outline: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .box-input span{
@@ -48,4 +47,44 @@
     border-left: 2px solid #008080;
     border-right: 2px solid #008080;
     letter-spacing: 0.2em;
+} 
+
+/* css da caixa da senha sem o flexbox por razões de falta de interoperabilidade*/
+.box-input-sen{
+    position: relative;
+    width: 380px;
+    top: 45px;
 }
+
+.box-input-sen input{
+    border: 3px solid #008080;
+    width: 100%;
+    padding: 20px;
+    background: #F5F8F3;    ;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.box-input-sen span{
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.5em;
+    color: #008080;
+    transition: 0.5s;
+
+}
+
+.box-input-sen input:valid ~ span, 
+.box-input-sen input:focus ~ span{
+    color: #008080;
+    transform: translateX(13px) translateY(-13px);
+    font-size: 0.85em;
+    padding: 0 10px;
+    background-color: #F5F8F3;
+    border-left: 2px solid #008080;
+    border-right: 2px solid #008080;
+    letter-spacing: 0.2em;
+} 
