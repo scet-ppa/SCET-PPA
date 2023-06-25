@@ -80,3 +80,25 @@ background-color: #124242;
     left: 570px;
     top: 120px;
 }
+
+h3{
+        /* E-mail */
+
+
+    position: absolute;
+    width: 59px;
+    height: 24px;
+    left: 752px;
+    top: 419px;
+
+    font-family: 'Fredoka';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #B5B5B5;
+}
