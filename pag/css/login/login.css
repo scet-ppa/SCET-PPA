@@ -5,7 +5,7 @@ h1{
     position: absolute;
     width: 389px;
     height: 54px;
-    left: 52%;
+    left: 50%;
     top: 2%;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -56,6 +56,7 @@ h2{
 
 a #cad:hover, #ent:hover{
     background-color: #124242;
+    pointer-events: painted;
 }
 
 
@@ -72,18 +73,6 @@ width: 430px;
 height: 100px;
 left: 450px;
 top: 170px;
-
-background: #E8E8E8;
-}
-
-#fundo-se{
-    /* Rectangle 2 */
-
-position: absolute;
-width: 430px;
-height: 63px;
-left: 450px;
-top: 270px;
 
 background: #E8E8E8;
 }
