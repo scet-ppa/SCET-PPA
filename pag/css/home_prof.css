@@ -1,0 +1,413 @@
+
+/* home do professor */
+h1{
+box-sizing: border-box;
+
+position: absolute;
+width: 1427.09px;
+height: 1024px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+/* backgorund */
+.fundo{  
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: rgba(185, 190, 214, 0.65);
+}
+
+/* conteiner azul */
+.contAzul{
+position: absolute;
+width: 338px;
+height: 1030px;
+left: 0px;
+top: -6px;
+
+background: #065F5F;
+border-radius: 0px;
+}
+
+/* Vector 2 */
+.vector-2{
+position: absolute;
+width: 327px;
+height: 0px;
+left: 0px;
+top: 953px;
+
+}
+
+/* botão sobre */
+#sobre{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 954px;
+}
+
+
+/* Rectangle 7 */
+.rectangle-7{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 954px;
+
+background: #065F5F;
+}
+
+/* Sobre */
+.Sobree{
+position: absolute;
+width: 66px;
+height: 30px;
+left: 64px;
+top: 973px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* Vector */
+.vector-14{
+position: absolute;
+left: 2.01%;
+right: 96.25%;
+top: 95.21%;
+bottom: 2.34%;
+
+background: #C2D0D0;
+}
+
+/* menu */
+.menu { 
+position: absolute;
+width: 371px;
+height: 294px;
+left: -33px;
+top: 331px;
+}
+
+
+/* ic:twotone-assignment-late */
+.ic-assignment-late{
+position: absolute;
+width: 24px;
+height: 24px;
+left: -33px;
+top: 472px;
+}
+
+
+/* Vector */
+.vector-10{
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 4.17%;
+bottom: 12.5%;
+
+background: #F8F8F8;
+}
+
+/* botão TCC */
+#TCC {
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 557px;
+}
+
+
+/* Rectangle 6 */
+.rectangle-6 {
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 557px;
+
+background: #065F5F;
+
+}
+/* TCC */
+.TCCa{
+position: absolute;
+width: 48px;
+height: 30px;
+left: 62px;
+top: 576px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* Vector */
+.vector-15{
+position: absolute;
+left: 1.74%;
+right: 96.67%;
+top: 56.45%;
+bottom: 41.11%;
+
+border: 1px solid #A0C2C2;
+}
+
+/* botão estágio */
+#Estagio{ 
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 478px;
+}
+
+
+/* Rectangle 5 */
+.rectangle-5{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 478px;
+
+background: #065F5F;
+}
+
+/* Estágio */
+.Estagioo{
+position: absolute;
+width: 84px;
+height: 30px;
+left: 62px;
+top: 497px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* Vector */
+.vector-16{
+position: absolute;
+left: 1.6%;
+right: 96.74%;
+top: 48.73%;
+bottom: 48.73%;
+
+background: #A0C2C2;
+}
+
+/* botão notificações */
+#notificacoes { 
+position: absolute;
+width: 360.7px;
+height: 68px;
+left: -32.7px;
+top: 400px;
+}
+
+
+/* normal */
+.normal{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 400px;
+}
+
+
+/* botao desativado */
+#desativado1{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 1px;
+top: 400px;
+
+background: #065F5F;
+}
+
+/* notificação normal */
+.notinormal{
+position: absolute;
+left: 1.6%;
+right: 96.53%;
+top: 40.82%;
+bottom: 56.05%;
+
+background: #A0C2C2;
+}
+
+/* notificação mouse em cima */
+.notmouse{
+position: absolute;
+left: -2.29%;
+right: 100.76%;
+top: 41.11%;
+bottom: 56.35%;
+
+background: #E2F0F0;
+
+}
+/* Notificações */
+.notificacoess{
+position: absolute;
+width: 192px;
+height: 57px;
+left: 36px;
+top: 405px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* botão pendentes */
+#pendentes{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 11px;
+top: 331px;
+}
+
+
+/* botao desativado */
+#desativado{
+position: absolute;
+width: 327px;
+height: 68px;
+left: 11px;
+top: 331px;
+
+background: #065F5F;
+}
+
+/* Pendentes */
+.Pende{
+position: absolute;
+width: 160px;
+height: 57px;
+left: 42px;
+top: 336px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.62);
+
+}
+
+/* Vector */
+.vector-17{
+position: absolute;
+left: 1.6%;
+right: 96.6%;
+top: 34.38%;
+bottom: 63.09%;
+
+background: #F8F8F8;
+opacity: 0.3;
+}
+
+/* perfil */
+.Perfil{
+position: absolute;
+width: 327px;
+height: 52.33px;
+left: 11px;
+top: 19.67px;
+}
+
+
+/* Vector 1 */
+.vector-1{
+position: absolute;
+width: 327px;
+height: 0px;
+left: 11px;
+top: 72px;
+}
+
+/* Vector */
+.vector-18{
+position: absolute;
+left: 1.09%;
+right: 96.37%;
+top: 1.92%;
+bottom: 94.5%;
+
+background: #FFFFFF;
+}
+
+/* UsuárioProfessor */
+.Usuario{
+position: absolute;
+width: 195px;
+height: 30px;
+left: 64px;
+top: 23px;
+
+font-family: 'Fredoka';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
