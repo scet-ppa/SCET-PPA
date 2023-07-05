@@ -1,272 +1,203 @@
+.box {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .box .home-do-professor-wrapper {
+    border: 0px none;
+    height: 1024px;
+    width: 1427.09px;
+  }
+  
+  .box .home-do-professor {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    height: 1024px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 1427px;
+  }
+  
+  .box .overlap {
+    height: 1030px;
+    left: -33px;
+    position: relative;
+    top: -6px;
+    width: 1473px;
+  }
+  
+  .box .rectangle {
+    height: 360px;
+    left: 387px;
+    position: absolute;
+    top: 59px;
+    width: 562px;
+    background-color: #ececec;
+  }
+  
+  .box .background {
+    background-color: #b9bed6a6;
+    height: 1024px;
+    left: 33px;
+    position: absolute;
+    top: 6px;
+    width: 1440px;
+  }
+  
+  .box .conteiner-azul {
+    background-color: #055e5e;
+    height: 1030px;
+    left: 33px;
+    position: absolute;
+    top: 0;
+    width: 338px;
+  }
+  
+  .box .vector {
+    height: 4px;
+    left: 33px;
+    position: absolute;
+    top: 957px;
+    width: 327px;
+  }
+  
+  .box .boto-sobre {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 960px;
+    width: 329px;
+  }
+  
+  .box .overlap-group {
+    background-color: #065f5f;
+    height: 68px;
+    right: 40px;
+    position: relative;
+    width: 327px;
+  }
+  
+  .box .text-wrapper {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 30px;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    white-space: nowrap;
+  }
+  
+  .box .img {
+    height: 25px;
+    left: 28px;
+    position: absolute;
+    top: 21px;
+    width: 25px;
+  }
+  
+  .box .menu {
+    height: 294px;
+    left: 0;
+    position: absolute;
+    top: 337px;
+    width: 371px;
+  }
+  
+  .box .ic-twotone {
+    height: 24px;
+    left: 657px;
+    position: absolute;
+    top: -2395px;
+    width: 24px;
+  }
+  
+  .box .boto-TCC {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 226px;
+    width: 329px;
+  }
+  
+  .box .div {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 30px;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    white-space: nowrap;
+  }
+  
+  .box .vector-2 {
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+  }
+  
+  .box .boto-estgio {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 147px;
+    width: 329px;
+  }
+  
+  .box .vector-3 {
+    height: 26px;
+    left: 22px;
+    position: absolute;
+    top: 21px;
+    width: 24px;
+  }
+  
+  .box .boto-notificaes {
+    height: 68px;
+    right: 44px;
+    position: absolute;
+    top: 69px;
+    width: 363px;
+  }
+  
+  .box .overlap-2 {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 0;
+    width: 327px;
+  }
+  
+  .box .normal {
+    background-color: #065f5f;
+    height: 68px;
+    right: 30px;
+    position: absolute;
+    top: 0;
+    width: 327px;
 
-/* home do professor */
-h1{
-box-sizing: border-box;
-
-position: absolute;
-width: 1427.09px;
-height: 1024px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-}
-
-/* backgorund */
-.fundo{  
-position: absolute;
-width: 1440px;
-height: 1024px;
-left: 0px;
-top: 0px;
-
-background: rgba(185, 190, 214, 0.65);
-}
-
-/* conteiner azul */
-.contAzul{
-position: absolute;
-width: 338px;
-height: 1030px;
-left: 0px;
-top: -6px;
-
-background: #065F5F;
-border-radius: 0px;
-}
-
-/* Vector 2 */
-.vector-2{
-position: absolute;
-width: 327px;
-height: 0px;
-left: 0px;
-top: 953px;
-
-}
-
-/* botão sobre */
-#sobre{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 954px;
-}
-
-
-/* Rectangle 7 */
-.rectangle-7{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 954px;
-
-background: #065F5F;
-}
-
-/* Sobre */
-.Sobree{
-position: absolute;
-width: 66px;
-height: 30px;
-left: 64px;
-top: 973px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(255, 255, 255, 0.62);
-}
-
-
-/* Vector */
-.vector-14{
-position: absolute;
-left: 2.01%;
-right: 96.25%;
-top: 95.21%;
-bottom: 2.34%;
-
-background: #C2D0D0;
-}
-
-/* menu */
-.menu { 
-position: absolute;
-width: 371px;
-height: 294px;
-left: -33px;
-top: 331px;
-}
-
-
-/* ic:twotone-assignment-late */
-.ic-assignment-late{
-position: absolute;
-width: 24px;
-height: 24px;
-left: -33px;
-top: 472px;
-}
-
-
-/* Vector */
-.vector-10{
-position: absolute;
-left: 12.5%;
-right: 12.5%;
-top: 4.17%;
-bottom: 12.5%;
-
-background: #F8F8F8;
-}
-
-/* botão TCC */
-#TCC {
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 557px;
-}
-
-
-/* Rectangle 6 */
-.rectangle-6 {
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 557px;
-
-background: #065F5F;
-
-}
-/* TCC */
-.TCCa{
-position: absolute;
-width: 48px;
-height: 30px;
-left: 62px;
-top: 576px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(255, 255, 255, 0.62);
-}
-
-
-/* Vector */
-.vector-15{
-position: absolute;
-left: 1.74%;
-right: 96.67%;
-top: 56.45%;
-bottom: 41.11%;
-
-border: 1px solid #A0C2C2;
-}
-
-/* botão estágio */
-#Estagio{ 
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 478px;
-}
-
-
-/* Rectangle 5 */
-.rectangle-5{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 478px;
-
-background: #065F5F;
-}
-
-/* Estágio */
-.Estagioo{
-position: absolute;
-width: 84px;
-height: 30px;
-left: 62px;
-top: 497px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(255, 255, 255, 0.62);
-}
+  }
+  
+  .box .notificao-normal {
 
 
-/* Vector */
-.vector-16{
-position: absolute;
-left: 1.6%;
-right: 96.74%;
-top: 48.73%;
-bottom: 48.73%;
-
-background: #A0C2C2;
-}
-
-/* botão notificações */
-#notificacoes { 
-position: absolute;
-width: 360.7px;
-height: 68px;
-left: -32.7px;
-top: 400px;
-}
-
-
-/* normal */
-.normal{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 400px;
-}
-
-
-/* botao desativado */
-#desativado1{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 1px;
-top: 400px;
-
-background: #065F5F;
-}
-
-/* notificação normal */
-.notinormal{
 position: absolute;
 left: 1.6%;
 right: 96.53%;
@@ -274,140 +205,139 @@ top: 40.82%;
 bottom: 56.05%;
 
 background: #A0C2C2;
-}
 
-/* notificação mouse em cima */
-.notmouse{
-position: absolute;
-left: -2.29%;
-right: 100.76%;
-top: 41.11%;
-bottom: 56.35%;
-
-background: #E2F0F0;
-
-}
-/* Notificações */
-.notificacoess{
-position: absolute;
-width: 192px;
-height: 57px;
-left: 36px;
-top: 405px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(255, 255, 255, 0.62);
-}
-
-
-/* botão pendentes */
-#pendentes{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 11px;
-top: 331px;
-}
-
-
-/* botao desativado */
-#desativado{
-position: absolute;
-width: 327px;
-height: 68px;
-left: 11px;
-top: 331px;
-
-background: #065F5F;
-}
-
-/* Pendentes */
-.Pende{
-position: absolute;
-width: 160px;
-height: 57px;
-left: 42px;
-top: 336px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(255, 255, 255, 0.62);
-
-}
-
-/* Vector */
-.vector-17{
-position: absolute;
-left: 1.6%;
-right: 96.6%;
-top: 34.38%;
-bottom: 63.09%;
-
-background: #F8F8F8;
-opacity: 0.3;
-}
-
-/* perfil */
-.Perfil{
-position: absolute;
-width: 327px;
-height: 52.33px;
-left: 11px;
-top: 19.67px;
-}
-
-
-/* Vector 1 */
-.vector-1{
-position: absolute;
-width: 327px;
-height: 0px;
-left: 11px;
-top: 72px;
-}
-
-/* Vector */
-.vector-18{
-position: absolute;
-left: 1.09%;
-right: 96.37%;
-top: 1.92%;
-bottom: 94.5%;
-
-background: #FFFFFF;
-}
-
-/* UsuárioProfessor */
-.Usuario{
-position: absolute;
-width: 195px;
-height: 30px;
-left: 64px;
-top: 23px;
-
-font-family: 'Fredoka';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-}
+  }
+  
+  .box .text-wrapper-2 {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 57px;
+    left: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 192px;
+  }
+  
+  .box .notificao-mouse-em {
+    height: 26px;
+    left: 657px;
+    position: absolute;
+    top: -2515px;
+    width: 22px;
+  }
+  
+  .box .boto-pendentes {
+    height: 68px;
+    left: 44px;
+    position: absolute;
+    top: 0;
+    width: 329px;
+  }
+  
+  .box .text-wrapper-3 {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 57px;
+    left: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 160px;
+  }
+  
+  .box .vector-4 {
+    height: 26px;
+    left: 12px;
+    position: absolute;
+    top: 21px;
+    width: 26px;
+  }
+  
+  .box .perfil {
+    height: 52px;
+    left: 44px;
+    position: absolute;
+    top: 26px;
+    width: 329px;
+  }
+  
+  .box .vector-5 {
+    height: 4px;
+    left: -35px;
+   
+    position: absolute;
+    top: 50px;
+    width: 327px;
+  }
+  
+  .box .vector-6 {
+    height: 37px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 36px;
+  }
+  
+  .box .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 30px;
+    left: 53px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    white-space: nowrap;
+  }
+  
+  .box .h-1 {
+    color: #000000;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 30px;
+    left: 423px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 77px;
+    white-space: nowrap;
+  }
+  
+  .box .rectangle-2 {
+    height: 475px;
+    left: 1008px;
+    position: absolute;
+    top: 60px;
+    width: 431px;
+   background-color: rgb(255, 255, 255);
+  }
+  
+  .box .text-wrapper-5 {
+    color: #000000;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 30px;
+    left: 1032px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 92px;
+    white-space: nowrap;
+  }
+  
