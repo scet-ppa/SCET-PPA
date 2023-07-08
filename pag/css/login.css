@@ -1,11 +1,10 @@
-@import url(../style.css);
-@import url(../login/caixa-login.css);
+@import url(../css/style.css);
 
 h1{
     position: absolute;
     width: 389px;
     height: 54px;
-    left: 50%;
+    left: 52%;
     top: 2%;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -35,7 +34,7 @@ h2{
     color: #FFFFFF;
 }
 
-.cont #cad{
+.cont button{
         /* botao de entrar */
     box-sizing: border-box;
 
@@ -54,9 +53,8 @@ h2{
     border-radius: 45px;
 }
 
-a #cad:hover, #ent:hover{
+a button:hover, a button:active{
     background-color: #124242;
-    pointer-events: painted;
 }
 
 
@@ -64,35 +62,3 @@ a #cad:hover, #ent:hover{
     margin-left: 20px;
     margin-top: 35px;
 }
-
-#fundo-em{
-    /* Rectangle 2 */
-
-position: absolute;
-width: 430px;
-height: 100px;
-left: 450px;
-top: 170px;
-
-background: #E8E8E8;
-}
-
-#ent{
-    /* botao de entrar */
-box-sizing: border-box;
-
-position: absolute;
-width: 224px;
-height: 70px;
-left: 550px;
-top: 432px;
-
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #ffffff;
-font-size: 18px;
-
-border: 3px solid #FFFFFF;
-background-color: #008080;
-border-radius: 45px;
-}
-
