@@ -78,7 +78,7 @@ a button:hover, a button:active{
 .box-input span{
     position: absolute;
     left: 12px;
-    top: 7px;
+    top: 12px;
     padding: 10px;
     pointer-events: none;
     font-size: 1.5em;
