@@ -7,7 +7,7 @@ Docente: Ricardo de Carvalho Sena e Joao Paulo Oliveira Santos. Disciplina: Prá
 Série: 3º. Turma: 732. Curso: Técnico em Informática. Turno: Matutino.
 
 
-Projeto: SCET
+*Projeto: SCET*
 =============
 
 Projeto realizado pelos citados alunos com o objetivo da organização de TCC's e Estágios. 
