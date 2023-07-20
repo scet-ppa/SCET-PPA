@@ -4,7 +4,7 @@ Discente: Guilherme de Matos Silva, Hiarles de Souza Queiroz, Lucas Renan Taveir
 
 Docente: Ricardo de Carvalho Sena e Joao Paulo Oliveira Santos. Disciplina: Prática Profissional Articuladora e Gestão e Empreedorismo. 
 
-Série: 3º. Turma: 732. Curso: Técnico em Informática. Turno: Matutino.
+Série: 3º. Turma: 732. Curso: Técnico em Informática. Turno: Vespertino.
 
 
 *Projeto: SCET*
