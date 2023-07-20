@@ -1,0 +1,18 @@
+body {
+    background-color: #b9b9b9;
+}
+
+h1 {
+    color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    height: 51px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 303px;
+}
