@@ -1,3 +1,34 @@
+body { /*COr de fundo*/
+  background-color: #b9bed6a6;
+}
+
+.box .User { /*Nome do user*/
+  color: #ffffff;
+  font-family: "Fredoka-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  height: 30px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .box {
     background-color: transparent;
     display: flex;
@@ -6,11 +37,7 @@
     width: 100%;
   }
  
-  .box .home-do-professor-wrapper {
-    border: 0px none;
-    height: 1024px;
-    width: 1427.09px;
-  }
+ 
  
   .box .home-do-professor {
     background-color: #ffffff;
@@ -130,21 +157,6 @@
     width: 329px;
   }
  
-  .box .div {
-    color: #ffffff9e;
-    font-family: "Fredoka-Regular", Helvetica;
-    font-size: 25px;
-    font-weight: 400;
-    height: 30px;
-    left: 61px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 19px;
-    white-space: nowrap;
-  }
- 
   .box .vector-2 {
     height: 26px;
     left: 23px;
@@ -198,15 +210,11 @@
  
   .box .notificao-normal {
 
-
-
-
 position: absolute;
 left: 1.6%;
 right: 96.53%;
 top: 40.82%;
 bottom: 56.05%;
-
 
 background: #A0C2C2;
 
@@ -292,20 +300,7 @@ background: #A0C2C2;
     width: 36px;
   }
  
-  .box .text-wrapper-4 {
-    color: #ffffff;
-    font-family: "Fredoka-Medium", Helvetica;
-    font-size: 25px;
-    font-weight: 500;
-    height: 30px;
-    left: 53px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 3px;
-    white-space: nowrap;
-  }
+  
  
   .box .h-1 {
     color: #000000;
