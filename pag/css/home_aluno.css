@@ -40,6 +40,19 @@ body { /*Cor do corpo de fundo/plano*/
   width: 192px;
 }
 
+.box .Usuario {
+  color: #008080;
+  font-family: "Fredoka-SemiBold", Helvetica;
+  font-size: 45px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+}
+
 .box .rectangle {
     height: 360px;
     left: 387px;
@@ -122,23 +135,6 @@ body { /*Cor do corpo de fundo/plano*/
     width: 327px;
   }
  
-.box .normal {
-    background-color: #065f5f;
-    height: 68px;
-    right: 30px;
-    position: absolute;
-    top: 0;
-    width: 327px;
-  }
- 
-.box .notificao-normal {  
-  position: absolute;
-  left: 1.6%;
-  right: 96.53%;
-  top: 40.82%;
-  bottom: 56.05%;
-  background: #A0C2C2;
-  }
 
 .box .text-wrapper-3 {
     color: #ffffff9e;
@@ -153,14 +149,6 @@ body { /*Cor do corpo de fundo/plano*/
     text-align: center;
     top: 5px;
     width: 160px;
-  }
-
-.box .perfil {
-    height: 52px;
-    left: 44px;
-    position: absolute;
-    top: 26px;
-    width: 329px;
   }
  
 .box .h-1 {
