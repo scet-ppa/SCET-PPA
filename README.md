@@ -4,7 +4,7 @@
 
 **Docente:** Ricardo de Carvalho Sena e Joao Paulo Oliveira Santos. Disciplina: Prática Profissional Articuladora e Gestão e Empreedorismo. 
 
-**Série:** 3º. **Turma:** 732. **Curso:** Técnico em Informática. ***Turno:** Vespertino.
+**Série:** 3º. **Turma:** 732. **Curso:** Técnico em Informática. **Turno:** Vespertino.
 
 
 *Projeto: SCET*
