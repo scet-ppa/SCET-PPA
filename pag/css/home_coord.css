@@ -5,7 +5,23 @@
     justify-content: center;
     width: 100%;
   }
- 
+
+  .white-vertical-bar {
+    width: 25%;
+    background-color: white;
+  }
+
+  .box {
+    flex: 1;
+    display: flex;
+  }
+
+  .box .home-do-coordenador-wrapper {
+    border: 0px none;
+    height: 1024px;
+    width: 1427.09px;
+  }
+  
   .box .home-do-coordenador-wrapper {
     border: 0px none;
     height: 1024px;
