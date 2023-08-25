@@ -109,7 +109,23 @@ height: 1030px;
   width: 100%;
 }
 
-.botoes {
+.sobre{
+  color: #ffffff;
+font-family: "Fredoka-Medium", Helvetica;
+font-size: 25px;
+font-weight: 500;
+height: 30px;
+left: 50px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+text-align: center;
+top: 695px;
+white-space: nowrap;
+}
+
+/*.botoes {
+
   color: #ffffff9e;
   font-family: "Fredoka-Regular", Helvetica;
   font-size: 25px;
@@ -132,4 +148,35 @@ height: 1030px;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+}*/
+
+.lateral{
+	height: -10px;
+	left: 0;
+	position: absolute;
+	top: 230px;
+	width: 338px;
+}
+
+a{
+  text-decoration: none;
+  color: #A4BFBF;
+}
+
+ul{
+  list-style: none;
+}
+
+nav{
+  background-color: #055e5e;
+}
+
+a{
+  background-color: #055e5e;
+  display: block;
+  padding: 10px 5px;
+}
+
+a:hover{
+  background-color: #d1d4e4;
 }
