@@ -1,0 +1,182 @@
+body { /*Plano de fundo*/
+  background-color: #b9bed6a6; 
+}
+
+.titulo_user { /*Título da página*/
+  color: #008080;
+  font-family: "Fredoka-SemiBold", Helvetica;
+  font-size: 45px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+
+  border: 0px none;
+  height: 54px;
+  width: 751px;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.user { /*User do usuário*/
+  color: #ffffff;
+  font-family: "Fredoka-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  height: 30px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+
+}
+
+.retangulo {
+background-color: #065f5f1c;
+height: 72px;
+left: 0;
+position: fixed;
+top: 0;
+width: 1100px;
+border: 0px none;
+height: 72px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+}
+
+.menu {
+background-color: #055e5e;
+height: 1030px;
+left: 0;
+position: fixed;
+top: 0;
+width: 338px;
+border: 0px none;
+height: 1030px;
+}
+
+.info {
+  color: #ffffff9e;
+  font-family: "Fredoka-Regular", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  height: 30px;
+ 
+  
+  line-height: normal;
+  position: fixed;
+  text-align: center;
+
+  white-space: nowrap;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  border: 0px none;
+  height: 30px;
+  width: 66px;
+}
+
+.foto_perfil { /*Foto de perfil*/
+  height: 170px;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 170px;
+  border: 0px none;
+  height: 170px;
+  width: 170px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sobre{
+  color: #ffffff;
+font-family: "Fredoka-Medium", Helvetica;
+font-size: 25px;
+font-weight: 500;
+height: 30px;
+left: 50px;
+letter-spacing: 0;
+line-height: normal;
+position: absolute;
+text-align: center;
+top: 695px;
+white-space: nowrap;
+}
+
+/*.botoes {
+
+  color: #ffffff9e;
+  font-family: "Fredoka-Regular", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  height: 57px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 279px;
+
+  border: 0px none;
+  height: 57px;
+  width: 279px;
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}*/
+
+.lateral{
+	height: -10px;
+	left: 0;
+	position: absolute;
+	top: 230px;
+	width: 338px;
+}
+
+a{
+  text-decoration: none;
+  color: #A4BFBF;
+}
+
+ul{
+  list-style: none;
+}
+
+nav{
+  background-color: #055e5e;
+}
+
+a{
+  background-color: #055e5e;
+  display: block;
+  padding: 10px 5px;
+}
+
+a:hover{
+  background-color: #d1d4e4;
+}

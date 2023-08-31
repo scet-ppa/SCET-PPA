@@ -1,0 +1,441 @@
+body { /*Plano de fundo*/
+    background-color: #b9bed6a6; 
+}
+
+.cont{
+    /* conteiner verde */
+position: fixed;
+width: 350px;
+height: 800px;
+left: 0;
+top: 0;
+margin-top: 0;
+
+background: #008080;
+
+}
+
+
+.titulo { /*Título da página*/
+    color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    height: 51px;
+    left: 150px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    text-align: center;
+    top: 10px;
+    width: 303px;
+	border: 0px none;
+	height: 51px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.user { /*User do usuário*/
+	color: #ffffff;
+	font-family: "Fredoka-Medium", Helvetica;
+	font-size: 20px;
+	font-weight: 500;
+	height: 30px;
+	left: 90px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: fixed;
+	text-align: center;
+	top: 25px;
+	white-space: nowrap;
+}
+
+.sobre{
+    color: #ffffff;
+	font-family: "Fredoka-Medium", Helvetica;
+	font-size: 25px;
+	font-weight: 500;
+	height: 30px;
+	left: 50px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	text-align: center;
+	top: 695px;
+	white-space: nowrap;
+}
+
+.retangulo {
+	background-color: #065f5f1c;
+	height: 72px;
+	left: 350px;
+	position: fixed;
+	top: 0;
+	width: 1300px;
+	border: 0px none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.retangulo2 {
+	background-color: rgba(105, 116, 116, 0.10);
+	height: 42px;
+	left: 600px;
+	position: absolute;
+	top: 100px;
+	width: 580px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pesquisa{
+	background-color: rgba(105, 116, 116, 0.10);
+	font-size: 16px;
+	width: 580px;
+}
+
+.retangulo3 {
+	background-color: rgba(105, 116, 116, 0.10);
+	height: 540px;
+	left: 400px;
+	position: absolute;
+	top: 180px;
+	width: 1070px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.retangulo4 {
+	background-color: #A4BFBF;
+	height: 55px;
+	left: 400px;
+	position: absolute;
+    text-align: center;
+	top: 180px;
+	width: 1070px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.retangulo5 {
+	background-color: #008080;
+    background-color: transparent;
+	height: 68px;
+	left: 0;
+	position: absolute;
+    text-align: center;
+	top: 0;
+	width: 348px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    border: solid 2px white;
+}
+
+.retangulo6 {
+	background-color: #008080;
+    background-color: transparent;
+	height: 68px;
+	left: 0;
+	position: absolute;
+    text-align: center;
+	top: 674px;
+	width: 348px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    border: solid 2px white;
+}
+
+.retangulo_central img{
+	margin-left: 1146px;
+    margin-top: 105px;
+}
+
+.retangulo6 img{
+	margin-left: -290px;
+    margin-top: 20px;
+}
+
+.cont img{
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.lateral{
+	height: -10px;
+	left: 0;
+	position: absolute;
+	top: 230px;
+	width: 338px;
+}
+
+a{
+    text-decoration: none;
+    color: #A4BFBF;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #008080;
+}
+
+a{
+    background-color: #008080;
+    display: block;
+    padding: 10px 5px;
+}
+
+a:hover{
+    background-color: #d1d4e4;
+}
+
+.retangulo_central { /*Retangulo do conteúdo do cabeçalho*/
+	background-color: #d1d4e4;
+	box-shadow: 0px 4px 4px #00000073;
+	height: 793px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 1049px;
+	border: 0px none;
+	height: 793px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+/*.cabecalho {
+	background-color: #a3bfbf;
+	height: 71px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 1049px;
+	border: 0px none;
+	height: 71px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}*/
+
+.aluno {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 23px;
+	left: 460px;
+	position: fixed;
+	top: 195px;
+	width: 68px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.orientador {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 23px;
+	left: 620px;
+	position: fixed;
+	top: 195px;
+	width: 68px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.componente {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 23px;
+	left: 830px;
+	position: fixed;
+	top: 195px;
+	width: 68px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.tempo {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 990px;
+	position: absolute;
+	top: 195px;
+    text-align: center;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.de {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 1040px;
+	position: absolute;
+	top: 195px;
+    text-align: center;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.atraso{
+    color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 1090px;
+	position: absolute;
+	top: 195px;
+    text-align: center;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.data {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 1215px;
+	position: absolute;
+	top: 195px;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.inicio {
+	color: #000000;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 1300px;
+	position: absolute;
+	top: 195px;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+hr{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 280px;
+    margin-left: 393px;
+}
+
+.linha2{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha3{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha4{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha5{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha6{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha7{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha8{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.linha9{
+    color: #A4BFBF;
+    width: 1068px;
+    margin-top: 50px;
+    margin-left: 393px;
+}
+
+.filtro{
+    color: #065F5F;
+	font-family: "Dosis-SemiBold", Helvetica;
+	font-size: 20px;
+	font-weight: 600;
+	height: 53px;
+	left: 1350px;
+	position: absolute;
+	top: 110px;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}

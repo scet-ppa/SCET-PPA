@@ -1,15 +1,13 @@
-Projeto para a realização de um sistema de controle de estágio e tcc. 
-<!--
-**scet-ppa/SCET-PPA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Instituto Federal de Educação, Ciência e Tecnologia da Bahia — Campus Barreiras**
 
-Here are some ideas to get you started:
+**Discente:** Guilherme de Matos Silva, Hiarles de Souza Queiroz, Lucas Renan Taveira do Nascimento, Nicholas Rafael Queiroz dos Reis e Vandevan SIlva dos Passsos. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Docente:** Ricardo de Carvalho Sena e Joao Paulo Oliveira Santos. Disciplina: Prática Profissional Articuladora e Gestão e Empreedorismo. 
+
+**Série:** 3º. **Turma:** 732. **Curso:** Técnico em Informática. **Turno:** Vespertino.
+
+
+*Projeto: SCET*
+=============
+
+Projeto realizado pelos citados alunos com o objetivo de organizar os estágios e TCC's da referida instituição.
