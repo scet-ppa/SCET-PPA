@@ -16,12 +16,10 @@ body { /*Plano de fundo*/
     top: 0;
     width: 303px;
 	border: 0px none;
-	height: 51px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
 }
 
 .user { /*User do usuário*/
@@ -75,12 +73,10 @@ body { /*Plano de fundo*/
 	top: 0;
 	width: 1049px;
 	border: 0px none;
-	height: 793px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
 }
 
 /*.cabecalho {
