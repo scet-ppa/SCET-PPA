@@ -1,0 +1,133 @@
+body { /*Cor do corpo da página*/
+    background-color: #b9bed6a6;
+}
+
+.titulo { /*Cor do título da página*/
+    color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    height: 51px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 303px;
+
+    border: 0px none;
+    height: 51px;
+
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.user {
+    color: #ffffff;
+	font-family: "Fredoka-Medium", Helvetica;
+	font-size: 25px;
+	font-weight: 500;
+	height: 30px;
+	left: 0;
+	letter-spacing: 0;
+	line-height: normal;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	white-space: nowrap;
+}
+
+.retangulo {
+	background-color: #065f5f1c;
+	height: 72px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 1100px;
+	border: 0px none;
+	height: 72px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.menu {
+	background-color: #055e5e;
+	height: 1030px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 338px;
+	border: 0px none;
+	height: 1030px;
+}
+
+.retangulo_central { /*Retangulo do conteúdo do cabeçalho*/
+	background-color: #d1d4e4;
+	box-shadow: 0px 4px 4px #00000073;
+	height: 793px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 1049px;
+	border: 0px none;
+	height: 793px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+    
+
+.subtitulo {
+    color: #000000;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 78px;
+
+    border: 0px none;
+    height: 36px;
+    width: 78px;
+
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.exit {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 30px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    border: none;
+    height: 30px;
+    width: 48px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
