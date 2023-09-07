@@ -1,5 +1,5 @@
 body { /*Plano de fundo*/
-    background-color: #b9bed6a6; 
+    background-color: #b9bed6a6;
 }
 
 .cont{
@@ -10,10 +10,11 @@ height: 800px;
 left: 0;
 top: 0;
 margin-top: 0;
-
+display: block;
 background: #008080;
 
 }
+
 
 .titulo { /*Título da página*/
     color: #065f5f;
@@ -29,10 +30,12 @@ background: #008080;
     top: 10px;
     width: 303px;
 	border: 0px none;
+	height: 51px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	width: 100%;
 }
 
 .user { /*User do usuário*/
@@ -150,9 +153,9 @@ background: #008080;
     border: solid 2px white;
 }
 
-.retangulo4 img{
-	margin-left: -630px;
-    margin-top: -70px;
+.retangulo_central img{
+	margin-left: 1146px;
+    margin-top: 105px;
 }
 
 .retangulo6 img{
@@ -205,10 +208,12 @@ a:hover{
 	top: 0;
 	width: 1049px;
 	border: 0px none;
+	height: 793px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	width: 100%;
 }
 
 /*.cabecalho {
