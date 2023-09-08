@@ -12,30 +12,24 @@ top: 0;
 margin-top: 0;
 display: block;
 background: #008080;
-
 }
 
 
 .titulo { /*Título da página*/
-    color: #065f5f;
-    font-family: "Dosis-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 600;
     height: 51px;
     left: 150px;
     letter-spacing: 0;
     line-height: normal;
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 10px;
-    width: 303px;
+    width: 210px;
 	border: 0px none;
 	height: 51px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
 }
 
 .user { /*User do usuário*/
@@ -202,7 +196,7 @@ a:hover{
 .retangulo_central { /*Retangulo do conteúdo do cabeçalho*/
 	background-color: #d1d4e4;
 	box-shadow: 0px 4px 4px #00000073;
-	height: 745px;
+	height: 747px;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -337,6 +331,22 @@ a:hover{
 	left: 1215px;
 	position: absolute;
 	top: 195px;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.Pendente {
+	color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+	font-weight: 600;
+	height: 53px;
+	left: 870px;
+	position: absolute;
+	top: 10px;
 	width: 88px;
 	background-color: transparent;
 	display: inline-flex;
