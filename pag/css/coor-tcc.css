@@ -1,33 +1,18 @@
-@import url(../css/lateral-coor.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url(../css/barra_lateral.css);
 
-.navegacao{
-    position: relative;
-    height: 750px;
-    width: 250px;
-    background: #008080;
-    box-shadow: 10px 0 0 #087575;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navegacao ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 10px;
-    padding-top: 20px;
-    
-}
-
-.navegacao ul li{
-    position: relative;
-    list-style: none;
-    width: 100%
-}
-
-.navegacao ul li a{
-    position: relative; 
+body{
     display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: rgb(167, 167, 168);
-} 
+    justify-content: left;
+    align-items: center;
+    min-height: 90px; 
+    background-color: #FFFFFf;
+}
