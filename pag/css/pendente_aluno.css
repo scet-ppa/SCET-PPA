@@ -1,6 +1,42 @@
+@import url(../css/lateral-coor.css);
+
 body { /*Plano de fundo*/
     background-color: #b9bed6a6;
 }
+
+
+/*.navegacao{
+    position: relative;
+    height: 750px;
+    width: 250px;
+    background: #008080;
+    box-shadow: 10px 0 0 #087575;
+}
+
+.navegacao ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+    
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 100%
+}
+
+.navegacao ul li a{
+    position: relative; 
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(167, 167, 168);
+} */
+
 
 .cont{
     /* conteiner verde */
@@ -14,7 +50,6 @@ display: block;
 background: #008080;
 
 }
-
 
 .titulo { /*Título da página*/
     height: 51px;
