@@ -1,41 +1,36 @@
 body { /*Plano de fundo*/
-    background-color: #b9bed6a6; 
+    background-color: #b9bed6a6;
 }
 
 .cont{
     /* conteiner verde */
-position: fixed;
+position: absolute;
 width: 350px;
-height: 800px;
+height: 746px;
 left: 0;
 top: 0;
 margin-top: 0;
-
+display: block;
 background: #008080;
 
 }
 
 
 .titulo { /*Título da página*/
-    color: #065f5f;
-    font-family: "Dosis-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 600;
     height: 51px;
     left: 150px;
     letter-spacing: 0;
     line-height: normal;
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 10px;
-    width: 303px;
+    width: 210px;
 	border: 0px none;
 	height: 51px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
 }
 
 .user { /*User do usuário*/
@@ -47,7 +42,7 @@ background: #008080;
 	left: 90px;
 	letter-spacing: 0;
 	line-height: normal;
-	position: fixed;
+	position: absolute;
 	text-align: center;
 	top: 25px;
 	white-space: nowrap;
@@ -72,9 +67,9 @@ background: #008080;
 	background-color: #065f5f1c;
 	height: 72px;
 	left: 350px;
-	position: fixed;
+	position: absolute;
 	top: 0;
-	width: 1300px;
+	width: 1160px;
 	border: 0px none;
 	display: flex;
 	flex-direction: row;
@@ -202,13 +197,12 @@ a:hover{
 .retangulo_central { /*Retangulo do conteúdo do cabeçalho*/
 	background-color: #d1d4e4;
 	box-shadow: 0px 4px 4px #00000073;
-	height: 793px;
+	height: 747px;
 	left: 0;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 1049px;
 	border: 0px none;
-	height: 793px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: row;
@@ -237,7 +231,7 @@ a:hover{
 	font-weight: 600;
 	height: 23px;
 	left: 460px;
-	position: fixed;
+	position: absolute;
 	top: 195px;
 	width: 68px;
 	background-color: transparent;
@@ -253,7 +247,7 @@ a:hover{
 	font-weight: 600;
 	height: 23px;
 	left: 620px;
-	position: fixed;
+	position: absolute;
 	top: 195px;
 	width: 68px;
 	background-color: transparent;
@@ -269,7 +263,7 @@ a:hover{
 	font-weight: 600;
 	height: 23px;
 	left: 830px;
-	position: fixed;
+	position: absolute;
 	top: 195px;
 	width: 68px;
 	background-color: transparent;
@@ -338,6 +332,22 @@ a:hover{
 	left: 1215px;
 	position: absolute;
 	top: 195px;
+	width: 88px;
+	background-color: transparent;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.Pendente {
+	color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+	font-weight: 600;
+	height: 53px;
+	left: 870px;
+	position: absolute;
+	top: 10px;
 	width: 88px;
 	background-color: transparent;
 	display: inline-flex;

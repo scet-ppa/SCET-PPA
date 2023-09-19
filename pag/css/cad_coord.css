@@ -75,7 +75,7 @@ a button:hover, a button:active{
     font-size: 1.5em;
 }
 
-.box-input span{
+.box-input label{
     position: absolute;
     left: 12px;
     top: 12px;
@@ -87,8 +87,8 @@ a button:hover, a button:active{
 
 }
 
-.box-input input:valid ~ span, 
-.box-input input:focus ~ span{
+.box-input input:valid ~ label, 
+.box-input input:focus ~ label{
     color: #008080;
     transform: translateX(13px) translateY(-18px);
     font-size: 0.85em;
