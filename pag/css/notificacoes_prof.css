@@ -1,0 +1,356 @@
+.notificaes {
+    background-color: #ffffff;
+    height: 1024px;
+    overflow: hidden;
+    width: 1438px;
+  }
+  
+
+  .notificaes .overlap {
+    height: 1030px;
+    left: -31px;
+    position: relative;
+    top: -6px;
+    width: 1473px;
+  }
+  
+  .notificaes .backgorund {
+    background-color: #b9bed6a6;
+    height: 1024px;
+    left: 31px;
+    position: absolute;
+    top: 6px;
+    width: 1440px;
+  }
+  
+  .notificaes .conteiner-azul {
+    background-color: #055e5e;
+    height: 1030px;
+    left: 31px;
+    position: absolute;
+    top: 0;
+    width: 338px;
+  }
+  
+  .notificaes .vector {
+    height: 4px;
+    left: 42px;
+    position: absolute;
+    top: 76px;
+    width: 327px;
+  }
+  
+  .notificaes .img {
+    height: 4px;
+    left: 31px;
+    position: absolute;
+    top: 957px;
+    width: 327px;
+  }
+  
+  .notificaes .perfil {
+    height: 46px;
+    left: 42px;
+    position: absolute;
+    top: 21px;
+    width: 46px;
+  }
+  
+  .notificaes .usu-riocoordenador {
+    color: #ffffff;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 30px;
+    left: 110px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    white-space: nowrap;
+  }
+  
+  .notificaes .boto-sobre {
+    height: 68px;
+    left: 32px;
+    position: absolute;
+    top: 960px;
+    width: 329px;
+  }
+  
+  .notificaes .overlap-group {
+    background-color: #065f5f;
+    height: 68px;
+    position: relative;
+    width: 327px;
+  }
+  
+  .notificaes .text-wrapper {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 30px;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    white-space: nowrap;
+  }
+  
+  .notificaes .vector-2 {
+    height: 25px;
+    left: 28px;
+    position: absolute;
+    top: 21px;
+    width: 25px;
+  }
+  
+  .notificaes .menu {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 303px;
+    width: 364px;
+  }
+  
+  .notificaes .boto-TCC {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 288px;
+    width: 329px;
+  }
+  
+  .notificaes .div {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 30px;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    white-space: nowrap;
+  }
+  
+  .notificaes .vector-3 {
+    height: 26px;
+    left: 23px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+  }
+  
+  .notificaes .boto-estgio {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 209px;
+    width: 329px;
+  }
+  
+  .notificaes .vector-4 {
+    height: 26px;
+    left: 22px;
+    position: absolute;
+    top: 21px;
+    width: 24px;
+  }
+  
+  .notificaes .boto-notificaes {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 131px;
+    width: 363px;
+  }
+  
+  .notificaes .overlap-2 {
+    height: 68px;
+    left: 34px;
+    position: absolute;
+    top: 0;
+    width: 327px;
+  }
+  
+  .notificaes .normal {
+    background-color: #065f5f;
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 327px;
+  }
+  
+  .notificaes .notificao-normal {
+    height: 32px;
+    left: 22px;
+    position: absolute;
+    top: 18px;
+    width: 27px;
+  }
+  
+  .notificaes .text-wrapper-2 {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 57px;
+    left: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 192px;
+  }
+  
+  .notificaes .notificao-mouse-em {
+    height: 26px;
+    left: -4203px;
+    position: absolute;
+    top: -1369px;
+    width: 22px;
+  }
+  
+  .notificaes .overlap-3 {
+    height: 131px;
+    left: 34px;
+    position: absolute;
+    top: 0;
+    width: 332px;
+  }
+  
+  .notificaes .boto-professor {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 63px;
+    width: 329px;
+  }
+  
+  .notificaes .text-wrapper-3 {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 57px;
+    left: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 192px;
+  }
+  
+  .notificaes .vector-5 {
+    height: 22px;
+    left: 24px;
+    position: absolute;
+    top: 23px;
+    width: 26px;
+  }
+  
+  .notificaes .boto-pendentes {
+    height: 68px;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    width: 329px;
+  }
+  
+  .notificaes .text-wrapper-4 {
+    color: #ffffff9e;
+    font-family: "Fredoka-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 57px;
+    left: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 160px;
+  }
+  
+  .notificaes .vector-6 {
+    height: 26px;
+    left: 12px;
+    position: absolute;
+    top: 21px;
+    width: 26px;
+  }
+  
+  .notificaes .rectangle {
+    background-color: #d9d9d9;
+    height: 69px;
+    left: 382px;
+    position: absolute;
+    top: 21px;
+    width: 1072px;
+  }
+  
+  .notificaes .rectangle-2 {
+    background-color: #d1d4e4;
+    box-shadow: 0px 4px 4px #00000073;
+    height: 762px;
+    left: 398px;
+    position: absolute;
+    top: 125px;
+    width: 1034px;
+  }
+  
+  .notificaes .text-wrapper-5 {
+    color: #000000;
+    font-family: "Fredoka-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    height: 36px;
+    left: 408px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 123px;
+    width: 78px;
+  }
+  
+  .notificaes .identificador {
+    height: 72px;
+    left: 369px;
+    position: absolute;
+    top: 8px;
+    width: 1104px;
+  }
+  
+  .notificaes .div-wrapper {
+    background-color: #bbc7d5;
+    height: 72px;
+    position: relative;
+    width: 1102px;
+  }
+  
+  .notificaes .text-wrapper-6 {
+    color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    height: 51px;
+    left: 393px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 303px;
+  }
+  
