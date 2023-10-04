@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCET - TCC</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css"
+    <link rel="stylesheet" type="text/css" href="../css/prof-estagio.css">
 </head>
+
 <body>
+    <div class="container">
     <div class="navegacao">
         <ul>
             <li class="list">
@@ -67,20 +70,30 @@
         </ul>
     </div>
 
-    <div id="busca">
-        <input type="text" id="txtBusca" placeholder="Pesquisar"/>
-        <span class="icon"></span>
-    </div>
+        <div class="grid-item">
+            <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar" />
+            <a href="#">
+                <span class="search-btn"><ion-icon name="search-outline"></ion-icon></span>
+            </a>
+        </div>
 
-    <table class="tabela">
-        <tr class="info">
-            <th>Nome</th>
-            <th>Matricula</th>
-            <th>Curso</th>
-            <th>Turma</th>
-            <th>Orientador</th>
-        </tr>
-    </table>
+        <div class="table">
+
+        <fieldset>
+            <table id="estudantes">
+                <tr class="info">
+                    <th>Aluno</th>
+                    <th>Orientador</th>
+                    <th>Tema</th>
+                    <th>Situação</th>
+                    <th>Data de Iniciação</th>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+    </div>
+    </div>
 
     
 
@@ -88,14 +101,15 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         const list = document.querySelectorAll('.list');
-        function activeLink(){
+        function activeLink() {
             list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active'); 
+                item.classList.remove('active'));
+            this.classList.add('active');
         }
-            list.forEach((item) =>
-            item.addEventListener('click', activeLink)); 
-    
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
     </script>
 </body>
+
 </html>

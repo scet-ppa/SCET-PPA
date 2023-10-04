@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url(../css/barra_lateral.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Define a largura da barra lateral e os grids */
+  min-height: 100vh; /* Garante que o container ocupa toda a altura da viewport */
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide o espaço restante em duas colunas */
+}
+
+.grid-item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  height: 100%; /* Ocupa toda a altura do grid-item */
+}
+
+.search-box, .table {
+  height: 50%; /* Cada um ocupa metade da altura do grid-item */
+  box-sizing: border-box; /* Inclui padding e borda na altura */
+}
+
+.search-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.table {
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+
+
+.search-box {
+    margin-top: 10%;
+    margin-left: 37%;
+    transform: translate(-50%, -50%);
+    background: #b6bebe;
+    height: 40px;
+    width: 1000;
+    padding: 10px;
+    
+    
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #647474;
+    font-size: 16px;
+    line-height: 10%;
+    width: 92%;
+
+}
+
+.search-btn {
+    align-items:first baseline;
+}
+
+#estudantes {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#estudantes td,
+#estudantes th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#estudantes tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#estudantes tr:hover {
+  background-color: #ddd;
+}
+
+#estudantes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+  

@@ -7,13 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+/*body{
     display: flex;
     justify-content: left;
     align-items: center;
     min-height: 100vh; 
     background-color: #FFFFFf;
 }
+*/
 
 .navegacao{
     position: relative;
