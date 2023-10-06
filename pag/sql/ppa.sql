@@ -25,7 +25,6 @@ create table coordenador(
     email varchar(80),
     senha varchar(25)
 ); 
-
     
 create table professor(
 	id_usuario integer auto_increment primary key, 
