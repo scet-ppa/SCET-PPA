@@ -10,10 +10,16 @@
 }
 
 body{
-    display: flex;
-    justify-content: left;
+    display: grid;
+    /*justify-content: left;
     align-items: center;
-    min-height: 90px; 
+    min-height: 90px; */
+    grid-template-columns: 10% auto auto auto;
+    grid-template-areas: 
+    'navegacao content content content'
+    'navegacao content content content'
+    'navegacao content content content';
+  
     background-color: #FFFFFf;
 }
 
@@ -23,6 +29,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    grid-area: content;
   }
   
   .estudantes td,
@@ -47,3 +54,10 @@ body{
     color: white;
   }
   
+  #busca{
+    grid-area: co;
+    margin-top: 1.5%;
+    position: relative;
+    justify-content: center;
+
+  }
