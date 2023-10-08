@@ -3,6 +3,11 @@
 
 body { /*Plano de fundo*/
 	background-color: #b9bed6a6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
   }
 
 * {
@@ -58,8 +63,29 @@ body { /*Plano de fundo*/
   height: 100%; /* Ocupa toda a altura do grid-item */
 }
 
-.search-box, .table {
-  height: 50%; /* Cada um ocupa metade da altura do grid-item */
-  box-sizing: border-box; /* Inclui padding e borda na altura */
+fieldset {
+	border: 2px solid #008080;
+	padding: 10px;
+	width: 70%;
+	max-width: 600px;
+	box-sizing: border-box;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 2px solid #008080;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+img {
+	max-width: 100px;
+	max-height: 100px;
+}
