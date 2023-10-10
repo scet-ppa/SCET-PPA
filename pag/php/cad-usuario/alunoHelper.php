@@ -36,8 +36,7 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        $aluno = new Aluno($nome,$curso,$turma,$matricula,
-        $email,$senha);
+        $aluno = new Aluno($nome,$curso,$turma,$matricula, $email,$senha);
         $aluno->inserir();
 
     }

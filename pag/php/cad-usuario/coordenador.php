@@ -1,7 +1,7 @@
 <?php
 include_once '../banco.php';
 
-class coordenador{
+class Coordenador{
     public $id_coordenador;
     public $nome;
     public $email;
@@ -17,8 +17,7 @@ class coordenador{
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("insert into coordenador (nome, email, senha) values(:nome, 
-            :email, :senha)");
+            $stmt = $conn->prepare("insert into coordenador (nome, email, senha) values(:nome, :email, :senha)");
             $stmt->bindParam(':nome',$this->nome);
             $stmt->bindParam(':email',$this->email);
             $stmt->bindParam(':senha',$this->senha);
@@ -28,6 +27,7 @@ class coordenador{
         }
         $banco->fecharConexao();
     }
+
     function getIdCoordenador(){
         return $this->id_coordenador;
     }
@@ -35,6 +35,7 @@ class coordenador{
     function setIdCoordenador($id_coordenador){
         $this->id_coordenador = $id_coordenador;
     }
+
     static function carregar($id_coordenador){
         try{
             $banco = new Banco();

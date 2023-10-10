@@ -14,11 +14,11 @@ body{
     /*justify-content: left;
     align-items: center;
     min-height: 90px; */
-    grid-template-columns: 10% auto auto auto;
+    /*grid-template-columns: 10% auto auto auto;*/
     grid-template-areas: 
-    'navegacao content content content'
-    'navegacao content content content'
-    'navegacao content content content';
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content';
   
     background-color: #FFFFFf;
 }
@@ -57,6 +57,7 @@ body{
   #busca{
     grid-area: co;
     margin-top: 1.5%;
+    margin-bottom: 2.5%;
     position: relative;
     justify-content: center;
 
