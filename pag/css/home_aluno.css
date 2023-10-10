@@ -1,38 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 @import url(../css/barra_lateral.css);
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
 	background-color: #b9bed6a6;
 }
-
-.retangulo {
-	background-color: #065f5f1c;
-	height: 70px;
-	left: 5px;
-	position: absolute;
-	top: 0;
-	width: 1509px;
-	border: 15px none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	}
-	
-.titulo {
-	color: #065f5f;
-  	font-family: "Dosis-SemiBold", Helvetica;
-  	font-size: 40px;
-	font-weight: 600;
-	height: 70px;
-	left: 10px;
-	position: absolute;
-	top: 7px;
-	width: 1509px;
-	border: 15px none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	}
 
 * {
     margin: 0;
@@ -90,4 +69,19 @@ th, td {
 img {
 	max-width: 100px;
 	max-height: 100px;
+}
+
+.titulo{
+	color: #065f5f;
+	font-family: "Dosis-SemiBold", Helvetica;
+
+	font-size: 40px;
+  	font-weight: 600;
+	
+	position: absolute;
+	top: 10px;
+	width: 88px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }

@@ -3,19 +3,19 @@ body { /*Plano de fundo*/
 }
 
 .Pendente {
-color: #065f5f;
+  color: #065f5f;
   font-family: "Dosis-SemiBold", Helvetica;
   font-size: 40px;
-font-weight: 600;
-height: 53px;
-left: 870px;
-position: absolute;
-top: 10px;
-width: 88px;
-background-color: transparent;
-display: inline-flex;
-flex-direction: row;
-justify-content: center;
+  font-weight: 600;
+  height: 53px;
+  left: 870px;
+  position: absolute;
+  top: 10px;
+  width: 88px;
+  background-color: transparent;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*.navegacao{

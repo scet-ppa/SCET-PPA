@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCET - Cadastro de Aluno</title>
     <link rel="stylesheet" type="text/css" href="../css/cad_aluno.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
 
