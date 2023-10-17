@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
 }
 
 body{
@@ -23,6 +24,23 @@ body{
 }
 
 
+=======
+}
+
+body{
+    display: grid;
+    /*justify-content: left;
+    align-items: center;
+    min-height: 90px; */
+    /*grid-template-columns: 10% auto auto auto;*/
+    grid-template-areas: 
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content';
+  
+    background-color: #FFFFFf;
+}
+>>>>>>> dfd4f283ea09ca72f3d314d5e64d8299fb77d220
 
 .estudantes {
     font-family: Arial, Helvetica, sans-serif;
@@ -59,5 +77,8 @@ body{
     margin-bottom: 2.5%;
     position: relative;
     justify-content: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> dfd4f283ea09ca72f3d314d5e64d8299fb77d220
   }
