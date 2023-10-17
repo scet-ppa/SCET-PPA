@@ -38,6 +38,7 @@ body {
 }
 
 fieldset {
+	left: 12px;
 	border: 2px solid #065f5f;
 	padding: 10px;
 	max-width: 600px;
@@ -46,6 +47,7 @@ fieldset {
 }
 
 table {
+	left: 12px;
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -74,14 +76,19 @@ img {
 .titulo{
 	color: #065f5f;
 	font-family: "Dosis-SemiBold", Helvetica;
-
 	font-size: 40px;
-  	font-weight: 600;
-	
+	font-weight: 600;
+	height: 600px;
+	left:610px;
 	position: absolute;
-	top: 10px;
-	width: 88px;
-	display: flex;
-	flex-direction: row;
+	top: 15px;
+	width: 850px;
 	justify-content: center;
+}
+
+#mover{
+	right: 12px;
+	margin-left: 150px;
+	top: 12px;
+	margin-top: -600px;
 }
