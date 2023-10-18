@@ -1,5 +1,5 @@
 <?php
-include_once '../banco.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class Aluno{
     public $id_aluno;

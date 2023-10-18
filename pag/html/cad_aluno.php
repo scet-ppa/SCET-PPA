@@ -1,5 +1,5 @@
 <?php
-    include_once "../../php/cad-usuario/alunoHelper.php";
+    include_once "../php/cad-usuario/alunoHelper.php";
 ?>
 
 <!DOCTYPE html>

@@ -9,20 +9,27 @@
 }
 
 body{
-    display: grid;
+    display: flex;
     /*justify-content: left;
     align-items: center;
     min-height: 90px; */
     /*grid-template-columns: 10% auto auto auto;*/
-    grid-template-areas: 
+   /* grid-template-columns: 1fr 2fr;*/
+    /*grid-template-areas: 
     'navegacao content content content content content content content content content'
     'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content';
+    'navegacao content content content content content content content content content';*/
   
     background-color: #FFFFFf;
 }
 
 
+.content{
+  flex: 1;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .estudantes {
     font-family: Arial, Helvetica, sans-serif;
@@ -54,10 +61,14 @@ body{
   }
   
   #busca{
-    grid-area: co;
     margin-top: 1.5%;
     margin-bottom: 2.5%;
-    position: relative;
+    display: flex;
     justify-content: center;
+    align-items: center;
 
+  }
+
+  fieldset{
+    border-radius: 5px;
   }

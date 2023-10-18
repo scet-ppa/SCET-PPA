@@ -1,6 +1,6 @@
 <?php
-    include_once '../cad-usuario/aluno.php';
-    include_once '../banco.php';
+    include_once 'aluno.php';
+    include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
    if(isset($_POST['tipo'])){
         $tipo = $_POST['tipo'];
