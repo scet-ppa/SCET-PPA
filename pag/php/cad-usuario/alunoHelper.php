@@ -6,7 +6,7 @@
         $tipo = $_POST['tipo'];
         if($tipo === 'cad_aluno'){
             cadastrarAluno();
-            header('Location:home_aluno.html');
+            header('Location:../html/home_aluno.php');
         }/*else if($tipo === 'excluir_aluno'){
             excluir_aluno();
             header('Location:index.php');
@@ -40,6 +40,11 @@
         $aluno->inserir();
 
     }
+
+   function excluir_aluno(){
+        $aluno = Aluno::carregar($_POST['id_aluno']);
+        $aluno->excluir_aluno();
+   }
 
     function getAlunos(){
         try{

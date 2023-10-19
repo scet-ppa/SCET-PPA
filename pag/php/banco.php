@@ -4,13 +4,13 @@
         private $serverName = "localhost"; //nome do servidor ip
         private $userName = "root"; //nome do usuario
         private $password = ""; 
-        private $dbname = ""; //base de dados que será utilizada
+        private $dbname = "ppa"; //base de dados que será utilizada
 
         function conectar(){
             try{
                 $this->conn = new PDO("mysql:host=$this->serverName;dbname=$this->dbname", $this->userName, $this->password);
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                #echo "Conexão realizada";
+                echo "Conexão realizada";
                 return $this->conn; 
             }catch(PDOException $e){
                 echo "Erro ao estabelecer conexão: ".$e->getMessage(); 

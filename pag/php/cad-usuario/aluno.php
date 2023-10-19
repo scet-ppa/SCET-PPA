@@ -41,6 +41,25 @@ class Aluno{
         return $this->id_aluno;
     }
 
+    /*function editar(){
+        $banco = new Banco();
+        $conn = $banco->conectar();
+        try{
+            $stmt = $conn->prepare("update aluno set nome=:nome, curso=:curso, turma=:turma, matricula=:matricula, email=:email, senha=:senha where id_aluno=:id_aluno");
+            $stmt->bindParam(':nome',$this->nome);
+            $stmt->bindParam(':curso',$this->curso);
+            $stmt->bindParam(':turma',$this->turma);
+            $stmt->bindParam(':matricula',$this->matricula);
+            $stmt->bindParam(':email',$this->email);
+            $stmt->bindParam(':senha',$this->senha);
+          //  $stmt->bindParam(':curso',$this->curso);
+            $stmt->execute();
+        }catch(PDOException $e){
+            echo $e->getMessage();
+        }
+        $banco->fecharConexao();
+    }*/
+
     function setIdAluno($id_aluno){
         $this->id_aluno = $id_aluno;
     }
