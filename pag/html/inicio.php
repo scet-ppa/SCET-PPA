@@ -11,14 +11,14 @@
     
     <nav>
         <div class="logo">
-            <a href="../html/inicio.html"> SCET </a>
+            <a href="../html/inicio.php"> SCET </a>
         </div>
 
         <ul>
             <li> <a href="../html/login.html"> Login </a> </li>
             <li> <a href="../html/cad_aluno.php"> Aluno </a> </li>
-            <li> <a href="../html/cad_prof.html"> Professor </a> </li>
-            <li> <a href="../html/cad_coord.html"> Coordenador </a> </li>
+            <li> <a href="../html/cad_prof.php"> Professor </a> </li>
+            <li> <a href="../html/cad_coord.php"> Coordenador </a> </li>
         </ul>
         
     </nav>

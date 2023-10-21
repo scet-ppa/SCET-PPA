@@ -2,7 +2,6 @@
     include_once "../php/cad-usuario/alunoHelper.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
