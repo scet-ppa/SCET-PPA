@@ -2,18 +2,6 @@
 @import url(../css/barra_lateral.css);
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-	background-color: #b9bed6a6;
-	display: flex;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -21,75 +9,71 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 200px 1fr; /* Define a largura da barra lateral e os grids */
-  min-height: 100vh; /* Garante que o container ocupa toda a altura da viewport */
+body{
+  display: flex;
+  background-color: #b9bed6a6;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide o espaço restante em duas colunas */
-}
-
-.grid-item {
-  padding: 20px;
-  border: 1px solid #ccc;
-  height: 100%; /* Ocupa toda a altura do grid-item */
-}
-
-fieldset {
-	left: 12px;
-	border: 2px solid #065f5f;
-	padding: 10px;
-	max-width: 600px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-table {
-	left: 12px;
-	width: 100%;
-	border-collapse: collapse;
-}
-
-table, th, td {
-	border: 2px solid #065f5f;
-}
-
-legend {
-	font-family: "Dosis-SemiBold", Helvetica;
-	color: #065f5f;
-	font-size: 40px;
-}
-th, td {
-	font-family: "Dosis-SemiBold", Helvetica;
-	font-size: 20px;
-	padding: 10px;
-	text-align: left;
-}
-
-img {
-	max-width: 100px;
-	max-height: 100px;
+/*
+.caixa-titulo{
+  margin-bottom: 46%;
+  width:100%;
+  background-color: #b9bed6a6;
 }
 
 .titulo{
-	color: #065f5f;
-	font-family: "Dosis-SemiBold", Helvetica;
-	font-size: 40px;
-	font-weight: 600;
-	height: 600px;
-	left:610px;
-	position: absolute;
-	top: 15px;
-	width: 850px;
-	justify-content: center;
-}
+  margin-left: 36%;
+}*/
 
-#mover{
-	right: 12px;
-	margin-left: 150px;
-	top: 12px;
-	margin-top: -600px;
-}
+.mover{
+    flex: 2;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+
+  fieldset {
+    border: 2px solid #065f5f;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  table {
+    left: 12px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 2px solid #065f5f;
+  }
+  
+  legend {
+    font-family: "Dosis-SemiBold", Helvetica;
+    color: #065f5f;
+    font-size: 40px;
+  }
+  th, td {
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .titulo{
+    color: #065f5f;
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    height: 600px;
+    left:610px;
+    position: absolute;
+    top: 15px;
+    width: 850px;
+    justify-content: center;
+  }
+  

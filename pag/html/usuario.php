@@ -21,9 +21,9 @@
         <div class="usuario"> 
             <ul>
               
-                <li id="aluno"><a href="../html/cad_aluno.html"><button>Aluno</button></a></li>
-                <li id="professor"><a href="../html/cad_prof.html"><button>Professor</button></a></li>
-                <li id="coordenador"><a href="../html/cad_coord.html"><button>Coordenador</button></a></li>
+                <li id="aluno"><a href="../html/cad_aluno.php"><button>Aluno</button></a></li>
+                <li id="professor"><a href="../html/cad_prof.php"><button>Professor</button></a></li>
+                <li id="coordenador"><a href="../html/cad_coord.php"><button>Coordenador</button></a></li>
     
             </ul>
         </div>
