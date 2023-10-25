@@ -47,17 +47,17 @@
         </div>
 
         <div class="box-input" id="senha">
-            <input type="password" required="required">
+            <input type="password" name="senha" required="required">
             <label>Senha</label>
         </div>
 
         <div class="box-input" id="turma">
-            <input type="text" required="required">
+            <input type="text" name="turma" required="required">
             <label>Turma</label>
         </div>
     
         <div class="box-input" id="confirmar">
-            <input type="password" required="required">
+            <input type="password" name="confirmar" required="required">
             <label>Confirmação de senha</label>
         </div>
 

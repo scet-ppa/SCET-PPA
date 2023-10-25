@@ -6,7 +6,8 @@
         $tipo = $_POST['tipo'];
         if($tipo === 'cad_aluno'){
             cadastrarAluno();
-            header('Location:../html/home_aluno.php');
+            echo $_SERVER['DOCUMENT_ROOT'];
+           /* header('Location:'.$_SERVER['DOCUMENT_ROOT'].'/pag/html/home_aluno.php');*/
         }/*else if($tipo === 'excluir_aluno'){
             excluir_aluno();
             header('Location:index.php');

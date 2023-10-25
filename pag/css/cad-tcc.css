@@ -1,4 +1,11 @@
-@import url(../css/style.css);
+body{
+    background: #D1D4E4;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .box{
     display: flex;
@@ -14,7 +21,7 @@
 }
 
 .box-input{
-    position: absolute;
+/*    position: absolute;*/
     width: 360px;
     top: 50px;
 }
