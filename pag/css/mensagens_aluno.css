@@ -29,7 +29,7 @@ body{
     background-color: #b9bed6a6;
 }
 
-.container {
+/*.container {
     width: 80%;
     max-width: 800px;
     background-color: #fff;
@@ -99,17 +99,4 @@ body{
     margin-left: 10px;
     cursor: pointer;
 }
-
-.titulo{
-	color: #065f5f;
-	font-family: "Dosis-SemiBold", Helvetica;
-	font-size: 40px;
-	font-weight: 600;
-	height: 600px;
-	left:610px;
-	position: absolute;
-	top: 15px;
-	width: 850px;
-	justify-content: center;
-    
-}
+*/

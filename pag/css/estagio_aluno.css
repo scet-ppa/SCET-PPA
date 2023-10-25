@@ -9,17 +9,26 @@
 }
 
 body{
-    display: grid;
+    display: flex;
     /*justify-content: left;
     align-items: center;
     min-height: 90px; */
     /*grid-template-columns: 10% auto auto auto;*/
-    grid-template-areas: 
+   /* grid-template-columns: 1fr 2fr;*/
+    /*grid-template-areas: 
     'navegacao content content content content content content content content content'
     'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content';
+    'navegacao content content content content content content content content content';*/
   
-    background-color: #FFFFFf;
+    background-color: #b9b9b9;
+}
+
+
+.content{
+  flex: 1;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .estudantes {
@@ -47,14 +56,93 @@ body{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #008080;
     color: white;
   }
   
   #busca{
-    grid-area: co;
-    margin-top: 1.5%;
-    margin-bottom: 2.5%;
-    position: relative;
+    margin-top: 15px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+  }
+
+  fieldset{
+    border-radius: 5px;
+  }
+  
+  .cad-tcc:link, .cad-tcc:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+ .cad-tcc{
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+    background-color: #008080;
+    width: 130px;
+    margin-left: 85%;
+    margin-bottom: 1.5%;
+  }
+
+  .editar:link, .editar:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cad-tcc:hover,
+  .cad-tcc:active {
+    background-color: #055151;
+  }
+
+  .editar{
+    background-color: #1083b4;
+  }
+
+  .editar:hover,
+  .editar:active {
+    background-color: rgb(21, 44, 199);
+  }
+
+  .excluir:link, .excluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .excluir{
+    background-color: #f44336;
+  }
+
+  .concluir{
+    background-color: rgb(9, 144, 43);
+  }
+
+  .concluir:link, .concluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
