@@ -7,7 +7,7 @@ if(isset($_POST['tipo'])){
     $tipo = $_POST['tipo'];
     if($tipo === 'cad_prof'){
         cadastrarProfessor();
-        header('Location:home_prof.html');
+        header('Location:../../html/home_prof.php');
     }/*else if($tipo === 'excluir_prof'){
         excluir_prof();
         header('Location:index.php');
@@ -31,13 +31,11 @@ if(isset($_POST['tipo'])){
 function cadastrarProfessor(){
   //  echo "oi";
     $nome = $_POST['nome'];
-    $curso = $_POST['curso'];
-    $turma = $_POST['turma'];
     $matricula = $_POST['matricula'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $professor = new Professor($nome,$curso,$turma,$matricula, $email,$senha);
+    $professor = new Professor($nome, $matricula, $email, $senha);
     $professor->inserir();
 
 }
@@ -51,8 +49,8 @@ function getProfessores(){
        // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $professores = array();
         foreach($stmt->fetchAll() as $v => $value){
-            $professor = new Professor($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
-            $value['senha']);
+            $professor = new Professor($value['nome'], $value['matricula'], 
+            $value['email'], $value['senha']);
             $professor->setIdProfessor( $value['id_professor']);
             array_push($professores,$professor);
         }

@@ -52,8 +52,7 @@
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $coordenadores = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $coordenador = new Coordenador($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
-                $value['senha']);
+                $coordenador = new Coordenador($value['nome'], $value['email'], $value['senha']);
                 $coordenador->setIdCoordenador( $value['id_coordenador']);
                 array_push($coordenadores,$coordenador);
             }

@@ -47,8 +47,8 @@ class Coordenador{
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
                 $coordenador = new coordenador($value['nome'],
-                $value['telefone'],
-                $value['email'],$value['id_curso'],
+                $value['email'],
+                $value['senha'],$value['id_curso'],
                 $value['nascimento'],
                 $value['sexo']);
                 $coordenador->setIdcoordenador( $value['id_coordenador']);
