@@ -17,7 +17,7 @@ include_once "../php/cad-usuario/alunoHelper.php";
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="../html/usuario.html">
+                    <a href="../html/usuario.php">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
@@ -74,8 +74,7 @@ include_once "../php/cad-usuario/alunoHelper.php";
         </div>
         </div>
         
-<!--
-        <div class="caixa-titulo"> <h1 class="titulo">Olá, bem-vindo!</h1></div>-->
+<!--<div class="caixa-titulo"> <h1 class="titulo">Olá, bem-vindo!</h1></div>-->
 
         <div class="mover">
             <fieldset>
