@@ -57,7 +57,7 @@
         </div>
     
         <div class="box-input" id="confirmar">
-            <input type="password" name="confirmar" required="required">
+            <input type="password" name="senha" required="required">
             <label>Confirmação de senha</label>
         </div>
 

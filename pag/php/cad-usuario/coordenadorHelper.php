@@ -6,8 +6,8 @@
         $tipo = $_POST['tipo'];
         if($tipo === 'cad_coordenador'){
             cadastrarCoordenador();
-            echo $_SERVER['DOCUMENT_ROOT'];
-           header('Location:'.$_SERVER['DOCUMENT_ROOT'].'/pag/html/home_coord.php');*/
+          
+            header('Location:../../html/home_coord.php');
         }/*else if($tipo === 'excluir_aluno'){
             excluir_aluno();
             header('Location:index.php');
@@ -28,51 +28,47 @@
        $aluno->editar();
    }*/
 
-    function cadastrarAluno(){
+    function cadastrarCoordenador(){
       //  echo "oi";
         $nome = $_POST['nome'];
-        $curso = $_POST['curso'];
-        $turma = $_POST['turma'];
-        $matricula = $_POST['matricula'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        $aluno = new Aluno($nome,$curso,$turma,$matricula, $email,$senha);
-        $aluno->inserir();
-
+        $coordenador = new Coordenador($nome, $email, $senha);
+        $coordenador->inserir();
     }
 
-   function excluir_aluno(){
-        $aluno = Aluno::carregar($_POST['id_aluno']);
-        $aluno->excluir_aluno();
+   function excluir_coordenador(){
+        $coordenador = Coordenador::carregar($_POST['id_coordenador']);
+        $coordenador->excluir_coordenador();
    }
 
-    function getAlunos(){
+    function getCoordenador(){
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("select * from aluno");
+            $stmt = $conn->prepare("select * from coordenador");
             $stmt->execute();
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            $alunos = array();
+            $coordenadores = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
+                $coordenador = new Coordenador($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
                 $value['senha']);
-                $aluno->setIdAluno( $value['id_aluno']);
-                array_push($alunos,$aluno);
+                $coordenador->setIdCoordenador( $value['id_coordenador']);
+                array_push($coordenadores,$coordenador);
             }
 
-            //var_dump($alunos);
-            return $alunos;
+            //var_dump($coordenadores);
+            return $coordenadores;
 
         }catch(PDOException $e){
             echo "Erro " . $e->getMessage();
         }
     }
 
-   // getAlunos();
+   // getcoordenadores();
 
-/*    $aluno = new Aluno('Pedro Carvalho','75 99147 8160',
+/*    $coordenador = new Coordenador('Pedro Carvalho','75 99147 8160',
     'pedro@gmail.com',2,'01-08-2014','Masculino');
-    $aluno->inserir();*/
+    $coordenador->inserir();*/
 ?>

@@ -8,46 +8,104 @@
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
-
-    <div class="cont">
-        <img src="../img/perfil.png"  width="32" height="32" left="20">
-    </div>
-
-    <!– Fíguras geométricas –>
-
-    <div class="retangulo"></div>
-      
-    </div>
-    <div class="retangulo5"></div>
     
-    <div class="retangulo6">
-        <img src="../img/sobre.png"  width="32" height="32" left="30">
-    </div>
-
-    <div class="menu"></div>
-
-    <div class="lateral">
-        <nav>
+    <div class="container">
+        <div class="navegacao">
             <ul>
-            <li><a href="#">Pendentes</a></li>
-            <li><a href="#">Professores</a></li>
-            <li><a href="#">Notificações</a></li>
-            <li><a href="#">Estágio</a></li>
-            <li><a href="#">TCC</a></li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="list">Usuario</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="list">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="list">Mensagens</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="list">Notificações</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="list">Professores</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                        <span class="list">Estágio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="list">TCC</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                        <span class="list">Pendentes</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="list">Sair</span>
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </div>
-    
-    <div class="cabecalho"></div>
-    
-    <!– Títulos textuais –>
-    <div class="titulo"></div> <!– Título –>
-    <div class="user">Usuário Coordenador</div> <!– User do usuário–>
-    
-    <div class="sobre">Sobre</div>
+        </div>
+        </div>
+        
+<!--
+        <div class="caixa-titulo"> <h1 class="titulo">Olá, bem-vindo!</h1></div>
+-->
 
-    <!--Textos do cabeçalho-->
-    <div class="Pendente">Olá,</div>
+        <div class="mover">
+            <fieldset>
+                <legend>Dados do(a) Coordenador(a)</legend>
+                <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Matrícula</th>
+                            <th>Foto</th>
+                        </tr>
+            
+                    <tbody>
+                        <tr>
+                            <td>Nome do Coordenador completo</td>
+                            <td>email@example.com</td>
+                            <td>20201910015</td>
+                            <td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
+                        </tr>
+                    </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+                item.addEventListener('click', activeLink));
+        </script>
 
 </body>
 </html>

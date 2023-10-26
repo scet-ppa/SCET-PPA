@@ -15,31 +15,35 @@
 <body>
 
     <section class="container">
- 
-        <div class="cont">
-            <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
-            <a href="../html/home_coord.html"><button>CADASTRAR</button></a>
-        </div>
- 
-        <h1>Cadastro de Coordenador</h1>
 
-        <div class="box">
-            <div class="box-input" id="nome">
-                <input type="text" required="required">
-              <label>Nome</label>
-        </div>
+        <form name="formCad" method="POST" action="../php/cad-usuario/coordenadorHelper.php">
+            <input style="display: none" name="tipo" id="tipo" type="text" value="cad_coordenador">
+            <div class="cont">
+                <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
+              <!--  <a href="../html/home_coord.php"><button>CADASTRAR</button></a>-->
+            <input type="submit" value="CADASTRAR">
+            </div>
+    
+            <h1>Cadastro de Coordenador</h1>
+
+            <div class="box">
+                <div class="box-input" id="nome">
+                    <input type="text" required="required" name="nome">
+                <label>Nome</label>
+            </div>
             <div class="box-input" id="email">
-                <input type="email" required="required">
-            <label>Email</label>
-      </div>
-        <div class="box-input" id="senha">
-            <input type="password" required="required">
-            <label>Senha</label>
-      </div>
-        <div class="box-input" id="confirmar">
-            <input type="password" required="required">
-            <label>Confirmação de senha</label>
-      </div>
+                <input type="email" required="required" name="email">
+                <label>Email</label>
+                </div>
+            <div class="box-input" id="senha">
+                <input type="password" required="required" name="senha">
+                <label>Senha</label>
+            </div>
+            <div class="box-input" id="confirmar">
+                <input type="password" required="required" name="senha">
+                <label>Confirmação de senha</label>
+            </div>
+        </form>
       </div>
     
 </body>
