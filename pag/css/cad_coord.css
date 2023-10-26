@@ -17,7 +17,7 @@ h1{
     color: #008080;
 }
 
-.cont button{
+.cont .but{
     /* botao de cadastrar */
 box-sizing: border-box;
 
@@ -36,7 +36,7 @@ background-color: #008080;
 border-radius: 45px;
 }
 
-a button:hover, a button:active{
+.cont .but:hover, .cont .but:active{
     background-color: #124242;
 }
 

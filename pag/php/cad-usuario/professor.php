@@ -4,16 +4,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 class Professor{
     public $id_professor;
     public $nome;
-    public $curso;
-    public $turma;
     public $matricula;
     public $email;
     public $senha;
 
-    function __construct($nome, $curso, $turma, $matricula, $email, $senha){
+    function __construct($nome, $matricula, $email, $senha){
         $this->nome = $nome;
-        $this->turma =  $turma;
-        $this->curso = $curso;
         $this->matricula = $matricula;
         $this->email = $email;
         $this->senha = $senha;

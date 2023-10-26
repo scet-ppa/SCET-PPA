@@ -21,7 +21,7 @@
             <div class="cont">
                 <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
               <!--  <a href="../html/home_coord.php"><button>CADASTRAR</button></a>-->
-            <input type="submit" value="CADASTRAR">
+               <input class="but" type="submit" value="CADASTRAR">
             </div>
     
             <h1>Cadastro de Coordenador</h1>
