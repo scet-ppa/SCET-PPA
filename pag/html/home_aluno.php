@@ -73,8 +73,6 @@ include_once "../php/cad-usuario/alunoHelper.php";
             </ul>
         </div>
         </div>
-        
-<!--<div class="caixa-titulo"> <h1 class="titulo">Olá, bem-vindo!</h1></div>-->
 
         <div class="mover">
             <fieldset>
@@ -90,15 +88,22 @@ include_once "../php/cad-usuario/alunoHelper.php";
                         </tr>
             
                     <tbody>
-                        <tr>
-                        <td>Nome do Aluno completo</td>
-                        <td>email@example.com</td>
-                        <td>20201910015</td>
-                        <td>Curso de Exemplo</td>
-                        <td>732</td>
-                        <td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
-                        </tr>
-                    </div>
+                    <?php
+                    $alunos = getAlunos();
+                    foreach($alunos as $aluno){
+                        echo '<tr>';
+                        echo '<td>'.$aluno->id_aluno.'</td>';
+                        echo '<td>'.$aluno->email.'</td>';
+                        echo '<td>'.$aluno->matricula.'</td>';
+                        echo '<td>'.$aluno->curso.'</td>';
+                        echo '<td>'.$aluno->turma.'</td>';
+                        //echo '<td>'<img src="../img/perfil.png" alt="Foto de Perfil">'</td>';
+                        echo '</tr>';
+                    }
+                    ?>
+                <table>
+        </div>
+            <fieldset>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

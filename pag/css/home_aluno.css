@@ -64,16 +64,3 @@ body{
     max-height: 100px;
   }
   
-  .titulo{
-    color: #065f5f;
-    font-family: "Dosis-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 600;
-    height: 600px;
-    left:610px;
-    position: absolute;
-    top: 15px;
-    width: 850px;
-    justify-content: center;
-  }
-  
