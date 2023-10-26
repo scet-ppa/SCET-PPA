@@ -17,7 +17,7 @@ h1{
     color: #008080;
 }
 
-.cont button{
+.cont .but{
     /* botao de cadastrar */
 box-sizing: border-box;
 
@@ -25,7 +25,7 @@ position: absolute;
 width: 224px;
 height: 70px;
 left: 550px;
-top: 540px;
+top: 500px;
 
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: #ffffff;
@@ -36,7 +36,7 @@ background-color: #008080;
 border-radius: 45px;
 }
 
-a button:hover, a button:active{
+.cont .but:hover, .cont .but:active{
     background-color: #124242;
 }
 
@@ -104,7 +104,7 @@ a button:hover, a button:active{
     width: 430px;
     height: 40px;
     left: 430px;
-    top: 160px;
+    top: 180px;
     color: #B5B5B5;
     text-align: left;
     font-size: 14px;
@@ -119,7 +119,7 @@ a button:hover, a button:active{
     width: 430px;
     height: 50px;
     left: 430px;
-    top: 235px;
+    top: 255px;
     color: #B5B5B5;
     text-align: left;
     font-size: 14px;
@@ -134,7 +134,7 @@ a button:hover, a button:active{
     width: 430px;
     height: 50px;
     left: 430px;
-    top: 310px;
+    top: 330px;
     color: #B5B5B5;
     text-align: left;
     font-size: 14px;
@@ -149,22 +149,7 @@ a button:hover, a button:active{
     width: 165px;
     height: 8%;
     left: 430px;
-    top: 385px;
-    color: #B5B5B5;
-    text-align: left;
-    font-size: 14px;
-    font-family: Fredoka;
-    font-weight: 500;
-
-    background: #E8E8E8;
-}
-
-#especializacao {
-    position: absolute;
-    width: 200px;
-    height: 8%;
-    left: 660px;
-    top: 385px;
+    top: 405px;
     color: #B5B5B5;
     text-align: left;
     font-size: 14px;
@@ -176,10 +161,10 @@ a button:hover, a button:active{
 
 #confirmar {
     position: absolute;
-    width: 430px;
-    height: 50px;
-    left: 430px;
-    top: 460px;
+    width: 200px;
+    height: 8%;
+    left: 660px;
+    top: 405px;
     color: #B5B5B5;
     text-align: left;
     font-size: 14px;

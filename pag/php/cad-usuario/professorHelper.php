@@ -5,8 +5,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 if(isset($_POST['tipo'])){
     $tipo = $_POST['tipo'];
-    if($tipo === 'cad_prof'){
+    if($tipo === 'cad_professor'){
         cadastrarProfessor();
+        echo 
         header('Location:../../html/home_prof.php');
     }/*else if($tipo === 'excluir_prof'){
         excluir_prof();

@@ -1,3 +1,7 @@
+<?php
+    include_once "../php/cad-usuario/professorHelper.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

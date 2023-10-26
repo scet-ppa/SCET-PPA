@@ -15,40 +15,42 @@
 <body>
     
     <section class="container">
- 
-        <div class="cont">
-            <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
-            <a href="../html/home_prof.html"><button>CADASTRAR</button></a>
-        </div>
- 
-        <h1>Cadastro de Professor</h1>
 
-        <div class="box">
-            <div class="box-input" id="nome">
-                <input type="text" required="required">
-              <label>Nome</label>
+        <form name="formCad" method="POST" action="../php/cad-usuario/professorHelper.php">
+            <input style="display: none" name="tipo" id="tipo" type="text" value="cad_professor">
+            <div class="cont">
+                <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
+                <!-- <a href="../html/home_prof.html"><button>CADASTRAR</button></a> -->
+                <input class="but" type="submit" value="CADASTRAR">
+            </div>
+    
+            <h1>Cadastro de Professor</h1>
+
+            <div class="box">
+                <div class="box-input" id="nome">
+                    <input type="text" required="required">
+                <label>Nome</label>
+            </div>
+                <div class="box-input" id="email">
+                    <input type="email" required="required">
+                <label>Email</label>
         </div>
-            <div class="box-input" id="email">
-                <input type="email" required="required">
-            <label>Email</label>
-      </div>
-      <div class="box-input" id="matricula">
-        <input type="number" required="required">
-        <label>Matricula</label>
+        <div class="box-input" id="matricula">
+            <input type="text" required="required">
+            <label>Matricula</label>
+            </div>
+            <div class="box-input" id="senha">
+                <input type="password" required="required">
+                <label>Senha</label>
         </div>
-        <div class="box-input" id="senha">
-            <input type="password" required="required">
-            <label>Senha</label>
-      </div>
-      <div class="box-input" id="especializacao">
-        <input type="text" required="required">
-        <label>Especialização</label>
-        </div>
+      
         <div class="box-input" id="confirmar">
             <input type="password" required="required">
-            <label>Confirmação de senha</label>
-      </div>
-      </div>
+            <label>Confirmar senha</label>
+        </div>
+        </form>
+        
+    </div>
 
 </body>
 </html>
