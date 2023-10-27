@@ -1,6 +1,6 @@
 create schema ppa; 
 use ppa; 
-drop schema ppa;
+drop schema ppa; 
 
 create table aluno(
 	id_aluno integer auto_increment key, 
@@ -54,78 +54,42 @@ create table tcc(
     foreign key (id_aluno) references aluno(id_aluno),
     id_professor integer,
     foreign key (id_professor) references professor(id_professor),
-    situacao varchar (50) not null,
-    tema varchar (20),
+    situacao varchar (20) not null,
+    tema varchar (50),
     relatorio varchar (40)
 );
 
 create table apresentacao(
 	id_apresentacao integer auto_increment primary key,
-    descricao varchar (50)
+	id_tcc integer, 
+    foreign key (id_tcc) references tcc(id_tcc), 
+    datas varchar (10)
 );
 
-create table avaliacao(
-	id_avaliacao integer auto_increment primary key,
-    id_professor integer,
-    foreign key (id_professor) references professor(id_professor)
-);
-
-create table professor_apresentacao(
-	id_professor integer,
-    foreign key (id_professor) references professor(id_professor),
-    id_apresentacao integer,
-    foreign key (id_apresentacao) references apresentacao(id_apresentacao),
-    primary key(id_professor, id_apresentacao)
+create table avaliação(
+	id_avaliacao integer auto_increment primary key, 
+    id_apresentacao integer, 
+	foreign key (id_apresentacao) references apresentacao(id_apresentacao), 
+    orientador integer, 
+    foreign key (orientador) references professor(id_professor), 
+    banca integer, 
+    foreign key (banca) references professor(id_professor), 
+    descricao varchar (35)
 );
 
 create table nota(
-	id_nota integer auto_increment primary key,
-    id_avaliacao integer,
-    foreign key (id_avaliacao) references avaliacao(id_avaliacao),
-    valor varchar (40),
+	id_nota integer auto_increment primary key, 
+    id_avaliacao integer, 
+    foreign key (id_avaliacao) references avaliacao(id_avaliacao), 
+    valor float, 
     descricao varchar (50)
-);
+); 
 
-create table empresa(
-	id_empresa integer auto_increment primary key
-);
-
-create table avaliacao_discente(
-	avaliacao_discente integer auto_increment primary key
-);
-
-create table avaliacao_orientador(
-	avaliacao_orientador integer auto_increment primary key
-);
-
-create table avaliacao_empresa(
-	avaliacao_empresa integer auto_increment primary key
-);
-
-create table estagio(
-	id_estagio integer auto_increment primary key,
-    id_aluno integer,
-    foreign key (id_aluno) references aluno(id_aluno),
-    id_professor integer,
-    foreign key (id_professor) references professor(id_professor),
-    avaliacao_discente integer,
-    foreign key (avaliacao_discente) references avaliacao_discente(avaliacao_discente),
-    avaliacao_orientador integer,
-    foreign key (avaliacao_orientador) references avaliacao_orientador(avaliacao_orientador),
-    avaliacao_empresa integer,
-    foreign key (avaliacao_empresa) references avaliacao_empresa(avaliacao_empresa),
-	id_empresa integer,
-    foreign key (id_empresa) references empresa(id_empresa),
-    data_inicial varchar (50),
-    tema varchar (40),
-    relatorio varchar (40)
-);
 
 select * from curso; 
 select * from coordenador; 
 select * from aluno; 
-select * from tcc;
-select * from estagio;
+select * from professor; 
 
 insert into coordenador(nome, email, senha) values("nicholas", "nick@gmail.com", "123"); 
 insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica"); 
