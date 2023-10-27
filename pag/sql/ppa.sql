@@ -48,6 +48,17 @@ create table curso_coord(
     foreign key (id_coordenador) references coordenador(id_coordenador)
 ); 
 
+create table tcc(
+	id_tcc integer auto_increment key,
+    id_aluno integer,
+    foreign key (id_aluno) references aluno(id_aluno),
+    id_professor integer,
+    foreign key (id_professor) references professor(id_professor),
+    situacao varchar (50) not null,
+    tema varchar (20),
+    relatorio varchar (40)
+);
+
 select * from curso; 
 select * from coordenador; 
 select * from aluno; 

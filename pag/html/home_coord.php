@@ -1,3 +1,7 @@
+<?php
+include_once "../php/cad-usuario/coordenadorHelper.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -69,10 +73,6 @@
             </ul>
         </div>
         </div>
-        
-<!--
-        <div class="caixa-titulo"> <h1 class="titulo">Olá, bem-vindo!</h1></div>
--->
 
         <div class="mover">
             <fieldset>
@@ -81,8 +81,7 @@
                         <tr>
                             <th>Nome</th>
                             <th>E-mail</th>
-                            <th>Matrícula</th>
-                            <th>Foto</th>
+                            <!--<th>Foto</th>-->
                         </tr>
             
                     <tbody>
@@ -92,12 +91,8 @@
                             <td>20201910015</td>
                             <td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
                         </tr>
-            </fieldset> 
-        </div>
+                    </div>
 
-        <a class="but" href="cad_curso.html">CADASTRAR CURSO</a>
-
-        
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>
