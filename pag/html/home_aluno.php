@@ -93,6 +93,7 @@ include_once "../php/cad-usuario/alunoHelper.php";
                     foreach($alunos as $aluno){
                         echo '<tr>';
                         echo '<td>'.$aluno->id_aluno.'</td>';
+                        echo '<td>'.$aluno->nome.'</td>';
                         echo '<td>'.$aluno->email.'</td>';
                         echo '<td>'.$aluno->matricula.'</td>';
                         echo '<td>'.$aluno->curso.'</td>';
