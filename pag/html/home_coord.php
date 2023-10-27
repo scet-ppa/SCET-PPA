@@ -92,8 +92,12 @@
                             <td>20201910015</td>
                             <td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
                         </tr>
-                    </div>
+            </fieldset> 
+        </div>
 
+        <a class="but" href="cad_curso.html">CADASTRAR CURSO</a>
+
+        
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>

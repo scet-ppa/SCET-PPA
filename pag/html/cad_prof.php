@@ -28,24 +28,24 @@
 
             <div class="box">
                 <div class="box-input" id="nome">
-                    <input type="text" required="required">
+                    <input type="text" required="required" name="nome">
                 <label>Nome</label>
             </div>
                 <div class="box-input" id="email">
-                    <input type="email" required="required">
+                    <input type="emailrequired="required" naame="email">
                 <label>Email</label>
         </div>
         <div class="box-input" id="matricula">
-            <input type="text" required="required">
+            <input type="text" required="required" name="matricula">
             <label>Matricula</label>
             </div>
             <div class="box-input" id="senha">
-                <input type="password" required="required">
+                <input type="password" required="required" name="senha">
                 <label>Senha</label>
         </div>
       
         <div class="box-input" id="confirmar">
-            <input type="password" required="required">
+            <input type="password" required="required" name="senha">
             <label>Confirmar senha</label>
         </div>
         </form>

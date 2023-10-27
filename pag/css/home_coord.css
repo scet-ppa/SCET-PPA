@@ -25,10 +25,10 @@ body{
 }*/
 
 .mover{
-    flex: 2;
-    margin-left: 5%;
-    margin-right: 3%;
-    margin-top: 2%;
+    flex: 1;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   fieldset {
@@ -77,3 +77,39 @@ body{
     justify-content: center;
   }
   
+
+  .but{
+      /* botao de cadastrar */
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+/*  display: flex;
+  justify-content: right;*/
+  width: 224px;
+  height: 70px;
+  left: 1250px;
+  top: 255px;
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  
+  border: 3px solid #FFFFFF;
+  background-color: #008080;
+  border-radius: 45px;
+  padding-top: 22px;
+  padding-left: 29px;
+  }
+  
+
+  .but:hover, .but:active{
+    background-color: #124242;
+  }
+
+  .but:link, .but:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }

@@ -20,7 +20,8 @@
         
         <div class="cont">
             <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
-            <a href="../html/home_aluno.php"><button>CADASTRAR</button></a> 
+            <!--<a href="../html/home_aluno.php"><button>CADASTRAR</button></a> -->
+            <input class="but" type="submit" value="CADASTRAR">
         </div>
 
         <h1>Cadastro de Aluno</h1>

@@ -41,11 +41,11 @@ create table curso(
 );
 
 create table curso_coord( 
-	id_curso integer,
+	id_curso_coord integer auto_increment primary key, 
+    id_curso integer,
     foreign key (id_curso) references curso(id_curso), 
     id_coordenador integer,
-    foreign key (id_coordenador) references coordenador(id_coordenador),
-	primary key(id_curso, id_coordenador)
+    foreign key (id_coordenador) references coordenador(id_coordenador)
 ); 
 
 select * from curso; 
