@@ -45,12 +45,50 @@
     
     <!– Títulos textuais –>
     <div class="titulo"></div> <!– Título –>
-    <div class="user">Usuário Coordenador</div> <!– User do usuário–>
+    <div class="user">Usuário Professor</div> <!– User do usuário–>
     
     <div class="sobre">Sobre</div>
 
     <!- Textos do cabeçalho ->
     <div class="Pendente">Olá,</div>
+    <div class="mover">
+            <fieldset>
+                <legend>Dados do(a) Professor(a)</legend>
+                <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <!--<th>Foto</th>-->
+                        </tr>
+            
+                    <tbody>
+                        <?php
+                        $professores = getProfessor();
+                        foreach($professores as $professor){
+                        echo '<tr>';
+                        echo '<td>'.$professor->nome.'</td>';
+                        echo '<td>'.$professor->email.'</td>';
+                        //<td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
+                        echo '</tr>';
+                        }
+                        ?>
+                <table>
+        </div>
+            <fieldset>   
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+                item.addEventListener('click', activeLink));
+        </script>
+
 
 </body>
 </html>
