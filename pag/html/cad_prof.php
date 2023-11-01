@@ -16,7 +16,7 @@
     
     <section class="container">
 
-        <form name="formCad" method="POST" action="../php/cad-usuario/professorHelper.php">
+        <form name="formCad" method="POST" action="../php/cad-usuario/professorHelper.php" onsubmit="return validateForm()">
             <input style="display: none" name="tipo" id="tipo" type="text" value="cad_professor">
             <div class="cont">
                 <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">

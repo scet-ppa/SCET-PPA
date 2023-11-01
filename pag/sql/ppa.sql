@@ -1,6 +1,8 @@
 create schema ppa; 
 use ppa; 
 drop schema ppa; 
+create schema teste; 
+drop schema teste; 
 
 create table aluno(
 	id_aluno integer auto_increment key, 
@@ -12,6 +14,14 @@ create table aluno(
     senha varchar(25)
 );
 
+alter table nota drop column valor; 
+alter table nota add column nota numeric(4,2); 
+alter table estagio add column id_avalia_aluno integer; 
+alter table estagio add constraint foreign key (id_avalia_aluno) references avaliacao_aluno(id_avalia_aluno); 
+alter table estagio add column id_avalia_prof integer;
+alter table estagio add constraint foreign key (id_avalia_prof) references avaliacao_prof(id_avalia_prof); 
+alter table estagio add column id_avalia_emp integer;
+alter table estagio add constraint foreign key (id_avalia_emp) references avaliacao_empresa(id_avalia_emp); 
 alter table aluno add column turma varchar (10); 
 alter table curso drop column id_aluno; 
 alter table curso drop constraint curso_ibfk_2; 
@@ -79,12 +89,42 @@ create table avaliação(
 
 create table nota(
 	id_nota integer auto_increment primary key, 
-    id_avaliacao integer, 
-    foreign key (id_avaliacao) references avaliacao(id_avaliacao), 
-    valor float, 
+    valor numeric (4,2), 
     descricao varchar (50)
 ); 
 
+create table estagio(
+	id_estagio integer auto_increment primary key, 
+    orientador integer, 
+    foreign key (orientador) references professor(id_professor), 
+    id_aluno integer, 
+    foreign key (id_aluno) references aluno(id_aluno), 
+    id_empresa integer, 
+    foreign key (id_empresa) references empresa(id_empresa), 
+    data_inicio int(20), 
+    prev_termino int(20), 
+    situacao varchar(15)
+);
+
+create table avaliacao_aluno(
+	id_avalia_aluno integer auto_increment primary key,
+    nota numeric (4,2)
+); 
+
+create table avaliacao_prof(
+	id_avalia_prof integer auto_increment primary key,
+    nota numeric (4,2)
+); 
+
+create table avaliacao_empresa(
+	id_avalia_emp integer auto_increment primary key,
+    nota numeric (4,2)
+); 
+
+create table empresa(
+	id_empresa integer auto_increment primary key, 
+    nome varchar(50)
+);
 
 select * from curso; 
 select * from coordenador; 

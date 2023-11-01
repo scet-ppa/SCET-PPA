@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,7 +41,12 @@
         </div>
 
         <a><button id="ent">ENTRAR</button></a>
-        
+        <?php
+        // Set session variables
+        $_SESSION["nome"] = "green";
+        $_SESSION["favanimal"] = "cat";
+        echo "Session variables are set.";
+?>
     </section>
     
 
