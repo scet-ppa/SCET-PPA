@@ -43,7 +43,6 @@ body{
     border: 1px solid #ddd;
     padding: 8px;
   }
-  
   .estudantes tr:nth-child(even) {
     background-color: #f2f2f2;
   }
@@ -72,4 +71,81 @@ body{
     border-radius: 5px;
   }
   
+<<<<<<< HEAD
   
+=======
+  .cad-tcc:link, .cad-tcc:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+ .cad-tcc{
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+    background-color: #008080;
+    width: 130px;
+    margin-left: 85%;
+    margin-bottom: 1.5%;
+  }
+
+  .editar:link, .editar:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cad-tcc:hover,
+  .cad-tcc:active {
+    background-color: #055151;
+  }
+
+  .editar{
+    background-color: #1083b4;
+  }
+
+  .editar:hover,
+  .editar:active {
+    background-color: rgb(21, 44, 199);
+  }
+
+  .excluir:link, .excluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .excluir{
+    background-color: #f44336;
+  }
+
+  .concluir{
+    background-color: rgb(9, 144, 43);
+  }
+
+  .concluir:link, .concluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+>>>>>>> e1c9370e5325435ee34002d55bc1d712e7c7a391

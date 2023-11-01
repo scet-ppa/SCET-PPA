@@ -16,7 +16,7 @@
 
     <section class="container">
 
-        <form name="formCad" method="POST" action="../php/cad-usuario/coordenadorHelper.php">
+        <form name="formCad" method="POST" action="../php/cad-usuario/coordenadorHelper.php" onsubmit="return validateForm()">
             <input style="display: none" name="tipo" id="tipo" type="text" value="cad_coordenador">
             <div class="cont">
                 <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
@@ -28,7 +28,7 @@
 
             <div class="box">
                 <div class="box-input" id="nome">
-                    <input type="text" required="required" name="nome">
+                    <input type="text" name="nome">
                 <label>Nome</label>
             </div>
             <div class="box-input" id="email">
@@ -46,5 +46,7 @@
         </form>
       </div>
     
+
+    <script src="../js/validacao.js"></script>
 </body>
 </html>

@@ -71,36 +71,43 @@ include_once "../php/cad-usuario/professorHelper.php";
                     </a>
                 </li>
             </ul>
-        </div>
-        </div>
+        </nav>
+    </div>
+    
+    <div class="cabecalho"></div>
+    
+    <!– Títulos textuais –>
+    <div class="titulo"></div> <!– Título –>
+    <div class="user">Usuário Professor</div> <!– User do usuário–>
+    
+    <div class="sobre">Sobre</div>
 
-        <div class="mover">
+    <!- Textos do cabeçalho ->
+    <div class="Pendente">Olá,</div>
+    <div class="mover">
             <fieldset>
                 <legend>Dados do(a) Professor(a)</legend>
                 <table>
                         <tr>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Matrícula</th>
-                        <th>Foto</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <!--<th>Foto</th>-->
                         </tr>
             
                     <tbody>
-                    <?php
-                    $professores = getProfessores();
-                    foreach($professores as $professor){
+                        <?php
+                        $professores = getProfessor();
+                        foreach($professores as $professor){
                         echo '<tr>';
-                        echo '<td>'.$professor->id_professor.'</td>';
                         echo '<td>'.$professor->nome.'</td>';
                         echo '<td>'.$professor->email.'</td>';
-                        echo '<td>'.$professor->matricula.'</td>';
-                        //echo '<td>'<img src="../img/perfil.png" alt="Foto de Perfil">'</td>';
+                        //<td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
                         echo '</tr>';
-                    }
-                    ?>
+                        }
+                        ?>
                 <table>
         </div>
-            <fieldset>
+            <fieldset>   
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

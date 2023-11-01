@@ -15,7 +15,7 @@
 
 <section class="container">
  
-    <form name="formCad" method="POST" action="../php/cad-usuario/alunoHelper.php">
+    <form name="formCad" method="POST" action="../php/cad-usuario/alunoHelper.php" onsubmit="return validateForm()">
         <input style="display: none" name="tipo" id="tipo" type="text" value="cad_aluno">
         
         <div class="cont">
@@ -66,5 +66,6 @@
     
 </section>
     
+<script scr="../js/validacao.js"></script>
 </body>
 </html>
