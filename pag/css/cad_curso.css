@@ -1,0 +1,120 @@
+body{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mover{
+    flex: 2;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+
+  fieldset {
+    border: 2px solid #065f5f;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  fieldset label {
+    font-size: 25px;
+  }
+
+  fieldset input {
+    font-size: 18px;
+  }
+  
+  table {
+    left: 12px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 2px solid black;
+  }
+  
+  legend {
+    font-family: "Dosis-SemiBold", Helvetica;
+    color: #065f5f;
+    font-size: 30px;
+  }
+
+  th, td {
+    font-family: "Dosis-SemiBold", Helvetica;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th{
+    background-color: #065f5f;
+    color: white;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 2px;
+    margin-top: 2px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type=reset] {
+    background-color: #FF0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2px;
+  }
+  
+  input[type=reset]:hover {
+    background-color: #DC143C;
+  }
+
+  .excluir:hover,
+.excluir:active {
+  background-color: red;
+}
+
+.excluir {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 2px;
+  padding: 4%;
+}
+
+.editar {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 2px;
+  padding: 4%;
+}
+
+.editar:hover,
+.editar:active {
+  background-color: orangered;
+}
+
+  
