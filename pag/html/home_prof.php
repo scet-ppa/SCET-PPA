@@ -1,5 +1,5 @@
 <?php
-    include_once "../php/cad-usuario/professorHelper.php";
+include_once "../php/cad-usuario/professorHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,35 +8,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: Professor</title>
-    <link rel="stylesheet" type="text/css" href="../css/home_prof.css">
+    <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
-
-    <div class="cont">
-        <img src="../img/perfil.png"  width="32" height="32" left="20">
-    </div>
-
-    <!– Fíguras geométricas –>
-
-    <div class="retangulo"></div>
-      
-    </div>
-    <div class="retangulo5"></div>
     
-    <div class="retangulo6">
-        <img src="../img/sobre.png"  width="32" height="32" left="30">
-    </div>
-
-    <div class="menu"></div>
-
-    <div class="lateral">
-        <nav>
+    <div class="container">
+        <div class="navegacao">
             <ul>
-            <li><a href="#">Pendentes</a></li>
-            <li><a href="#">Notificações</a></li>
-            <li><a href="#">Estágio</a></li>
-            <li><a href="#">TCC</a></li>
+                <li class="list">
+                    <a href="../html/usuario.php">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="list">Usuario</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/home_prof.php">
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="list">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/mensagens_prof.html">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="list">Mensagens</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/notificacoes_prof.html">
+                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="list">Notificações</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/home_prof.html">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="list">Professores</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/estagio_prof.html">
+                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                        <span class="list">Estágio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/prof-tcc.html">
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="list">TCC</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/pendente_prof.html">
+                        <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                        <span class="list">Pendentes</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/inicio.php">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="list">Sair</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
