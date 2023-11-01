@@ -73,45 +73,34 @@
     </div>
    
 
-    <div class="content">
-        <div id="busca">
-            <input type="text" id="txtBusca" placeholder="Pesquisar"/>
-            <span class="icon"></span>
-    </div>
-    
-    <a class="cad-tcc" href="../html/cad-tcc.html">CADASTRAR</a>
-       
-        <fieldset>
-            <legend>TCC Cadastrado</legend>
-            <table class="estudantes">
-                <tr class="info">
-                    <th>Nome</th>
-                    <th>Tema</th>
-                    <th>Orientador</th>
-                    <th>Curso</th>
-                    <th>Turma</th>
-                    <th colspan="3">Ações</th>
-                </tr>
-    
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+    <div class="mover">
+<fieldset>
+    <legend>Notificações</legend>
+    <div class="notification-container">
+        <div class="notification">
+            <p>Notificação 1: TCC aprovado.</p>
+            <button class="remove-button">Remover</button>
+        </div>
+        <div class="notification">
+            <p>Notificação 2: Professor Orientador definido.</p>
+            <button class="remove-button">Remover</button>
+        </div>
+        <div class="notification">
+            <p>Notificação 3: Tempo de realização de estágio expirado!</p>
+            <button class="remove-button">Remover</button>
+        </div>
 
-                    <td> <a class="editar" href="#">Editar</a></td>
-                    <td> <a class="excluir" href="#">Excluir</a></td>
-                    <td> <a class="concluir" href="#">Concluir </a></td>
-    
-                </tr>
-            </table>
-        </fieldset>
-    
-    
+        <div class="button-container">
+            <button class="button" id="clear-all">Limpar Tudo</button>
+            <button class="button" id="mute-notifications">Silenciar Notificações</button>
+        </div>
     </div>
-   
-    
+</fieldset>
+
+</div>
+
+
+    <script src="../js/notificacao.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

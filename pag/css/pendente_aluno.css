@@ -6,41 +6,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-<<<<<<< HEAD
 }
 
 body{
-    display: grid;
+    display: flex;
     /*justify-content: left;
     align-items: center;
     min-height: 90px; */
     /*grid-template-columns: 10% auto auto auto;*/
-    grid-template-areas: 
+   /* grid-template-columns: 1fr 2fr;*/
+    /*grid-template-areas: 
     'navegacao content content content content content content content content content'
     'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content';
+    'navegacao content content content content content content content content content';*/
   
-    background-color: #FFFFFf;
+    background-color: #b9bed6a6;
 }
 
 
-=======
+.content{
+  flex: 1;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-body{
-    display: grid;
-    /*justify-content: left;
-    align-items: center;
-    min-height: 90px; */
-    /*grid-template-columns: 10% auto auto auto;*/
-    grid-template-areas: 
-    'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content';
-  
-    background-color: #FFFFFf;
-}
->>>>>>> dfd4f283ea09ca72f3d314d5e64d8299fb77d220
 
 .estudantes {
     font-family: Arial, Helvetica, sans-serif;
@@ -67,18 +56,19 @@ body{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #008080;
     color: white;
   }
   
   #busca{
-    grid-area: co;
-    margin-top: 1.5%;
-    margin-bottom: 2.5%;
-    position: relative;
+    margin-top: 15px;
+    display: flex;
     justify-content: center;
-<<<<<<< HEAD
+    align-items: center;
 
-=======
->>>>>>> dfd4f283ea09ca72f3d314d5e64d8299fb77d220
   }
+
+  fieldset{
+    border-radius: 5px;
+  }
+  

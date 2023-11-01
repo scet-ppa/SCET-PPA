@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url(../css/barra_lateral.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+    align-items: center;
+   
+    /*justify-content: left;
+    align-items: center;
+    min-height: 90px; */
+    /*grid-template-columns: 10% auto auto auto;*/
+   /* grid-template-columns: 1fr 2fr;*/
+    /*grid-template-areas: 
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content';*/
+    background-color: #b9bed6a6;
+}
+
+/*.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.profile {
+    width: 20%;
+    padding: 20px;
+    background-color: #b9bed6a6;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.chat-container {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.incoming {
+    background-color: #e6e6e6;
+    text-align: left;
+}
+
+.outgoing {
+    background-color: #065f5f;
+    color: #fff;
+    text-align: right;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#send-button {
+    background-color: #065f5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+*/

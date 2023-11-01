@@ -23,7 +23,6 @@ body{
     background-color: #b9bed6a6;
 }
 
-
 .content{
   flex: 1;
   margin-left: 20px;
@@ -31,118 +30,44 @@ body{
   padding-right: 20px;
 }
 
-.estudantes {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    grid-area: content;
-  }
-  
-  .estudantes td,
-  .estudantes th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .estudantes tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .estudantes tr:hover {
-    background-color: #ddd;
-  }
-  
-  .estudantes th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #008080;
-    color: white;
-  }
-  
-  #busca{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.notification {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+        }
 
-  }
+.notification-container {
+  max-width: 500px;
+  margin: 100px;
+}
 
-  fieldset{
-    border-radius: 5px;
-  }
-  
-  .cad-tcc:link, .cad-tcc:visited {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
- .cad-tcc{
-    display: flex;
-    justify-content: right;
-    margin-top: 0;
-    background-color: #008080;
-    width: 130px;
-    margin-left: 85%;
-    margin-bottom: 1.5%;
-  }
-
-  .editar:link, .editar:visited {
-  color: white;
+.button-container {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #065f5f;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
-.cad-tcc:hover,
-  .cad-tcc:active {
-    background-color: #055151;
-  }
+.button:hover {
+  background-color: #b30000;
+}
 
-  .editar{
-    background-color: #1083b4;
-  }
-
-  .editar:hover,
-  .editar:active {
-    background-color: rgb(21, 44, 199);
-  }
-
-  .excluir:link, .excluir:visited {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .excluir{
-    background-color: #f44336;
-  }
-
-  .concluir{
-    background-color: rgb(9, 144, 43);
-  }
-
-  .concluir:link, .concluir:visited {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+fieldset {
+  border: 2px solid #065f5f;
+  padding: 10px;
+  box-sizing: border-box;
+}
+        
+.mover{
+  flex: 2;
+  margin-left: 5%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
