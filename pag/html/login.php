@@ -1,5 +1,6 @@
 <?php
     session_start();
+    
 ?>
 
 <!DOCTYPE html>
@@ -27,26 +28,38 @@
         <h1>Acesse sua conta</h1>
         
         <div class="box">
-            <form>
+            <form name="formCad" method="POST" action="../php/cad-usuario/alunoHelper.php" onsubmit="return validateForm()">
+                <div class="box-input">
+                    <input type="select" type="usuario" id="usuario" name="usuario">
+                    <span>Usuario</span>
+                    <?php
+                    $usuario = getUsuarios();
+                    foreach($uduarios as $usuario){
+                        echo '<option value="'.$usuario->getIdUsuario().'">
+                        '.$usuario->descricao.'</option>';
+                    }
+                    ?>
+                </div>
                 <div class="box-input">
                     <input type="email" required type="email" id="email" name="email">
                     <span>Email</span>
                 </div>
         
-                <div class="box-input-sen">
+                <div class="box-input">
                     <input type="password" required type="senha" id="senha" name="senha">
                     <span>Senha</span>
                 </div>
             </form>
         </div>
 
-        <a><button id="ent">ENTRAR</button></a>
+        <input class="but" type="submit" value="ENTRAR">
+        
         <?php
         // Set session variables
-        $_SESSION["nome"] = "green";
-        $_SESSION["favanimal"] = "cat";
-        echo "Session variables are set.";
-?>
+        $_SESSION["nome"] = "nome";
+        $_SESSION["email"] = "email";
+        ;
+        ?>
     </section>
     
 

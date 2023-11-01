@@ -1,18 +1,19 @@
 .box{
     position: absolute;
     min-height: 100vh;
-    top: 175px;
+    top: 125px;
     left: 110px;
     /*margin-top: 25%;;
     margin-left: 25%;*/
     flex-direction: column;
     gap: 50px;
-    margin-left: 340px;
+    margin-left: 320px;
 }
 
 .box-input{
     position: relative;
     width: 380px;
+    margin: 5%;
 }
 
 

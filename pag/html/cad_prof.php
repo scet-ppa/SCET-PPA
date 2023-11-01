@@ -28,29 +28,30 @@
 
             <div class="box">
                 <div class="box-input" id="nome">
-                    <input type="text" required="required" name="nome">
+                    <input type="text" name="nome">
                 <label>Nome</label>
             </div>
                 <div class="box-input" id="email">
-                    <input type="emailrequired="required" naame="email">
+                    <input type="email" naame="email">
                 <label>Email</label>
         </div>
         <div class="box-input" id="matricula">
-            <input type="text" required="required" name="matricula">
+            <input type="text" name="matricula">
             <label>Matricula</label>
             </div>
             <div class="box-input" id="senha">
-                <input type="password" required="required" name="senha">
+                <input type="password" name="senha">
                 <label>Senha</label>
         </div>
       
         <div class="box-input" id="confirmar">
-            <input type="password" required="required" name="senha">
+            <input type="password" name="senha">
             <label>Confirmar senha</label>
         </div>
         </form>
         
     </div>
 
+    <script scr="../js/validacao.js"></script>
 </body>
 </html>

@@ -4,6 +4,15 @@ drop schema ppa;
 create schema teste; 
 drop schema teste; 
 
+create table usuario(
+	id_usuario integer auto_increment primary key, 
+    descricao varchar(25)
+);
+
+insert into usuario(descricao) values("Coordenador");
+insert into usuario(descricao) values("Professor");
+insert into usuario(descricao) values("Aluno");
+
 create table aluno(
 	id_aluno integer auto_increment key, 
     id_curso integer,
@@ -126,6 +135,7 @@ create table empresa(
     nome varchar(50)
 );
 
+select * from usuario; 
 select * from curso; 
 select * from coordenador; 
 select * from aluno; 

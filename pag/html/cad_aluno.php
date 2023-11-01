@@ -28,22 +28,22 @@
 
         <div class="box">
             <div class="box-input" id="nome">
-            <input required name="nome" type="text">
+            <input name="nome" type="text">
             <label>Nome</label>
         </div>
         
         <div class="box-input" id="email">
-            <input required name="email" type="email" >
+            <input name="email" type="email" >
             <label>Email</label>
         </div>
 
         <div class="box-input" id="matricula">
-            <input  required name="matricula"  type="text">
+            <input name="matricula"  type="text">
             <label>Matricula</label>
         </div>
 
         <div class="box-input" id="curso">
-            <input required name="curso" type="text">
+            <input name="curso" type="text">
             <label>Curso</label>
         </div>
 

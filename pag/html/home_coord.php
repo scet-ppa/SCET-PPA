@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../php/cad-usuario/coordenadorHelper.php";
 ?>
 
@@ -86,14 +87,22 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
             
                     <tbody>
                         <?php
-                        $coordenadores = getCoordenador();
+                            echo '<tr>';
+                            echo '<td>'.$_SESSION["nome"].'</td>';
+                            echo '<td>'.$_SESSION["email"].'</td>';
+
+                            /*echo $_SESSION["name"] . ".<br>";
+                            echo $_SESSION["email"] . ".<br>";*/
+
+                            echo '</tr>'
+/*                      $coordenadores = getCoordenador();
                         foreach($coordenadores as $coordenador){
                         echo '<tr>';
                         echo '<td>'.$coordenador->nome.'</td>';
                         echo '<td>'.$coordenador->email.'</td>';
                         //<td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
                         echo '</tr>';
-                        }
+                        }*/
                         ?>
                 <table>
         </div>

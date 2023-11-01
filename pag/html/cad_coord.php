@@ -32,15 +32,15 @@
                 <label>Nome</label>
             </div>
             <div class="box-input" id="email">
-                <input type="email" required="required" name="email">
+                <input type="email" name="email">
                 <label>Email</label>
                 </div>
             <div class="box-input" id="senha">
-                <input type="password" required="required" name="senha">
+                <input type="password" name="senha">
                 <label>Senha</label>
             </div>
             <div class="box-input" id="confirmar">
-                <input type="password" required="required" name="senha">
+                <input type="password" name="senha">
                 <label>Confirmação de senha</label>
             </div>
         </form>
