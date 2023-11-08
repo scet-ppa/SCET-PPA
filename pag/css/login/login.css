@@ -115,7 +115,7 @@ border-radius: 45px;
     border: 0;
     border-radius: 0;
     height: 34px;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
  }      
 
  label {

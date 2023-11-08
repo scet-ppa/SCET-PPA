@@ -63,6 +63,32 @@ class Aluno{
     function setIdAluno($id_aluno){
         $this->id_aluno = $id_aluno;
     }
+
+    static function getAlunoUsuario($email, $senha){
+        try{
+            $banco = new Banco();
+            $conn = $banco->conectar();
+            $stmt = $conn->prepare("select * from aluno where email=:email and senha=:senha");
+            $stmt->bindParam(":email", $email); 
+            $stmt->bindParam(":senha", $senha); 
+            $stmt->execute();
+           // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $alunos = null;
+            
+            foreach($stmt->fetchAll() as $v => $value){
+                $aluno = new Aluno($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
+                $value['senha']);
+                $aluno->setIdAluno( $value['id_aluno']);
+               
+            }
+
+            //var_dump($alunos);
+            return $alunos;
+
+        }catch(PDOException $e){
+            echo "Erro " . $e->getMessage();
+        }
+    }
     static function carregar($id_aluno){
         try{
             $banco = new Banco();
