@@ -8,51 +8,60 @@ body{
     margin-left: 5%;
     margin-right: 3%;
     margin-top: 2%;
-  }
+}
 
-  fieldset {
+fieldset {
     border: 2px solid #065f5f;
     padding: 10px;
     box-sizing: border-box;
-  }
+}
 
-  fieldset label {
-    font-size: 25px;
-  }
+br {
+  width: 80em;
+}
 
-  fieldset input {
-    font-size: 18px;
-  }
+fieldset label {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+fieldset div{
+  margin-bottom: 8px;
+}
+
+fieldset input {
+    font-size: 15px;
+}
   
-  table {
+table {
     left: 12px;
     width: 100%;
     border-collapse: collapse;
-  }
+}
   
-  table, th, td {
+table, th, td {
     border: 2px solid black;
-  }
-  
-  legend {
+}
+
+legend {
     font-family: "Dosis-SemiBold", Helvetica;
     color: #065f5f;
-    font-size: 30px;
-  }
+    font-size:28px;
+}
 
-  th, td {
+th, td {
     font-family: "Dosis-SemiBold", Helvetica;
     font-size: 20px;
     padding: 10px;
     text-align: left;
-  }
+}
 
-  th{
+th{
     background-color: #065f5f;
     color: white;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -62,13 +71,13 @@ body{
     float: right;
     margin-right: 2px;
     margin-top: 2px;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
-  }
+}
   
-  input[type=reset] {
+input[type=reset] {
     background-color: #FF0000;
     color: white;
     padding: 12px 20px;
@@ -77,13 +86,13 @@ body{
     cursor: pointer;
     float: right;
     margin-top: 2px;
-  }
+}
   
-  input[type=reset]:hover {
+input[type=reset]:hover {
     background-color: #DC143C;
-  }
+}
 
-  .excluir:hover,
+.excluir:hover,
 .excluir:active {
   background-color: red;
 }
@@ -117,4 +126,3 @@ body{
   background-color: orangered;
 }
 
-  
