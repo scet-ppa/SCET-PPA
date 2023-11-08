@@ -18,34 +18,35 @@
             <fieldset>
                 <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
                 <legend>Dados do Estagio</legend>
-                <div>
-                <label for="orientador">Nome do Professor: </label>
-                <input size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
-                </div>
 
                 <div>
+                <label for="orientador">Nome do Professor: </label>
+                <input class="input1" size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
+                </div>
+
+                <div class="situ">
                 <label for="situacao">Situação: </label>
-                <input size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
+                <input class="input2" size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
                 </div>
 
                 <div>
                 <label for="id_aluno">Nome do Aluno: </label>
-                <input size="40" required placeholder="Digite aqui o nome do empresa" name="id_aluno" id="id_aluno" type="text">
+                <input class="teste" size="40" required placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text">
                 </div>
 
-                <div>
+                <div class="data">
                 <label for="data_inicio">Data de inicio: </label>
-                <input size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="text">
+                <input class="input3" size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
                 </div>
 
                 <div>
                 <label for="id_empresa">Nome da Empresa: </label>
-                <input size="40" required placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text">
+                <input class="input4" size="40" required placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text">
                 </div>
 
-                <div>
+                <div class="previa">
                 <label for="prev_termino">Previa de Termino: </label>
-                <input size="40" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="text">
+                <input class="input5" size="40" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
                 </div>
 
             </fieldset>
@@ -54,7 +55,7 @@
             <input type="submit" value="Enviar">
 
         </form>
-    </fieldset>
+</fieldset>
     <div>
         <fieldset>
             <legend>Estagios Cadastrados</legend>

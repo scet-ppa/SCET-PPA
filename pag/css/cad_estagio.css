@@ -16,10 +16,6 @@ fieldset {
     box-sizing: border-box;
 }
 
-br {
-  width: 80em;
-}
-
 fieldset label {
     font-size: 20px;
     margin-bottom: 12px;
@@ -29,8 +25,59 @@ fieldset div{
   margin-bottom: 8px;
 }
 
+.situ{
+    margin-left: 560px;
+    margin-top: -35px;
+}
+
+.situ input{
+    font-size: 13px;
+}
+
+.data input{
+    font-size: 13px;
+}
+
+.data{
+    margin-left: 560px;
+    margin-top: -32px;
+}
+
+.previa{
+    margin-left: 560px;
+    margin-top: -32px;
+}
+
+.previa input{
+    font-size: 13px;
+}
+
 fieldset input {
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.teste{
+    font-size: 14px;
+}
+
+.input1{
+    font-size: 14px;
+}
+
+.input2{
+    font-size: 14px;
+}
+
+.input3{
+    font-size: 14px;
+}
+
+.input4{
+    font-size: 14px;
+}
+
+.input5{
+    font-size: 14px;
 }
   
 table {
