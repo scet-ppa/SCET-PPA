@@ -1,6 +1,5 @@
 <?php
     session_start();
-    
 ?>
 
 <!DOCTYPE html>
@@ -28,16 +27,20 @@
         <h1>Acesse sua conta</h1>
         
         <div class="box">
-            <form name="formCad" method="POST" action="../php/cad-usuario/alunoHelper.php" onsubmit="return validateForm()">
+            <form name="formCad" method="POST" action="../php/usar/controlador_loginHelper.php" onsubmit="return validateForm()">
                 <div class="box-input">
-                    <input type="select" type="usuario" id="usuario" name="usuario">
-                    <span>Usuario</span>
+                    <label>Usuario: </label>
+                    <select class="sel" name="tipoUser" id="tipoUser">
+                        <option value="prof">Professor</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="coord">Coordenador</option>
+                    </select>
                     <?php
-                    $usuario = getUsuarios();
+                   /* $usuario = getUsuarios();
                     foreach($uduarios as $usuario){
                         echo '<option value="'.$usuario->getIdUsuario().'">
-                        '.$usuario->descricao.'</option>';
-                    }
+                        '.$usuario->descricao.'</option>';*/
+                    
                     ?>
                 </div>
                 <div class="box-input">
@@ -49,10 +52,12 @@
                     <input type="password" required type="senha" id="senha" name="senha">
                     <span>Senha</span>
                 </div>
+
+                <input class="but" type="submit" value="ENTRAR">
             </form>
         </div>
 
-        <input class="but" type="submit" value="ENTRAR">
+       
         
         <?php
         // Set session variables

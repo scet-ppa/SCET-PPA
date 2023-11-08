@@ -15,7 +15,7 @@
         </div>
 
         <ul>
-            <li> <a href="../html/login.html"> Login </a> </li>
+            <li> <a href="../html/login.php"> Login </a> </li>
             <li> <a href="../html/cad_aluno.php"> Aluno </a> </li>
             <li> <a href="../html/cad_prof.php"> Professor </a> </li>
             <li> <a href="../html/cad_coord.php"> Coordenador </a> </li>

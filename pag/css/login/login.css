@@ -54,7 +54,7 @@ h2{
     border-radius: 45px;
 }
 
-a #cad:hover, .but:hover{
+a #cad:hover, form .but:hover{
     background-color: #124242;
     pointer-events: painted;
 }
@@ -77,15 +77,15 @@ top: 170px;
 background: #E8E8E8;
 }
 
-.but{
+form .but{
     /* botao de entrar */
 box-sizing: border-box;
 
 position: absolute;
 width: 224px;
 height: 70px;
-left: 550px;
-top: 432px;
+left: 120px;
+top: 332px;
 
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: #ffffff;
@@ -95,3 +95,31 @@ border: 3px solid #FFFFFF;
 background-color: #008080;
 border-radius: 45px;
 }
+
+.sel{ /* <div> */
+    background-color: #E8E8E8;
+    background: #E8E8E8;
+    width: 240px;
+    height: 44px;
+    overflow: hidden;
+    background: url(nova_setinha.jpg) no-repeat right #F5F8F3; /* novo ícone para o <select> */
+    border: 2.5px solid #008080;
+ }   
+
+ .sel select { /* <select> */
+    background: transparent; /* importante para exibir o novo ícone */
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+ }      
+
+ label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #008080;
+    font-size: 18px;
+ }
