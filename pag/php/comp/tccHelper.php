@@ -21,13 +21,13 @@ if(isset($_POST['tipo'])){
 function editar_tcc(){
     $tcc = TCC::carregar($_POST['id_tcc']);
     $tcc->tema = $_POST['tema'];
-   // $curso = $_POST['curso'];
+   // $tcc = $_POST['tcc'];
     $tcc->editar();
 }
 
 function excluir_tcc(){
-    $curso = TCC::carregar($_POST['id_tcc']);
-    $curso->excluir_tcc();
+    $tcc = TCC::carregar($_POST['id_tcc']);
+    $tcc->excluir_tcc();
 }
 
 function cadastrarTCC(){
@@ -49,7 +49,7 @@ function getTCCS(){
             $tcc->setIdTCC($value['id_tcc']);
             array_push($tccs,$tcc);
         }
-       return $TCCS;
+       return $tccs;
 
     }catch(PDOException $e){
         echo "Erro " . $e->getMessage();
