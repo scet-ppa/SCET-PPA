@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cad_Curso</title>
     <link rel="stylesheet" href="../css/cad_curso.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
     <fieldset>
@@ -22,6 +23,7 @@
                 <input size="40" required placeholder="Digite aqui o nome do curso" name="descricao" id="descricao" type="text">
             </fieldset>
 
+            <a class="botao" href="home_coord.php">Voltar</a>
             <input type="reset" value="Excluir">
             <input type="submit" value="Enviar">
 
