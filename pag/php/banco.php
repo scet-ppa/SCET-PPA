@@ -10,7 +10,7 @@
             try{
                 $this->conn = new PDO("mysql:host=$this->serverName;dbname=$this->dbname", $this->userName, $this->password);
                 $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                echo "Conexão realizada";
+
                 return $this->conn; 
             }catch(PDOException $e){
                 echo "Erro ao estabelecer conexão: ".$e->getMessage(); 
@@ -19,8 +19,7 @@
 
         function fecharConexao(){
             try{
-                $this->conn = null; 
-                echo "Conexão finalizada.";
+                $this->conn = null;    
             }catch(PDOException $e){
                 echo "Erro ao finalizar conexão.".$e;
             }

@@ -11,7 +11,7 @@
 
 body{
   display: flex;
-  background-color: #b9bed6a6;
+  background-color: #FFFFFF;
 }
 /*
 .caixa-titulo{
@@ -97,8 +97,7 @@ body{
   border: 3px solid #FFFFFF;
   background-color: #008080;
   border-radius: 45px;
-  padding-top: 22px;
-  padding-left: 29px;
+  
   }
   
 
@@ -113,3 +112,61 @@ body{
     border: none;
     cursor: pointer;
   }
+
+  .curso{
+    box-sizing: border-box;
+
+    width: 224px;
+    height: 70px;
+    left: 120px;
+    top: 332px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+
+    border: 3px solid #FFFFFF;
+    background-color: #065f5f;
+    border-radius: 45px;
+    text-decoration: none;
+
+    padding-top: 22px;
+    padding-left: 79px;
+    
+  }
+
+  .curso:hover {
+    color: white;
+    background-color: #124242;
+
+}
+
+.emp{
+  box-sizing: border-box;
+  position: absolute;
+
+  /*
+  position: absolute;*/
+  width: 224px;
+  height: 70px;
+  margin-left: 1310px;
+  margin-top: 92px;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+
+  border: 3px solid #FFFFFF;
+  background-color: #065f5f;
+  border-radius: 45px;
+  text-decoration: none;
+
+  padding-top: 22px;
+  padding-left: 70px;
+  
+}
+
+.emp:hover {
+  color: white;
+  background-color: #124242;
+}

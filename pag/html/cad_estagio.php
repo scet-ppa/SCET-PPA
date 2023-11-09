@@ -16,14 +16,16 @@
         <legend>Formulário de cadastro</legend>
         <form name="formCad" method="POST" action="../php/comp/estagioHelper.php">
             <fieldset>
-                <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
+               
+            <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
                 <legend>Dados do Estagio</legend>
+              
                 <div>
                 <label for="orientador">Nome do Professor: </label>
                 <input size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
                 </div>
 
-                <div>
+                <div class="murrinha">>
                 <label for="situacao">Situação: </label>
                 <input size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
                 </div>
@@ -54,6 +56,7 @@
             <input type="submit" value="Enviar">
 
         </form>
+        
     </fieldset>
     <div>
         <fieldset>

@@ -48,8 +48,7 @@ class Coordenador{
             $coord = null;
             
             foreach($stmt->fetchAll() as $v => $value){
-                $coord = new Coordenador($value['nome'], $value['email'], $value['email'],
-                $value['senha']);
+                $coord = new Coordenador($value['nome'], $value['email'], $value['senha']);
                 $coord->setIdCoordenador( $value['id_coordenador']);
                
             }

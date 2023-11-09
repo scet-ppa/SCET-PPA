@@ -10,9 +10,13 @@ if(isset($_POST['tipoUser'])){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     if($tipo === 'prof'){
-
-        echo ' login professor ' ; 
-        header('Location:../../html/home_prof.php');
+        $prof = Professor::getProfessorUsuario($email, $senha); 
+        if(isset($prof)){
+            header('Location:../../html/home_prof.php');
+        } else{
+            echo ' professor não existe ' ; 
+        }
+        
     }else if($tipo === 'aluno'){
         $aluno = Aluno::getAlunoUsuario($email, $senha); 
         if(isset($aluno)){

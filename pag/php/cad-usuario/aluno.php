@@ -4,16 +4,16 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 class Aluno{
     public $id_aluno;
     public $nome;
-    public $curso;
+    public $id_curso;
     public $turma;
     public $matricula;
     public $email;
     public $senha;
 
-    function __construct($nome, $curso, $turma, $matricula, $email, $senha){
+    function __construct($nome, $id_curso, $turma, $matricula, $email, $senha){
         $this->nome = $nome;
         $this->turma =  $turma;
-        $this->curso = $curso;
+        $this->id_curso = $id_curso;
         $this->matricula = $matricula;
         $this->email = $email;
         $this->senha = $senha;
@@ -26,7 +26,7 @@ class Aluno{
             $stmt = $conn->prepare("insert into aluno (nome, id_curso, turma, matricula, email, senha) values(:nome, :curso, :turma, 
             :matricula, :email, :senha)");
             $stmt->bindParam(':nome',$this->nome);
-            $stmt->bindParam(':curso',$this->curso);
+            $stmt->bindParam(':id_curso',$this->id_curso);
             $stmt->bindParam(':turma',$this->turma);
             $stmt->bindParam(':matricula',$this->matricula);
             $stmt->bindParam(':email',$this->email);
@@ -76,7 +76,7 @@ class Aluno{
             $alunos = null;
             
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['turma'], $value['matricula'], $value['email'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
                
@@ -89,6 +89,8 @@ class Aluno{
             echo "Erro " . $e->getMessage();
         }
     }
+
+    
     static function carregar($id_aluno){
         try{
             $banco = new Banco();
@@ -99,10 +101,8 @@ class Aluno{
             $aluno = null;
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'],
-                $value[''],$value['id_curso'],
-                $value['nascimento'],
-                $value['sexo']);
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['turma'], $value['matricula'], $value['email'],
+                $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
              }
             return $aluno;
