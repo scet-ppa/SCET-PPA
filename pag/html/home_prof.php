@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "../php/cad-usuario/professorHelper.php";
 ?>
 
@@ -96,14 +97,14 @@ include_once "../php/cad-usuario/professorHelper.php";
             
                     <tbody>
                         <?php
-                        $professores = getProfessor();
-                        foreach($professores as $professor){
                         echo '<tr>';
-                        echo '<td>'.$professor->nome.'</td>';
-                        echo '<td>'.$professor->email.'</td>';
-                        //<td><img src="../img/perfil.png" alt="Foto de Perfil"></td>
-                        echo '</tr>';
-                        }
+                        echo '<td>'.$_SESSION["nome"].'</td>';
+                        echo '<td>'.$_SESSION["email"].'</td>';
+
+                        /*echo $_SESSION["name"] . ".<br>";
+                        echo $_SESSION["email"] . ".<br>";*/
+
+                        echo '</tr>'
                         ?>
                 <table>
         </div>

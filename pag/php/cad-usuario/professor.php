@@ -37,6 +37,32 @@ class Professor{
     function setIdProfessor($id_professor){
         $this->id_professor = $id_professor;
     }
+
+    static function getProfessorUsuario($email, $senha){
+        try{
+            $banco = new Banco();
+            $conn = $banco->conectar();
+            $stmt = $conn->prepare("select * from coordenador where email=:email and senha=:senha");
+            $stmt->bindParam(":email", $email); 
+            $stmt->bindParam(":senha", $senha); 
+            $stmt->execute();
+           // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $coord = null;
+            
+            foreach($stmt->fetchAll() as $v => $value){
+                $coord = new Coordenador($value['nome'], $value['email'], $value['senha'],  $value['matricula']);
+                $coord->setIdCoordenador( $value['id_coordenador']);
+               
+            }
+
+            //var_dump($alunos);
+            return $coord;
+
+        }catch(PDOException $e){
+            echo "Erro " . $e->getMessage();
+        }
+    }
+
     static function carregar($id_professor){
         try{
             $banco = new Banco();

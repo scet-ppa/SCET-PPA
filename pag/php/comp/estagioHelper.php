@@ -31,13 +31,13 @@
     function cadastrarAluno(){
       //  echo "oi";
         $situacao = $_POST['situacao'];
-        $id_professor = $_POST['id_professor'];
+        $orientador = $_POST['orientador'];
         $id_aluno = $_POST['id_aluno'];
         $id_empresa = $_POST['id_empresa'];
         $data_inicio = $_POST['data_inicio'];
         $prev_termino = $_POST['prev_termino'];
 
-        $estagio = new Estagio($situacao,$id_professor,$id_aluno,$id_empresa,$data_inicio,$prev_termino);
+        $estagio = new Estagio($situacao,$orientador,$id_aluno,$id_empresa,$data_inicio,$prev_termino);
         $estagio->inserir();
 
     }
@@ -56,7 +56,7 @@
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $estagios = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $estagio = new Estagio($value['situacao'], $value['id_professor'], $value['id_aluno'], $value['id_estagio'], $value['id_empresa'],
+                $estagio = new Estagio($value['situacao'], $value['orientador'], $value['id_aluno'], $value['id_estagio'], $value['id_empresa'],
                 $value['data_inicio'], $value['prev_termino']);
                 $estagio->setIdAluno( $value['id_estagio']);
                 array_push($estagios,$estagio);

@@ -66,7 +66,8 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>
@@ -104,9 +105,14 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                         echo '</tr>';
                         }*/
                         ?>
-                <table>
+                </table>
+       
+            </fieldset>   
+
         </div>
-            <fieldset>   
+
+        <a class="curso" href="cad_curso.php">CURSO</a>
+        <a class="emp" href="cad_empresa.php">EMPRESA</a>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
