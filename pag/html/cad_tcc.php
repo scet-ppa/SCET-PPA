@@ -52,6 +52,7 @@
 
             </fieldset>
 
+            <a class="botao" href="home_coord.php">Voltar</a>
             <input type="reset" value="Excluir">
             <input type="submit" value="Enviar">
 
