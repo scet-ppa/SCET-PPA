@@ -172,3 +172,23 @@ input[type=reset]:hover {
 .editar:active {
   background-color: orangered;
 }
+
+.botao {
+    background-color: orange;
+    color: white;
+    padding: 14px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 4px;
+    margin-left: 4px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-top: 0.1%;
+    float: right;
+  }
+  
+  .botao:hover,
+  .botao:active {
+    background-color: green;
+  }

@@ -19,15 +19,6 @@
                
             <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
                 <legend>Dados do Estagio</legend>
-<<<<<<< HEAD
-              
-                <div>
-                <label for="orientador">Nome do Professor: </label>
-                <input size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
-                </div>
-
-                <div class="murrinha">>
-=======
 
                 <div>
                 <label for="orientador">Nome do Professor: </label>
@@ -35,7 +26,6 @@
                 </div>
 
                 <div class="situ">
->>>>>>> df02a17844f1187786e0dc7088aee89525cc528e
                 <label for="situacao">Situação: </label>
                 <input class="input2" size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
                 </div>
@@ -62,16 +52,12 @@
 
             </fieldset>
 
+            <a class="botao" href="home_coord.php">Voltar</a>
             <input type="reset" value="Excluir">
             <input type="submit" value="Enviar">
 
         </form>
-<<<<<<< HEAD
-        
-    </fieldset>
-=======
 </fieldset>
->>>>>>> df02a17844f1187786e0dc7088aee89525cc528e
     <div>
         <fieldset>
             <legend>Estagios Cadastrados</legend>

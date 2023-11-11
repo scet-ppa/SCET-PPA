@@ -28,12 +28,12 @@ class Estagio{
         $this->id_estagio = $id_estagio;
     }
 
-    /*function editar(){
+    function editar(){
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("update curso set 
-            descricao=:descricao where id_curso=:id_curso");
+            $stmt = $conn->prepare("update estagio set 
+            situacao=:situacao where id_curso=:id_curso");
             $stmt->bindParam(':descricao',$this->descricao);
             $stmt->bindParam(':id_curso',$this->id_curso);
           //  $stmt->bindParam(':curso',$this->curso);
@@ -48,14 +48,14 @@ class Estagio{
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("delete from curso where id_curso = :id_curso");
-            $stmt->bindParam(':id_curso',$this->id_curso);
+            $stmt = $conn->prepare("delete from estagio where id_estagio = :id_estagio");
+            $stmt->bindParam(':id_estagio',$this->id_estagio);
             $stmt->execute();
         }catch(PDOException $e){
             echo $e->getMessage();
         }
         $banco->fecharConexao();
-    }*/
+    }
 
     function inserir(){
         $banco = new Banco();
