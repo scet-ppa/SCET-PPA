@@ -9,6 +9,8 @@ class TCC{
     public $situacao;
     public $tema;
     public $relatorio;
+    public $data_inicio;
+    public $prev_termino;
 
 function __construct($id_aluno, $orientador, $id_professor, $situacao, $tema, $relatorio) {
     $this->id_aluno = $id_aluno;
