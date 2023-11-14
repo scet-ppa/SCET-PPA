@@ -38,10 +38,10 @@
         $coordenador->inserir();
     }
 
-   function excluir_coordenador(){
+   /*function excluir_coordenador(){
         $coordenador = Coordenador::carregar($_POST['id_coordenador']);
         $coordenador->excluir_coordenador();
-   }
+   }*/
 
     function getCoordenador(){
         try{

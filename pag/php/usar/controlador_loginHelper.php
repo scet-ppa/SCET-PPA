@@ -12,6 +12,8 @@ if(isset($_POST['tipoUser'])){
     if($tipo === 'prof'){
         $prof = Professor::getProfessorUsuario($email, $senha); 
         if(isset($prof)){
+            $_SESSION["nome"] = $prof->nome;
+            $_SESSION["email"] = $prof->email;
             header('Location:../../html/home_prof.php');
         } else{
             echo ' professor não existe ' ; 
@@ -20,6 +22,8 @@ if(isset($_POST['tipoUser'])){
     }else if($tipo === 'aluno'){
         $aluno = Aluno::getAlunoUsuario($email, $senha); 
         if(isset($aluno)){
+            $_SESSION["nome"] = $aluno->nome;
+            $_SESSION["email"] = $aluno->email;
             header('Location:../../html/home_aluno.php');
         } else{
             echo ' aluno não existe ' ; 

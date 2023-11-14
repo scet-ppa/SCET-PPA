@@ -93,6 +93,9 @@ include_once "../php/cad-usuario/alunoHelper.php";
                             echo '<tr>';
                             echo '<td>'.$_SESSION["nome"].'</td>';
                             echo '<td>'.$_SESSION["email"].'</td>';
+                            echo '<td>'.$_SESSION["matricula"].'</td>';
+                            echo '<td>'.$_SESSION["curso"].'</td>';
+                            echo '<td>'.$_SESSION["turma"].'</td>';
                             /*echo $_SESSION["name"] . ".<br>";
                             echo $_SESSION["email"] . ".<br>";*/
                    

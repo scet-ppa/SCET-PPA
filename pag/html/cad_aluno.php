@@ -1,5 +1,7 @@
 <?php
+    session_start();
     include_once "../php/cad-usuario/alunoHelper.php";
+    include_once "../php/cad-usuario/cursoHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +44,19 @@
             <label>Matricula</label>
         </div>
 
+        <label id="cu">Curso:</label>
         <div class="box-input" id="curso">
-            <input name="curso" type="text">
-            <label>Curso</label>
+            
+            <select class="sel" name="curso" type="text">
+            <?php
+            $cursos = getCursos();
+                foreach($cursos as $curso){
+                    echo '<option value="'.$curso->getIdCurso().'">
+                    '.$curso->descricao.'</option>';
+                }
+            ?>
+            </select>
+            
         </div>
 
         <div class="box-input" id="senha">
@@ -65,7 +77,16 @@
     </form>
     
 </section>
-    
+<?php
+        // Set session variables
+        $_SESSION["nome"] = "nome";
+        $_SESSION["email"] = "email";
+        $_SESSION["matricula"] = "matricula";
+        $_SESSION["curso"] = "curso";
+        $_SESSION["turma"] = "turma";
+        ;
+        ?>
+        
 <script scr="../js/validacao.js"></script>
 </body>
 </html>

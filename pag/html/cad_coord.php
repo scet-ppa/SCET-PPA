@@ -1,5 +1,6 @@
 
-<?php
+<?php   
+    session_start();
    include_once "../php/cad-usuario/coordenadorHelper.php";
 ?>
 
@@ -46,6 +47,13 @@
         </form>
       </div>
     
+
+      <?php
+        // Set session variables
+        $_SESSION["nome"] = "nome";
+        $_SESSION["email"] = "email";
+        ;
+        ?>
 
     <script src="../js/validacao.js"></script>
 </body>

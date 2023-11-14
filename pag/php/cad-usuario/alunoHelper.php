@@ -42,10 +42,10 @@
 
     }
 
-   function excluir_aluno(){
+   /*function excluir_aluno(){
         $aluno = Aluno::carregar($_POST['id_aluno']);
         $aluno->excluir_aluno();
-   }
+   }*/
 
     function getAlunos(){
         try{
