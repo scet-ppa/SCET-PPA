@@ -118,7 +118,7 @@ border-radius: 45px;
     /*-webkit-appearance: none;*/
  }      
 
- label {
+ form label {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #008080;
     font-size: 18px;

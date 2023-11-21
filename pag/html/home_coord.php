@@ -65,8 +65,15 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                         <span class="list">Pendentes</span>
                     </a>
                 </li>
+
                 <li class="list">
-                    
+                    <a href="cad_empresa.php">
+                        <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                        <span class="list">Empresas</span>
+                    </a>
+                </li>
+
+                <li class="list">
                     <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
@@ -112,7 +119,7 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
         </div>
 
         <a class="curso" href="cad_curso.php">CURSO</a>
-        <a class="emp" href="cad_empresa.php">EMPRESA</a>
+        <a class="emp" href="cad_empresa.php">TURMA</a>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

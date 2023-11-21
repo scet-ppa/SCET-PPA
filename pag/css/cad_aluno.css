@@ -54,13 +54,13 @@ border-radius: 45px;
     top: 850px;
     /*margin-top: 25%;;
     margin-left: 25%;*/
-    flex-direction: column;
+   flex-direction: column;
     gap: 50px;
     margin-left: 300px;
 }
 
 .box-input{
-    position: absolute;
+    position: relative;
     width: 360px;
     top: 50px;
 }
@@ -75,7 +75,17 @@ border-radius: 45px;
     font-size: 1.5em;
 }
 
-.box-input label{
+.box-input span{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1.5em;
+    color: #008080;
+    transition: 0.5s;
+}
+/*.box-input label{
     position: absolute;
     left: 12px;
     top: 12px;
@@ -85,10 +95,10 @@ border-radius: 45px;
     color: #008080;
     transition: 0.5s;
 
-}
+}*/
 
-.box-input input:valid ~ label, 
-.box-input input:focus ~ label{
+.box-input input:valid ~ span, 
+.box-input input:focus ~ span{
     color: #008080;
     transform: translateX(13px) translateY(-18px);
     font-size: 0.85em;
@@ -98,6 +108,8 @@ border-radius: 45px;
     border-right: 2px solid #008080;
     letter-spacing: 0.2em;
 }
+
+
 
 #nome {
     position: absolute;
@@ -155,8 +167,6 @@ border-radius: 45px;
     font-size: 10px;
     font-family: Fredoka;
     font-weight: 500;
-
-   
 }
 
 #senha {
@@ -230,10 +240,7 @@ border-radius: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #008080;
     font-size: 18px;
+    padding-left: 150px;
+    padding-top: 150px;
  }
 
- 
-#cu{
-    padding-left: 130px;
-    padding-top: 190px;
- }

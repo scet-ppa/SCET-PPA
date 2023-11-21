@@ -31,22 +31,22 @@
         <div class="box">
             <div class="box-input" id="nome">
             <input name="nome" type="text">
-            <label>Nome</label>
+            <span>Nome</span>
         </div>
         
         <div class="box-input" id="email">
             <input name="email" type="email" >
-            <label>Email</label>
+            <span>Email</span>
         </div>
 
         <div class="box-input" id="matricula">
             <input name="matricula"  type="text">
-            <label>Matricula</label>
+            <span>Matricula</span>
         </div>
 
-        <label id="cu">Curso:</label>
+        <label>Curso:</label>
         <div class="box-input" id="curso">
-            
+        
             <select class="sel" name="curso" type="text">
             <?php
             $cursos = getCursos();
@@ -61,19 +61,20 @@
 
         <div class="box-input" id="senha">
             <input type="password" name="senha" required="required">
-            <label>Senha</label>
+            <span>Senha</span>
         </div>
 
         <div class="box-input" id="turma">
             <input type="text" name="turma" required="required">
-            <label>Turma</label>
+            <span>Turma</span>
         </div>
     
         <div class="box-input" id="confirmar">
             <input type="password" name="senha" required="required">
-            <label>Confirmação de senha</label>
+            <span>Confirmação de senha</span>
         </div>
-
+        </div>
+        
     </form>
     
 </section>
