@@ -9,7 +9,7 @@ include_once "../php/cad-usuario/professorHelper.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: professor</title>
-    <link rel="stylesheet" type="text/css" href="../css/home_coord.css">
+    <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
@@ -61,7 +61,7 @@ include_once "../php/cad-usuario/professorHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>

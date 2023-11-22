@@ -23,11 +23,12 @@ class Aluno{
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("insert into aluno (nome, id_curso, matricula, email, senha) values(:nome, :id_curso, 
-            :matricula, :email, :senha)");
+            $stmt = $conn->prepare("insert into aluno (nome, id_curso, matricula, id_turma, email, senha) values(:nome, :id_curso, 
+            :matricula,:id_turma, :email, :senha)");
             $stmt->bindParam(':nome',$this->nome);
             $stmt->bindParam(':id_curso',$this->id_curso);
             $stmt->bindParam(':matricula',$this->matricula);
+            $stmt->bindParam(':id_turma',$this->turma);
             $stmt->bindParam(':email',$this->email);
             $stmt->bindParam(':senha',$this->senha);
             $stmt->execute();

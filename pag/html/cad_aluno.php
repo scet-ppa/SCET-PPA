@@ -2,6 +2,7 @@
     session_start();
     include_once "../php/cad-usuario/alunoHelper.php";
     include_once "../php/cad-usuario/cursoHelper.php";
+    include_once "../php/cad-usuario/turmaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -59,15 +60,26 @@
             
         </div>
 
+        <div class="box-input" id ="turma">
+        
+            <select class="sel-tu" name="turma" type="text">
+            <?php
+            $turmas = getTurmas();
+                foreach($turmas as $turma){
+                    echo '<option value="'.$turma->getIdTurma().'">
+                    '.$turma->descricao.' - '.$turma->letivo.'</option>';
+                }
+            ?>
+            </select>
+            
+        </div>
+
         <div class="box-input" id="senha">
             <input type="password" name="senha" required="required">
             <span>Senha</span>
         </div>
 
-        <div class="box-input" id="turma">
-            <input type="text" name="turma" required="required">
-            <span>Turma</span>
-        </div>
+        
     
         <div class="box-input" id="confirmar">
             <input type="password" name="senha" required="required">

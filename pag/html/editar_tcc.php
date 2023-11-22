@@ -22,7 +22,7 @@ $tc =  Tcc::carregar($id_tcc);
 </head>
 <body>
 
-<h1>Editar TCC</h1>
+<!--<h1>Editar TCC</h1>-->
     <fieldset>
         <legend>Informação Geral</legend>
         <form name="form" method="POST" action="../php/com/tccHelper.php">
