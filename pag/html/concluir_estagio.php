@@ -7,7 +7,7 @@
     'id_estagio',
     FILTER_SANITIZE_NUMBER_INT
 );
-$es =  Estagio::carregar($id_estagio);
+$es = Estagio::carregar($id_estagio);
 ?>
 
 
@@ -16,7 +16,7 @@ $es =  Estagio::carregar($id_estagio);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cad_Estagio</title>
+    <title>Concluir_Estagio</title>
     <link rel="stylesheet" href="../css/cad_estagio.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>

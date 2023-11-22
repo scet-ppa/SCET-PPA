@@ -21,17 +21,17 @@
                 <legend>Dados do Estagio</legend>
 
                 <div>
-                <label for="orientador">Nome do Professor: </label>
+                <label for="nome">Nome do Professor: </label>
                 <input class="input1" size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
                 </div>
 
                 <div class="situ">
-                <label for="situacao">Situação: </label>
+                <label for="nome">Situação: </label>
                 <input class="input2" size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
                 </div>
 
                 <div>
-                <label for="id_aluno">Nome do Aluno: </label>
+                <label for="nome">Nome do Aluno: </label>
                 <input class="teste" size="40" required placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text">
                 </div>
 
@@ -41,7 +41,7 @@
                 </div>
 
                 <div>
-                <label for="id_empresa">Nome da Empresa: </label>
+                <label for="nome">Nome da Empresa: </label>
                 <input class="input4" size="40" required placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text">
                 </div>
 
