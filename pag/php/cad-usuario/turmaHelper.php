@@ -1,56 +1,58 @@
 <?php
-
 include_once 'turma.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 if(isset($_POST['tipo'])){
     $tipo = $_POST['tipo'];
-    if($tipo === 'cad_curso'){
-        cadastrarCurso();
-        header('Location:../../html/cad_curso.php');
-    }else if($tipo === 'excluir_curso'){
-        excluir_curso();
-        header('Location:../../html/cad_curso.php');
-    }else if($tipo === 'editar_curso'){
-        editar_curso();
-        header('Location:../../html/cad_curso.php');
+    if($tipo === 'cad_turma'){
+        //var_dump($_POST);
+        cadastrarTurma();
+        header('Location:../../html/cad-turma.php');
+    }else if($tipo === 'excluir_turma'){
+        excluir_turma();
+        header('Location:../../html/cad_turma.php');
+    }else if($tipo === 'editar_turma'){
+        editar_turma();
+        header('Location:../../html/cad_turma.php');
     }
 
 }
 
-function editar_curso(){
-    $curso = Curso::carregar($_POST['id_curso']);
-    $curso->descricao = $_POST['descricao'];
-   // $curso = $_POST['curso'];
-    $curso->editar();
+function editar_turma(){
+    $turma = Turma::carregar($_POST['id_turma']);
+    $turma->descricao = $_POST['descricao'];
+    $turma->letivo = $_POST['letivo'];
+   // $turma = $_POST['turma'];
+    $turma->editar();
 }
 
-function excluir_curso(){
-    $curso = Curso::carregar($_POST['id_curso']);
-    $curso->excluir_curso();
+function excluir_turma(){
+    $turma = Turma::carregar($_POST['id_turma']);
+    $turma->excluir_turma();
 }
 
-function cadastrarCurso(){
+function cadastrarTurma(){
     $descricao = $_POST['descricao'];
-    $curso = new Curso($descricao);
-    $curso->inserir();
+    $letivo = $_POST['letivo'];
+    $turma = new Turma($descricao, $letivo);
+    $turma->inserir();
 }
 
 
-function getCursos(){
+function getTurmas(){
     try{
         $banco = new Banco();
         $conn = $banco->conectar();
-        $stmt = $conn->prepare("select * from curso");
+        $stmt = $conn->prepare("select * from turma");
         $stmt->execute();
        // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $cursos = array();
+        $turmas = array();
         foreach($stmt->fetchAll() as $v => $value){
-            $curso = new Curso($value['descricao']);
-            $curso->setIdCurso($value['id_curso']);
-            array_push($cursos,$curso);
+            $turma = new Turma($value['descricao'], $value['ano_letivo']);
+            $turma->setIdTurma($value['id_turma']);
+            array_push($turmas,$turma);
         }
-       return $cursos;
+       return $turmas;
 
     }catch(PDOException $e){
         echo "Erro " . $e->getMessage();
