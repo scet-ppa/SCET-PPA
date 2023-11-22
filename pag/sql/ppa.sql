@@ -23,6 +23,7 @@ create table aluno(
     senha varchar(25)
 );
 
+use ppa; 
 alter table nota drop column valor; 
 alter table nota add column nota numeric(4,2); 
 alter table estagio add column id_avalia_aluno integer; 
@@ -38,6 +39,7 @@ alter table aluno drop constraint aluno_ibfk_1;
 alter table aluno add column id_turma integer;
 alter table aluno add constraint foreign key (id_turma) references turma(id_turma); 
 alter table aluno add column id_curso integer; 
+alter table turma drop constraint turma_ibfk_1;
 alter table aluno add constraint foreign key (id_curso) references curso(id_curso); 
 alter table coordenador drop column id_usuario; 
 alter table coordenador drop constraint coordenador_ibfk_1;
@@ -153,6 +155,12 @@ select * from coordenador;
 select * from aluno; 
 select * from professor; 
 select * from turma;
+select * from empresa;
+select * from estagio; 
 
+alter table turma drop column id_curso; 
+
+insert into empresa (nome) values ("OF"); 
+insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) values(1, 2, 1, 01/01/2001, 02/02/2002, "em andamento");
 insert into coordenador(nome, email, senha) values("nicholas", "nick@gmail.com", "123"); 
 insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica"); 
