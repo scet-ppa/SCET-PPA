@@ -184,11 +184,32 @@ border-radius: 45px;
     background: #E8E8E8;
 }
 
+.sel-tu{
+    background-color: #E8E8E8;
+    background: #E8E8E8;
+    width: 180px;
+    height: 54px;
+    overflow: hidden;
+    background: url(nova_setinha.jpg) no-repeat right #F5F8F3; /* novo ícone para o <select> */
+    border: 2px solid #008080;
+}
+
+.sel-tu select { /* <select> */
+    background: transparent; /* importante para exibir o novo ícone */
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    /*-webkit-appearance: none;*/
+ }     
 #turma {
     position: absolute;
     width: 200px;
     height: 50px;
-    left: 660px;
+    left: 722px;
     top: 347px;
     color: #B5B5B5;
     text-align: left;
@@ -196,8 +217,8 @@ border-radius: 45px;
     font-family: Fredoka;
     font-weight: 500;
 
-    background: #E8E8E8;
 }
+
 
 #confirmar {
     position: absolute;
