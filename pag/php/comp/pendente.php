@@ -25,7 +25,7 @@ function getIdPendente() {
     return $this->id_pendente;
 }
 
-function setIdPendente($id_pendente) {
+function setIdTCC($id_pendente) {
     $this->id_pendente = $id_pendente;
 }
 
@@ -78,7 +78,7 @@ function editar() {
                 $banco = new Banco();
                 $conn = $banco->conectar();
                 $stmt = $conn->prepare("select * from pendente where id_pendente = :id_pendente");
-                $stmt->bindParam(':id_tcc',$id_tcc);
+                $stmt->bindParam(':id_pendente',$id_pendente);
                 $stmt->execute();
                 $tcc = null;
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -86,7 +86,7 @@ function editar() {
                     $tcc = new Pendente($value['tema']);
                     $tcc->setIdPendente( $value['id_pendente']);
                  }
-                return $id_pendente;
+                return $pendente;
     
             }catch(PDOException $e){
                 echo "Erro " . $e->getMessage();
