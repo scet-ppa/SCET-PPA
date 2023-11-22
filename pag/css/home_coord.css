@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-@import url(../css/barra_lateral-coord.css);
+@import url(../css/barra_lateral.css);
 
 
 * {
@@ -150,7 +150,7 @@ body{
   width: 224px;
   height: 70px;
   margin-left: 1310px;
-  margin-top: 92px;
+  margin-top: 1050px;
 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #ffffff;

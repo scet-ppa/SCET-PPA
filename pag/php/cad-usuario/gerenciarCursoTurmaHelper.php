@@ -3,13 +3,13 @@ include_once "cursoHelper.php";
 
 include_once "turmaHelper.php";
 
-$id_professor= filter_input(
+$id_curso= filter_input(
     INPUT_GET,
-    'id_professor',
+    'id_curso',
     FILTER_SANITIZE_NUMBER_INT
 );
 
-$prof = Professor::carregar($id_professor);
+$cu = Curso::carregar($id_professor);
 
 ?>
 

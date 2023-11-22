@@ -3,7 +3,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class Turma{
     public $id_turma;
-    public $id_curso;
     public $descricao;
     public $letivo;
 
@@ -25,7 +24,7 @@ class Turma{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("update turma set 
-            descricao=:descricao where id_turma=:id_turma");
+            descricao=:descricao, letivo=:letivo where id_turma=:id_turma");
             $stmt->bindParam(':descricao',$this->descricao);
             $stmt->bindParam(':id_turma',$this->id_turma);
           //  $stmt->bindParam(':curso',$this->curso);
@@ -54,7 +53,7 @@ class Turma{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("insert into turma 
-            (descricao, letivo) values (:descricao, :letivo)");
+            (descricao, ano_letivo) values (:descricao, :letivo)");
             $stmt->bindParam(':descricao',$this->descricao);
             $stmt->bindParam(':letivo',$this->letivo);
             $stmt->execute();
