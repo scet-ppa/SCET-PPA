@@ -1,5 +1,5 @@
 <?php
-   include_once "../php/cad-usuario/empresaHelper.php";
+   include_once "../php/comp/empresaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -14,16 +14,16 @@
 <body>
     <fieldset>
         <legend>Formulário de Cadastro</legend>
-        <form name="formCad" method="POST" action="../php/cad-usuario/empresaHelper.php">
+        <form name="formCad" method="POST" action="../php/comp/empresaHelper.php">
             <fieldset>
                 <input style="display: none" name="tipo" id="tipo" type="text" value="cad_empresa">
                 <legend>Dados da Empresa</legend>
                 <label for="nome">Nome: </label>
-                <input size="40" required placeholder="Digite aqui o nome da empresa" name="descricao" id="descricao" type="text">
+                <input size="40" required placeholder="Digite aqui o nome da empresa" name="nome" id="nome" type="text">
             </fieldset>
 
             <a class="botao" href="home_coord.php">Voltar</a>
-            <input type="reset" value="Excluir">
+            <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
 
         </form>
@@ -39,13 +39,13 @@
                 </tr>
                 <?php
                 $empresas = getEmpresas();
-                foreach($Empresas as $empresas){
+                foreach($empresas as $empresa){
                     echo '<tr>'; 
-                    echo '<td>'.$empresa->id_curso.'</td>  ';
-                    echo '<td>'.$empresa->descricao.'</td> '; 
+                    echo '<td>'.$empresa->id_empresa.'</td>  ';
+                    echo '<td>'.$empresa->nome.'</td> '; 
 
-                    echo '<td> <a class="editar"  href="editar_empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Editar</a></td> ';  
-                    echo '<td> <a class="excluir"  href="excluir_empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Excluir</a></td> '; 
+                    echo '<td> <a class="editar"  href="editar-empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Editar</a></td> ';  
+                    echo '<td> <a class="excluir"  href="excluir-empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Excluir</a></td> '; 
                     echo '</tr> ';
                 }
                 ?> 
