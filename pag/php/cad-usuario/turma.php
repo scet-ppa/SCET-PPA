@@ -4,11 +4,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 class Turma{
     public $id_turma;
     public $descricao;
-    public $letivo;
+    public $ano_letivo;
 
-    function __construct($descricao, $letivo){
+    function __construct($descricao, $ano_letivo){
         $this->descricao = $descricao;
-        $this->letivo = $letivo; 
+        $this->ano_letivo = $ano_letivo; 
     }
 
     function getIdTurma(){
@@ -24,8 +24,9 @@ class Turma{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("update turma set 
-            descricao=:descricao, letivo=:letivo where id_turma=:id_turma");
+            descricao=:descricao, ano_letivo=:ano_letivo where id_turma=:id_turma");
             $stmt->bindParam(':descricao',$this->descricao);
+            $stmt->bindParam(':ano_letivo',$this->ano_letivo);
             $stmt->bindParam(':id_turma',$this->id_turma);
           //  $stmt->bindParam(':curso',$this->curso);
             $stmt->execute();
@@ -53,9 +54,9 @@ class Turma{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("insert into turma 
-            (descricao, ano_letivo) values (:descricao, :letivo)");
+            (descricao, ano_letivo) values (:descricao, :ano_letivo)");
             $stmt->bindParam(':descricao',$this->descricao);
-            $stmt->bindParam(':letivo',$this->letivo);
+            $stmt->bindParam(':ano_letivo',$this->ano_letivo);
             $stmt->execute();
         }catch(PDOException $e){
             echo $e->getMessage();
@@ -73,7 +74,7 @@ class Turma{
             $turma = null;
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
-                $turma = new Turma($value['descricao'], $value['letivo']);
+                $turma = new Turma($value['descricao'], $value['ano_letivo']);
                 $turma->setIdTurma( $value['id_turma']);
              }
             return $turma;

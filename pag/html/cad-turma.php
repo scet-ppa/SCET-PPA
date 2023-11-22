@@ -24,7 +24,7 @@
 
                 <label for="nome">Ano Letivo: </label>
                 <!-- COmentário -->
-                <input size="40" required placeholder="Digite aqui o ano letivo" name="letivo" id="letivo" type="text">
+                <input size="40" required placeholder="Digite aqui o ano letivo" name="ano_letivo" id="ano_letivo" type="text">
             </fieldset>
 
             <a class="botao" href="home_coord.php">Voltar</a>
@@ -49,7 +49,7 @@
                     echo '<tr>'; 
                     echo '<td>'.$turma->id_turma.'</td>  ';
                     echo '<td>'.$turma->descricao.'</td> '; 
-                    echo '<td>'.$turma->letivo.'</td> '; 
+                    echo '<td>'.$turma->ano_letivo.'</td> '; 
                     echo '<td> <a class="editar"  href="editar_turma.php?id_curso='.$turma->getIdTurma().'">Editar</a></td> ';  
                     echo '<td> <a class="excluir"  href="excluir_turma.php?id_curso='.$turma->getIdTurma().'">Excluir</a></td> '; 
                     echo '</tr> ';

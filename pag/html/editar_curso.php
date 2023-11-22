@@ -17,6 +17,7 @@ $cu =  Curso::carregar($id_curso);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cad_curso.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
     
     <title>Editar Curso</title>
 </head>

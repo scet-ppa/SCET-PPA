@@ -10,10 +10,10 @@ if(isset($_POST['tipo'])){
         header('Location:../../html/cad-turma.php');
     }else if($tipo === 'excluir_turma'){
         excluir_turma();
-        header('Location:../../html/cad_turma.php');
+        header('Location:../../html/cad-turma.php');
     }else if($tipo === 'editar_turma'){
         editar_turma();
-        header('Location:../../html/cad_turma.php');
+        header('Location:../../html/cad-turma.php');
     }
 
 }
@@ -21,7 +21,7 @@ if(isset($_POST['tipo'])){
 function editar_turma(){
     $turma = Turma::carregar($_POST['id_turma']);
     $turma->descricao = $_POST['descricao'];
-    $turma->letivo = $_POST['letivo'];
+    $turma->ano_letivo = $_POST['ano_letivo'];
    // $turma = $_POST['turma'];
     $turma->editar();
 }
@@ -33,8 +33,8 @@ function excluir_turma(){
 
 function cadastrarTurma(){
     $descricao = $_POST['descricao'];
-    $letivo = $_POST['letivo'];
-    $turma = new Turma($descricao, $letivo);
+    $ano_letivo = $_POST['ano_letivo'];
+    $turma = new Turma($descricao, $ano_letivo);
     $turma->inserir();
 }
 
