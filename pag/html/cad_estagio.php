@@ -1,5 +1,8 @@
 <?php
    include_once "../php/comp/estagioHelper.php";
+   include_once "../php/cad-usuario/professorHelper.php";
+   include_once "../php/cad-usuario/alunoHelper.php";
+   include_once "../php/comp/empresaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -21,18 +24,34 @@
                 <legend>Dados do Estagio</legend>
 
                 <div>
-                <label for="nome">Nome do Professor: </label>
-                <input class="input1" size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text">
+                <label for="professores">Nome do Professor: </label>
+                <select name="orientador" id="orientador">
+                    <?php
+                        $professores = getProfessores();
+                        foreach($professores as $professor){
+                            echo '<option value="'.$professor->getIdProfessor().'">
+                            '.$professor->nome.'</option>';
+                        }
+                    ?>
+                </select>
                 </div>
 
                 <div class="situ">
-                <label for="nome">Situação: </label>
+                <label for="situacao">Situação: </label>
                 <input class="input2" size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text">
                 </div>
 
                 <div>
-                <label for="nome">Nome do Aluno: </label>
-                <input class="teste" size="40" required placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text">
+                <label for="alunos">Nome do Aluno: </label>
+                <select name="aluno" id="aluno">
+                    <?php
+                        $alunos = getAlunos();
+                        foreach($alunos as $aluno){
+                            echo '<option value="'.$aluno->getIdAluno().'">
+                            '.$aluno->nome.'</option>';
+                        }
+                    ?>
+                </select>
                 </div>
 
                 <div class="data">
@@ -41,8 +60,16 @@
                 </div>
 
                 <div>
-                <label for="nome">Nome da Empresa: </label>
-                <input class="input4" size="40" required placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text">
+                <label for="empresas">Nome da empresa: </label>
+                <select name="empresa" id="empresas">
+                    <?php
+                        $empresas = getEmpresas();
+                        foreach($empresas as $empresa){
+                            echo '<option value="'.$empresa->getIdEmpresa().'">
+                            '.$empresa->nome.'</option>';
+                        }
+                    ?>
+                </select>
                 </div>
 
                 <div class="previa">
@@ -70,6 +97,7 @@
                     <th>Data de Ínicio</th>
                     <th>Previa de término</th>
                     <th>Situação</th>
+                    <th colspan="2">Ações</th>
                 </tr>
                 <?php
                 $estagios = getEstagios();
@@ -83,8 +111,8 @@
                     echo '<td>'.$estagio->prev_termino.'</td> ';
                     echo '<td>'.$estagio->situacao.'</td> ';
 
-                    echo '<td> <a class="editar"  href="editar_curso.php?id_curso='.$curso->getIdCurso().'">Editar</a></td> ';  
-                    echo '<td> <a class="excluir"  href="excluir_curso.php?id_curso='.$curso->getIdCurso().'">Excluir</a></td> '; 
+                    echo '<td> <a class="editar"  href="editar_estagio.php?id_estagio='.$estagio->getIdEstagio().'">Editar</a></td> ';  
+                    echo '<td> <a class="excluir"  href="excluir_estagio.php?id_estagio='.$estagio->getIdEstagio().'">Concluir</a></td> '; 
                     echo '</tr> ';
                 }
                 ?> 

@@ -73,7 +73,7 @@ class Estagio{
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("insert into estagio(situacao, orientador, id_aluno, id_empresa, data_inicio, prev_termino) 
+            $stmt = $conn->prepare("insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) 
             values(:situacao, :orientador, :id_aluno, :id_empresa, :data_inicio, :prev_termino)");
             $stmt->bindParam(':situacao',$this->situacao);
             $stmt->bindParam(':id_professor',$this->id_professor);
@@ -101,7 +101,7 @@ class Estagio{
                 $value['orientador'], $value['id_aluno'],
                 $value['id_empresa'], $value['data_inicio'],
                 $value['prev_termino']);
-                $estagio->setIdCurso( $value['id_estagio']);
+                $estagio->setIdEstagio( $value['id_estagio']);
              }
             return $estagio;
 

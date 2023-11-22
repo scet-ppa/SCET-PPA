@@ -5,7 +5,7 @@
    if(isset($_POST['tipo'])){
         $tipo = $_POST['tipo'];
         if($tipo === 'cad_estagio'){
-            cadastrarAluno();
+            cadastrarEstagio();
             /*echo $_SERVER['DOCUMENT_ROOT'];*/
             header('Location:../../html/cad_estagio.php');
         }else if($tipo === 'editar_estagio'){
@@ -41,7 +41,7 @@
    $estagio->concluir();
 }
 
-    function cadastrarAluno(){
+    function cadastrarEstagio(){
       //  echo "oi";
         $situacao = $_POST['situacao'];
         $orientador = $_POST['orientador'];
@@ -71,7 +71,7 @@
             foreach($stmt->fetchAll() as $v => $value){
                 $estagio = new Estagio($value['situacao'], $value['orientador'], $value['id_aluno'], $value['id_estagio'], $value['id_empresa'],
                 $value['data_inicio'], $value['prev_termino']);
-                $estagio->setIdAluno( $value['id_estagio']);
+                $estagio->setIdEstagio( $value['id_estagio']);
                 array_push($estagios,$estagio);
             }
 
