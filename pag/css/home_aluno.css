@@ -106,6 +106,7 @@ border-radius: 45px;
   height: 70px;
   left: 120px;
   top: 332px;
+  margin-top: 10px;
 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #ffffff;
@@ -136,7 +137,7 @@ position: absolute;*/
 width: 224px;
 height: 70px;
 margin-left: 1310px;
-margin-top: 92px;
+margin-top: 120px;
 
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: #ffffff;
