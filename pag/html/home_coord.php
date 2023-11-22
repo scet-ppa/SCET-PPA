@@ -9,7 +9,7 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: Coordenador</title>
-    <link rel="stylesheet" type="text/css" href="../css/home_coord.css">
+    <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
@@ -119,7 +119,7 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
         </div>
 
         <a class="curso" href="cad_curso.php">CURSO</a>
-        <a class="emp" href="cad_empresa.php">TURMA</a>
+        <a class="emp" href="cad-turma.php">TURMA</a>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
