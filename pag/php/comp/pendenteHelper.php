@@ -1,4 +1,5 @@
 <?php
+include_once 'pendente.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class Pendente{
@@ -78,7 +79,7 @@ function editar() {
                 $banco = new Banco();
                 $conn = $banco->conectar();
                 $stmt = $conn->prepare("select * from pendente where id_pendente = :id_pendente");
-                $stmt->bindParam(':id_tcc',$id_tcc);
+                $stmt->bindParam(':id_pendente',$id_pendente);
                 $stmt->execute();
                 $tcc = null;
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
