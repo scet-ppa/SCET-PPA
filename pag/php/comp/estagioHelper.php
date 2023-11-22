@@ -8,25 +8,38 @@
             cadastrarAluno();
             /*echo $_SERVER['DOCUMENT_ROOT'];*/
             header('Location:../../html/cad_estagio.php');
-        }/*else if($tipo === 'excluir_aluno'){
-            excluir_aluno();
-            header('Location:index.php');
-        }else if($tipo === 'editar_aluno'){
-            editar_aluno();
-            header('Location:index.php');
-        }*/
+        }else if($tipo === 'editar_estagio'){
+            editar_estagio();
+            header('Location:cad_estagio.php');
+        }else if($tipo === 'concluir_estagio'){
+            concluir_estagio();
+            header('Location:cad_estagio.php');
+        }
    }
 
-   /*function  editar_aluno(){
-        $aluno = Aluno::carregar($_POST['id_aluno']);
-        $aluno->nome = $_POST['nome'];
-        $aluno->telefone = $_POST['telefone'];
-        $aluno->email = $_POST['email'];
+   function  editar_estagio(){
+        $estagio = Estagio::carregar($_POST['id_estagio']);
+        $estagio->orientador = $_POST['orientador'];
+        $estagio->data_inicio = $_POST['data_inicio'];
+        $estagio->prev_termino = $_POST['prev_termino'];
        // $curso = $_POST['curso'];
-       $aluno->nascimento = $_POST['nascimento'];
-       $aluno->sexo = $_POST['sexo'];
-       $aluno->editar();
-   }*/
+       $estagio->id_empresa = $_POST['id_empresa'];
+       $estagio->id_aluno = $_POST['id_aluno'];
+       $estagio->situacao = $_POST['situacao'];
+       $estagio->editar();
+   }
+
+   function  concluir_estagio(){
+    $estagio = Estagio::carregar($_POST['id_estagio']);
+    $estagio->orientador = $_POST['orientador'];
+    $estagio->data_inicio = $_POST['data_inicio'];
+    $estagio->prev_termino = $_POST['prev_termino'];
+   // $curso = $_POST['curso'];
+   $estagio->id_empresa = $_POST['id_empresa'];
+   $estagio->id_aluno = $_POST['id_aluno'];
+   $estagio->situacao = $_POST['situacao'];
+   $estagio->concluir();
+}
 
     function cadastrarAluno(){
       //  echo "oi";

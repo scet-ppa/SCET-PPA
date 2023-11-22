@@ -25,37 +25,37 @@ $es =  Estagio::carregar($id_estagio);
         <legend>Formulário de cadastro</legend>
         <form name="formCad" method="POST" action="../php/comp/estagioHelper.php">
             <fieldset>
-                <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
+                <input style="display: none" name="tipo" id="tipo" type="text" value="editar_estagio">
                 <legend>Dados do Estagio</legend>
 
                 <div>
                 <label for="orientador">Nome do Professor: </label>
-                <input class="input1" size="40" required placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text" value="<?php echo $es->orientador; ?>">
+                <input class="input1" size="40" readonly placeholder="Digite aqui o nome do professor" name="orientador" id="orientador" type="text" value="<?php echo $es->orientador; ?>">
                 </div>
 
                 <div class="situ">
                 <label for="situacao">Situação: </label>
-                <input class="input2" size="40" required placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text" value="<?php echo $es->situacao; ?>">
+                <input class="input2" size="40" reandoly placeholder="Digite aqui a situação do estagio" name="situacao" id="situacao" type="text" value="<?php echo $es->situacao; ?>">
                 </div>
 
                 <div>
                 <label for="id_aluno">Nome do Aluno: </label>
-                <input class="teste" size="40" required placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text" value="<?php echo $es->id_aluno; ?>">
+                <input class="teste" size="40" reandoly placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text" value="<?php echo $es->id_aluno; ?>">
                 </div>
 
                 <div class="data">
                 <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date" value="<?php echo $es->data_inicio; ?>">
+                <input class="input3" size="40" reandoly placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date" value="<?php echo $es->data_inicio; ?>">
                 </div>
 
                 <div>
                 <label for="id_empresa">Nome da Empresa: </label>
-                <input class="input4" size="40" required placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text" value="<?php echo $es->id_empresa; ?>">
+                <input class="input4" size="40" reandoly placeholder="Digite aqui o nome do aluno" name="id_empresa" id="id_empresa" type="text" value="<?php echo $es->id_empresa; ?>">
                 </div>
 
                 <div class="previa">
                 <label for="prev_termino">Previa de Termino: </label>
-                <input class="input5" size="40" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date" value="<?php echo $es->prev_termino; ?>">
+                <input class="input5" size="40" reandoly placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date" value="<?php echo $es->prev_termino; ?>">
                 </div>
 
             </fieldset>
