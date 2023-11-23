@@ -67,7 +67,7 @@
             $turmas = getTurmas();
                 foreach($turmas as $turma){
                     echo '<option value="'.$turma->getIdTurma().'">
-                    '.$turma->descricao.' - '.$turma->letivo.'</option>';
+                    '.$turma->descricao.' - '.$turma->ano_letivo.'</option>';
                 }
             ?>
             </select>
@@ -94,9 +94,6 @@
         // Set session variables
         $_SESSION["nome"] = "nome";
         $_SESSION["email"] = "email";
-        $_SESSION["matricula"] = "matricula";
-        $_SESSION["curso"] = "curso";
-        $_SESSION["turma"] = "turma";
         ;
         ?>
         

@@ -33,7 +33,7 @@
                 <label>Nome</label>
             </div>
                 <div class="box-input" id="email">
-                    <input type="email" naame="email">
+                    <input type="email" name="email">
                 <label>Email</label>
         </div>
         <div class="box-input" id="matricula">

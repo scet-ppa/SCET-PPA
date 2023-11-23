@@ -3,7 +3,7 @@ session_start();
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/aluno.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/professor.php';
-include_once    $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/coordenador.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/coordenador.php';
 
 if(isset($_POST['tipoUser'])){
     $tipo = $_POST['tipoUser'];
@@ -22,12 +22,14 @@ if(isset($_POST['tipoUser'])){
     }else if($tipo === 'aluno'){
         $aluno = Aluno::getAlunoUsuario($email, $senha); 
         if(isset($aluno)){
+            echo "oi";
             $_SESSION["nome"] = $aluno->nome;
             $_SESSION["email"] = $aluno->email;
+    
             header('Location:../../html/home_aluno.php');
-        } else{
+        } /*else{
             echo ' aluno não existe ' ; 
-        }
+        }*/
     
         
     }else if($tipo === 'coord'){

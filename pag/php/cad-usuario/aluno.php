@@ -73,17 +73,18 @@ class Aluno{
             $stmt->bindParam(":senha", $senha); 
             $stmt->execute();
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            $alunos = null;
+            $aluno = null;
             
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['turma'], $value['matricula'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['matricula'], $value['email'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
-               
+//                $nome, $id_curso, $turma, $matricula, $email, $senha
             }
 
+
             //var_dump($alunos);
-            return $alunos;
+            return $aluno;
 
         }catch(PDOException $e){
             echo "Erro " . $e->getMessage();
@@ -101,7 +102,7 @@ class Aluno{
             $aluno = null;
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['turma'], $value['matricula'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['matricula'], $value['email'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
              }

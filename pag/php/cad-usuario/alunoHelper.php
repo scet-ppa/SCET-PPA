@@ -57,7 +57,7 @@
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $alunos = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['curso'], $value['email'], $value['id_curso'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['email'], $value['id_curso'], $value['id_turma'], $value['email'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
                 array_push($alunos,$aluno);
