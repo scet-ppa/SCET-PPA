@@ -10,93 +10,57 @@
 
 body{
     display: flex;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-   
-    align-items: center;
-   
-    /*justify-content: left;
-    align-items: center;
-    min-height: 90px; */
-    /*grid-template-columns: 10% auto auto auto;*/
-   /* grid-template-columns: 1fr 2fr;*/
-    /*grid-template-areas: 
-    'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content'
-    'navegacao content content content content content content content content content';*/
     background-color: #b9bed6a6;
 }
-
-/*.container {
+.container {
     width: 80%;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-}
-
-.profile {
-    width: 20%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #b9bed6a6;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
-.profile img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.chat-container {
-    width: 80%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.message {
-    margin: 10px 0;
-    padding: 10px;
+.inbox {
+    background: #f0f0f0;
     border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.incoming {
-    background-color: #e6e6e6;
-    text-align: left;
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.outgoing {
-    background-color: #065f5f;
-    color: #fff;
-    text-align: right;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.input-container {
-    display: flex;
-    align-items: center;
+li {
+    margin-bottom: 10px;
+}
+
+.compose {
     margin-top: 20px;
 }
 
-#message-input {
-    flex: 1;
+input[type="text"],
+textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: none;
 }
 
-#send-button {
-    background-color: #065f5f;
+button {
+    background: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-left: 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
-*/
+
+button:hover {
+    background: #0056b3;
+}
