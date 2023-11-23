@@ -1,3 +1,9 @@
+<?php
+    include_once "../php/comp/tccHelper.php";
+    include_once "../php/comp/estagioHelper.php";
+    include_once "../php/cad-usuario/professorHelper.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -57,7 +63,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_aluno.html">
+                    <a href="../html/pendente_aluno.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
@@ -83,22 +89,23 @@
             <legend>Professores Orientadores</legend>
             <table class="estudantes">
                 <tr class="info">
+                    <th>Identificação</th>
                     <th>Nome</th>
-                    <th>Curso</th>
-                    <th>TCC</th>
-                    <th>Estágio</th>
-                    <th>Disponibilidade</th>
+                    <th>Matricula</th>
+                    <th>Email</th>
+                    
                 </tr>
             <?php 
-                /*<tr>
-                    <td></td>
-                    
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                */?>
+            $professores = getProfessores();
+            foreach($professores as $professor){
+                echo '<tr>'; 
+                echo '<td>'.$professor->id_professor.'</td> ';
+                echo '<td>'.$professor->nome.'</td> ';
+                echo '<td>'.$professor->matricula.'</td> ';
+                echo '<td>'.$professor->email.'</td> ';
+                echo '</tr>';
+            }
+                ?>
             </table>
         </fieldset>
    

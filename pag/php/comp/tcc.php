@@ -1,7 +1,9 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/professorHelper.php';
+//include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/alunoHelper.php';
 
-class Pendente{
+class TCC{
     public $id_tcc;
     public $id_aluno;
     public $orientador;
@@ -21,24 +23,26 @@ function __construct($id_aluno, $orientador, $id_professor, $situacao, $tema, $r
     $this->relatorio = $relatorio;
 }
 
-function getIdPendente() {
-    return $this->id_pendente;
+function getIdTCC() {
+    return $this->id_tcc;
 }
 
-function setIdPendente($id_pendente) {
-    $this->id_pendente = $id_pendente;
+function setIdTCC($id_tcc) {
+    $this->id_tcc = $id_tcc;
 }
 
 function editar() {
     $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("update pendente set orientador=:orientador, situacao=:situacao, tema:=tema, relatorio:=relatorio where id_tcc=:id_tcc");
+            $stmt = $conn->prepare("update tcc set orientador=:orientador, situacao=:situacao, tema:=tema, relatorio:=relatorio where id_tcc=:id_tcc");
             $stmt->bindParam(':orientador',$this->orientador);
+            $stmt->bindParam(':id_tcc',$this->id_tcc);
             $stmt->bindParam(':situacao',$this->situacao);
             $stmt->bindParam(':tema',$this->tema);
             $stmt->bindParam(':relatorio',$this->relatorio);
-            $stmt->bindParam(':id_pendente',$this->id_pendente);
+            $stmt->bindParam(':data_inicio',$this->data_inicio);
+            $stmt->bindParam(':prev_termino',$this->prev_termino);
             // $stmt->bindParam(':curso',$this->curso);
             $stmt->execute();
         }catch(PDOException $e){
@@ -47,12 +51,18 @@ function editar() {
         $banco->fecharConexao();
     }
 
-        function excluir_pendente() {
+        function concluir_tcc() {
             $banco = new Banco();
             $conn = $banco->conectar();
             try{
-                $stmt = $conn->prepare("delete from pendente where id_pendente = :id_pendente");
-                $stmt->bindParam(':id_pendente',$this->id_pendente);
+                $stmt = $conn->prepare("delete set orientador=:orientador, situacao=:situacao, tema:=tema, relatorio:=relatorio tcc where id_tcc=:id_tcc");
+                $stmt->bindParam(':id_tcc',$this->id_tcc);
+                $stmt->bindParam(':orientador',$this->orientador);
+                $stmt->bindParam(':situacao',$this->situacao);
+                $stmt->bindParam(':tema',$this->tema);
+                $stmt->bindParam(':relatorio',$this->relatorio);
+                $stmt->bindParam(':data_inicio',$this->data_inicio);
+                $stmt->bindParam(':prev_termino',$this->prev_termino);
                 $stmt->execute();
             }catch(PDOException $e){
                 echo $e->getMessage();
@@ -64,7 +74,7 @@ function editar() {
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("insert into pendente (tema) values (:tema)");
+            $stmt = $conn->prepare("insert into tcc(orientador, ) values (:tema)");
             $stmt->bindParam(':tema',$this->tema);
             $stmt->execute();
         }catch(PDOException $e){
@@ -73,20 +83,23 @@ function editar() {
         $banco->fecharConexao();
         }
 
-        static function carregar($id_pendente) {
+        static function carregar($id_tcc) {
             try{
                 $banco = new Banco();
                 $conn = $banco->conectar();
-                $stmt = $conn->prepare("select * from pendente where id_pendente = :id_pendente");
+                $stmt = $conn->prepare("select * from tcc where tcc = :id_tcc");
                 $stmt->bindParam(':id_tcc',$id_tcc);
                 $stmt->execute();
                 $tcc = null;
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 foreach($stmt->fetchAll() as $v => $value){
-                    $tcc = new Pendente($value['tema']);
-                    $tcc->setIdPendente( $value['id_pendente']);
+                    $tcc = new TCC($value['situacao'],
+                    $value['orientador'], $value['id_aluno'],
+                    $value['tema'], $value['data_inicio'],
+                    $value['prev_termino']);
+                    $tcc->setIdTCC( $value['id_tcc']);
                  }
-                return $id_pendente;
+                return $tcc;
     
             }catch(PDOException $e){
                 echo "Erro " . $e->getMessage();

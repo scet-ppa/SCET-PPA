@@ -1,5 +1,6 @@
 <?php
 
+include_once "../php/cad-usuario/alunoHelper.php";
 include_once 'tcc.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
@@ -15,7 +16,6 @@ if(isset($_POST['tipo'])){
         editar_tcc();
         header('Location:../../html/cad_tcc.php');
     }
-
 }
 
 function editar_tcc(){

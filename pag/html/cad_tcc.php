@@ -1,5 +1,7 @@
 <?php
    include_once "../php/comp/tccHelper.php";
+   include_once "../php/cad-usuario/professorHelper.php";
+   include_once "../php/cad-usuario/alunoHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,40 +17,63 @@
 
     <fieldset>
         <legend>Formulário de Cadastro</legend>
+
         <form name="formCad" method="POST" action="../php/comp/tccHelper.php">
             <fieldset>
-                <input style="display: none" name="tipo" id="tipo" type="text" value="cad_estagio">
+
+                <input style="display: none" name="tipo" id="tipo" type="text" value="cad_tcc">
                 <legend>Dados do TCC</legend>
-
+                
                 <div>
-                <label for="id_aluno">Nome do Aluno: </label>
-                <input class="input1" size="40" required placeholder="Digite aqui o nome do Aluno" name="aluno" id="aluno" type="text">
-                </div>
-
-                <div class="situ">
-                <label for="situacao">Situação: </label>
-                <input class="input2" size="40" required placeholder="Digite aqui a situação do TCC" name="situacao" id="situacao" type="text">
-                </div>
-
-                <div>
-                <label for="id_orientador">Nome do orientador: </label>
-                <input class="teste" size="40" required placeholder="Digite aqui o nome da empresa" name="id_aluno" id="id_aluno" type="text">
-                </div>
-
-                <div class="data">
-                <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                    <label for="alunos">Nome: </label>
+                    <select name="aluno" id="aluno">
+                
+                <?php
+                        $alunos = getAlunos();
+                        foreach($alunos as $aluno){
+                            echo '<option value="'.$aluno->getIdAluno().'">
+                            '.$aluno->nome.'</option>';
+                        }
+                ?>
+                    </select>
                 </div>
 
                 <div>
-                <label for="id_tema">Tema: </label>
+                <label for="professores">Orientador: </label>
+                <select name="orientador" id="orientador">
+                    <?php 
+                        $professores = getProfessores();
+                        foreach($professores as $professor){
+                            echo '<option value="'.$professor->getIdProfessor().'">
+                            '.$professor->nome.'</option>';
+                        }
+                    ?>
+                </select>
+                </div>
+
+                <div>
+                    <label for="id_tema">Tema: </label>
                 <input class="input4" size="40" required placeholder="Digite o título do TCC" name="id_tema" id="id_tema" type="text">
                 </div>
 
+                <div class="data">
+                    <label for="data_inicio">Prévia de ínicio: </label>
+                <input class="input3" size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                </div>
+
                 <div class="previa">
-                <label for="prev_termino">Previa de Término: </label>
+                    <label for="prev_termino">Previa de Término: </label>
                 <input class="input5" size="40" required placeholder="Digite aqui a previa de término" name="prev_termino" id="prev_termino" type="date">
                 </div>
+
+                <div class="situ">
+                    <label for="situacao">Situação: </label>
+                    <input class="input2" size="40" required placeholder="Digite aqui a situação do TCC" name="situacao" id="situacao" type="text">
+                </div>
+
+                
+
+                
 
             </fieldset>
 
@@ -60,7 +85,7 @@
 </fieldset>
     <div>
         <fieldset>
-            <legend>TCCs Cadastrados</legend>
+            <legend>TCC's Cadastrados</legend>
             <table id="mover">
                 <tr>
                     <th>Código</th>
@@ -70,6 +95,7 @@
                     <th>Situação</th>
                     <th>Data de ínicio</th>
                     <th>Prévia de término</th>
+                    <th colspan="2">Ações</th>
                 </tr>
 
                 <?php
