@@ -93,6 +93,7 @@ body{
   float: right;
   margin-top: 2px;
   padding: 4%;
+  text-decoration: none;
 }
 
 .excluir:hover,
@@ -110,6 +111,7 @@ body{
   float: right;
   margin-top: 2px;
   padding: 4%;
+  text-decoration: none;
 }
 
 .editar:hover,
