@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estágio - Aluno</title>
+    <title>SCET - Estágio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQ3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/estagio_aluno.css">
+    <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 
 <body>
-    <div class="barrinha">
+    <div class="container">
         <div class="navegacao">
             <ul>
                 <li class="list">
@@ -21,64 +21,103 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/home_aluno.php">
+                    <a href="../html/home_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_coord.html">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_coord.html">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-aluno.html">
+                    <a href="../html/prof-coord.html">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_aluno.html">
-                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                    <a href="../html/estagio_coord.html">
+                        <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/aluno-tcc.html">
+                    <a href="../html/coor-tcc.html">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_aluno.html">
+                    <a href="cad_empresa.php">
+                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                        <span class="list">Empresas</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/pendente_coord.html">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
                 </li>
+
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
+        </div>
    
 
     <div class="content">
         <div id="busca">
             <input type="text" id="txtBusca" placeholder="Pesquisar"/>
             <span class="icon"></span>
-    </div>
+        </div>
+    
+    <a class="cad-tcc" href="../html/cad_tcc.php">CADASTRAR</a>
        
+        <fieldset>
+            <legend>TCC Cadastrado</legend>
+            <table class="estudantes">
+                <tr class="info">
+                    <th>Nome</th>
+                    <th>Empresa</th>
+                    <th>Orientador</th>
+                    <th>Curso</th>
+                    <th>Turma</th>
+                    <th colspan="4">Ações</th>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td> <a class="doc" href="#">Documentação</a></td>
+                    <td> <a class="editar" href="#">Editar</a></td>
+                    <td> <a class="excluir" href="#">Excluir</a></td>
+                    <td> <a class="concluir" href="#">Concluir </a></td>
+    
+                </tr>
+            </table>
+        </fieldset>
+    
+    
+    </div>
    
     
 
@@ -97,5 +136,4 @@
     
     </script>
 </body>
-
 </html>

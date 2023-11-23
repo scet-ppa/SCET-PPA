@@ -10,13 +10,26 @@
 <body>
     <fieldset>
         <form action="" method="post">
-            <legend>Auto Avaliação do Estudante</legend>
-            <label for="nome">Nome do Estagiário:</label>
-            <input type="text" name="nome" value="Paulo da Hora" id="nome">
-            <label for="curso">Curso</label>
-            <input type="text" name="curso" value="Ensino Médio Integrado em Informática" id="curso">
-            <h3>Inserir campos do formulário original de avaliação...............</h3>
-
+            <fieldset>
+                <legend>Auto Avaliação do Estudante</legend>
+                <label for="nome">Nome do Estagiário:</label>
+                <input type="text" name="nome" value="" id="nome">
+                <label for="celular">Telefone/Celular (Estagiário): DDD</label>
+                <input type="int" name="celular" value="" id="celular">
+                <label for="email">Endereço Eletrônico:</label>
+                <input type="email" name="email" value="" id="email">
+                <label for="curso">Curso</label>
+                <input type="text" name="curso" value="" id="curso">
+                <label for="email">Modalidade:</label>
+                <input type="checkbox" name="tipocurso" value="" id="tipocurso">
+                <label for="email">Nome da Instituição/Empresa:</label>
+                <input type="text" name="empresa" value="" id="empresa">
+                <label for="celular">Telefone/Celular (Empresa): DDD</label>
+                <input type="int" name="telefone" value="" id="telefone">
+                <h3>Inserir campos do formulário original de avaliação...............</h3>
+    
+            </fieldset>
+            
 
             <fieldset>
                 <legend>Avaliação do Estagiário com notas 1 - Insuficiente e 5 - Excelente</legend>
@@ -25,7 +38,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <td>Aspecto....</td>
+                                <td></td>
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
@@ -52,7 +65,15 @@
                                 <td><input type="radio" value="5" name="n2"></td>
                             </tr>
                             <tr>
-                                <td>2. Relacionamento com demais colegas de estágio</td>
+                                <td>3. Relacionamento com demais colegas de estágio</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>4. Relacionamento com demais colegas de estágio</td>
                                 <td><input type="radio" value="1" name="n3"></td>
                                 <td><input type="radio" value="2" name="n3"></td>
                                 <td><input type="radio" value="3" name="n3"></td>
@@ -66,7 +87,145 @@
 
                 <fieldset>
                     <legend>Grupo 2 - Aspectos Pessoais</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Assiduidade e pontualidade (presença diária no local de trabalho com cumprimento de horário).</td>
+                                <td><input type="radio" value="1" name="n1"></td>
+                                <td><input type="radio" value="2" name="n1"></td>
+                                <td><input type="radio" value="3" name="n1"></td>
+                                <td><input type="radio" value="4" name="n1"></td>
+                                <td><input type="radio" value="5" name="n1"></td>
+                            </tr>
+                            <tr>
+                                <td>2. Disciplina (facilidade em aceitar e seguir instruções de superiores e acatar regulamentos e
+                                    normas).</td>
+                                <td><input type="radio" value="1" name="n2"></td>
+                                <td><input type="radio" value="2" name="n2"></td>
+                                <td><input type="radio" value="3" name="n2"></td>
+                                <td><input type="radio" value="4" name="n2"></td>
+                                <td><input type="radio" value="5" name="n2"></td>
+                            </tr>
+                            <tr>
+                                <td>3. Sociabilidade e desembaraço (facilidade e espontaneidade com que agem frente às pessoas,
+                                    fatos e situações).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>4. Cooperação (atuação junto a outras pessoas no sentido de contribuir positivamente para o
+                                    alcance de um objetivo comum).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>5. Responsabilidade (capacidade de cuidar e responder pelas atribuições materiais, equipamentos e
+                                    bens do Instituto, que lhe são confiados no estágio).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>6. Merecimento de confiança (discrição demonstrada quanto ao sigilo das atividades a ele
+                                    confiados).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Grupo 3 - Aspectos Técnicos Profissionais</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Eficiência (qualidade, rapidez, precisão com que executa as tarefas integrantes do programa de
+                                    estágio).</td>
+                                <td><input type="radio" value="1" name="n1"></td>
+                                <td><input type="radio" value="2" name="n1"></td>
+                                <td><input type="radio" value="3" name="n1"></td>
+                                <td><input type="radio" value="4" name="n1"></td>
+                                <td><input type="radio" value="5" name="n1"></td>
+                            </tr>
+                            <tr>
+                                <td>2. Compreensão (rapidez e facilidade de entender, interpretar e pôr em prática instruções e
+                                    informações verbais e escritas).</td>
+                                <td><input type="radio" value="1" name="n2"></td>
+                                <td><input type="radio" value="2" name="n2"></td>
+                                <td><input type="radio" value="3" name="n2"></td>
+                                <td><input type="radio" value="4" name="n2"></td>
+                                <td><input type="radio" value="5" name="n2"></td>
+                            </tr>
+                            <tr>
+                                <td>3. Conhecimentos (conhecimento demonstrado no cumprimento do programa de estágio, tendo em
+                                    vista sua escolaridade / formação).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>4. Disponibilidade ( mostrar interesse pelo andamento do trabalho. Disposição para realizar tarefas
+                                    voluntárias).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>5. Organização (uso de meios racionais visando melhorar continuamente a forma de executar o
+                                    trabalho).</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                            <tr>
+                                <td>6. Criatividade. Capacidade de sugerir, projetar ou exercer modificações ou inovações na empresa.
+                                    Capacidade de adaptar conteúdo teórico à prática.</td>
+                                <td><input type="radio" value="1" name="n3"></td>
+                                <td><input type="radio" value="2" name="n3"></td>
+                                <td><input type="radio" value="3" name="n3"></td>
+                                <td><input type="radio" value="4" name="n3"></td>
+                                <td><input type="radio" value="5" name="n3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </fieldset>
             </fieldset>
         </form>
