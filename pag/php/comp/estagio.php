@@ -1,10 +1,14 @@
 <?php
+
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class Estagio{
     public $id_estagio;
     public $orientador;
     public $id_aluno;
+    public $nome_aluno;
+    public $nome_empresa;
+    public $nome_professor;
     public $id_empresa;
     public $data_inicio;
     public $prev_termino;
@@ -49,34 +53,28 @@ class Estagio{
         $banco->fecharConexao();
     }
 
-    function concluir_estagio(){
+    /*function excluir_estagio(){
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
-            $stmt = $conn->prepare("update estagio set 
-            situacao=:situacao, orientador=:orientador, data_inicio=:data_inicio, prev_termino=:prev_termino, id_empresa=:id_empresa, id_aluno=:id_aluno where id_estagio=:id_estagio");
-            $stmt->bindParam(':situacao',$this->situacao);
+            $stmt = $conn->prepare("delete from estagio where id_estagio = :id_estagio");
             $stmt->bindParam(':id_estagio',$this->id_estagio);
-            $stmt->bindParam(':id_empresa',$this->id_empresa);
-            $stmt->bindParam(':id_aluno',$this->id_aluno);
-            $stmt->bindParam(':situacao',$this->situacao);
-            $stmt->bindParam(':data_inicio',$this->data_inicio);
-            $stmt->bindParam(':prev_termino',$this->prev_termino);
             $stmt->execute();
         }catch(PDOException $e){
             echo $e->getMessage();
         }
         $banco->fecharConexao();
-    }
+    }*/
 
     function inserir(){
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) 
-            values(:situacao, :orientador, :id_aluno, :id_empresa, :data_inicio, :prev_termino)");
+            values( :orientador, :id_aluno, :id_empresa, :data_inicio, :prev_termino,:situacao)");
             $stmt->bindParam(':situacao',$this->situacao);
-            $stmt->bindParam(':id_professor',$this->id_professor);
+            $stmt->bindParam(':orientador',$this->orientador);
+            $stmt->bindParam(':id_aluno',$this->id_aluno);
             $stmt->bindParam(':id_empresa',$this->id_empresa);
             $stmt->bindParam(':data_inicio',$this->data_inicio);
             $stmt->bindParam(':prev_termino',$this->prev_termino);
