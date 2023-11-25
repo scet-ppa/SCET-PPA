@@ -1,3 +1,14 @@
+label{
+    font-size: 19px;
+    font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+/*CSS DA BARRA DE NAVEGAÇÃO*/
+
 .nav{
     margin-bottom: 2%;
 }
@@ -27,4 +38,238 @@
   
 .nav .active {
     background-color: #04AA6D;
+}
+
+/*CSS DE CUSTOMIZAÇÃO DA TABELA*/
+.custom {
+    font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom td, .custom th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .custom tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .custom tr:hover {background-color: #ddd;}
+  
+  .custom th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/*CSS DOS CAMPOS DE PREENCHIMENTO =*/
+.dados label{
+    margin-left: 0.5%;
+}
+
+.dados #nome{
+    width: 86.5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #celular{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 3%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #email{
+    width: 37%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #curso{
+    width: 37%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #modalidade{
+    width: 37%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #empresa{
+    width: 37%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #celular-emp{
+    width: 24.2%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #end-emp{
+    width: 32%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #numero{
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #complemento{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #bairro{
+    width: 24.2%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #municipio{
+    width: 22%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #uf{
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cep{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #setor{
+    width: 59%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #horario{
+    width: 12%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cep{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cep{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #supervisor{
+    width: 63%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 5%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cargo{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+/*CSS DA TABELA*/
+th, td {
+    font-size: 19px;
+    border-bottom: 1px solid #ddd;
+  }
+
+.numeracao{
+    margin-right: 0;
+}
+
+.table{
+    text-align: center;
 }

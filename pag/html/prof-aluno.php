@@ -89,17 +89,15 @@
             <legend>Professores Orientadores</legend>
             <table class="estudantes">
                 <tr class="info">
-                    <th>Identificação</th>
                     <th>Nome</th>
-                    <th>Matricula</th>
-                    <th>Email</th>
+                    <th>Quantidade de Orientações</th>
+                    <th>Disponibilidade</th>
                     
                 </tr>
             <?php 
             $professores = getProfessores();
             foreach($professores as $professor){
                 echo '<tr>'; 
-                echo '<td>'.$professor->id_professor.'</td> ';
                 echo '<td>'.$professor->nome.'</td> ';
                 echo '<td>'.$professor->matricula.'</td> ';
                 echo '<td>'.$professor->email.'</td> ';
