@@ -78,9 +78,16 @@ create table tcc(
     foreign key (id_aluno) references aluno(id_aluno),
     id_professor integer,
     foreign key (id_professor) references professor(id_professor),
+    id_tema integer,
+    foreign key (id_tema) references tema(id_tema),
     situacao varchar (20) not null,
-    tema varchar (50),
-    relatorio varchar (40)
+    data_inicio date, 
+    prev_termino date
+);
+
+create table tema (
+	id_tema integer auto_increment primary key,
+    nome varchar (50)
 );
 
 create table apresentacao(
@@ -115,10 +122,12 @@ create table estagio(
     foreign key (id_aluno) references aluno(id_aluno), 
     id_empresa integer, 
     foreign key (id_empresa) references empresa(id_empresa), 
-    data_inicio int(20), 
-    prev_termino int(20), 
+    data_inicio date, 
+    prev_termino date,
     situacao varchar(15)
 );
+
+drop table estagio;
 
 create table avaliacao_aluno(
 	id_avalia_aluno integer auto_increment primary key,
@@ -156,11 +165,30 @@ select * from aluno;
 select * from professor; 
 select * from turma;
 select * from empresa;
-select * from estagio; 
+select * from estagio;
+select * from tcc;
+select * from tema; 
 
 alter table turma drop column id_curso; 
 
-insert into empresa (nome) values ("OF"); 
-insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) values(1, 2, 1, 01/01/2001, 02/02/2002, "em andamento");
+insert into empresa (nome) values ("OF");
+insert into curso (descricao) values ("Edificacoes");
+insert into professor(nome, matricula, email, senha) values ("Hiarles", 20201910, "hiarlessouza@gmail.com", "123");
+insert into aluno (nome, matricula, id_curso, email, senha) values ("Ricardo", 20, 1, "hiarlessouza@gmail.com", "123");
+insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) values(1, 2, 1, 12112023, 02022002, "em andamento");
 insert into coordenador(nome, email, senha) values("nicholas", "nick@gmail.com", "123"); 
-insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica"); 
+insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica");
+
+select estagio.id_estagio, professor.nome as 'professor', aluno.nome as 'estudante', empresa.nome as 'empresa', date_format(estagio.data_inicio, '%d/%m/%Y') as data_inicio, date_format(estagio.prev_termino, '%d/%m/%Y') as prev_termino, estagio.situacao from estagio inner join aluno on (estagio.id_aluno = aluno.id_aluno)
+inner join professor on (estagio.orientador = professor.id_professor)
+inner join empresa on (estagio.id_empresa = empresa.id_empresa)
+where estagio.id_estagio = id_estagio;
+
+select date_format(data_inicio, '%d/%m/%Y') from estagio;
+select date_format(prev_termino, '%d/%m/%Y') as prev_termino from estagio;
+
+select * from professor;
+
+update professor set nome = 'Hiarles' where id_professor = 2;
+
+select * from estagio;

@@ -2,6 +2,7 @@
    include_once "../php/comp/tccHelper.php";
    include_once "../php/cad-usuario/professorHelper.php";
    include_once "../php/cad-usuario/alunoHelper.php";
+   include_once "../php/comp/temaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,31 +18,16 @@
 
     <fieldset>
         <legend>Formulário de Cadastro</legend>
-
         <form name="formCad" method="POST" action="../php/comp/tccHelper.php">
             <fieldset>
-
-                <input style="display: none" name="tipo" id="tipo" type="text" value="cad_tcc">
+               
+            <input style="display: none" name="tipo" id="tipo" type="text" value="cad_tcc">
                 <legend>Dados do TCC</legend>
-                
-                <div>
-                    <label for="alunos">Nome: </label>
-                    <select name="aluno" id="aluno">
-                
-                <?php
-                        $alunos = getAlunos();
-                        foreach($alunos as $aluno){
-                            echo '<option value="'.$aluno->getIdAluno().'">
-                            '.$aluno->nome.'</option>';
-                        }
-                ?>
-                    </select>
-                </div>
 
                 <div>
-                <label for="professores">Orientador: </label>
+                    <label for="professores">Nome do Professor: </label>
                 <select name="orientador" id="orientador">
-                    <?php 
+                    <?php
                         $professores = getProfessores();
                         foreach($professores as $professor){
                             echo '<option value="'.$professor->getIdProfessor().'">
@@ -51,29 +37,50 @@
                 </select>
                 </div>
 
+                <div class="situ">
+                    <label for="situacao">Situação: </label>
+                    <select name="situacao" id="situacao">
+                        <option value="iniciado">Iniciado</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select>
+                </div>
+
                 <div>
-                    <label for="id_tema">Tema: </label>
-                <input class="input4" size="40" required placeholder="Digite o título do TCC" name="id_tema" id="id_tema" type="text">
+                    <label for="alunos">Nome do Aluno: </label>
+                <select name="aluno" id="aluno">
+                    <?php
+                        $alunos = getAlunos();
+                        foreach($alunos as $aluno){
+                            echo '<option value="'.$aluno->getIdAluno().'">
+                            '.$aluno->nome.'</option>';
+                        }
+                    ?>
+                </select>
                 </div>
 
                 <div class="data">
-                    <label for="data_inicio">Prévia de ínicio: </label>
-                <input class="input3" size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                    <label for="data_inicio">Data de inicio: </label>
+                <input class="input3" size="40" required name="data_inicio" id="data_inicio" type="date">
                 </div>
+
+                <div>
+                    <label for="temas">Tema: </label>
+                    <select name="tema" id="tema">
+                       <?php
+                        $temas = getTemas();
+                        foreach($temas as $tema){
+                            echo '<option value="'.$tema->getIdTema().'">
+                            '.$tema->nome.'</option>';
+                        }
+                       ?> 
+                </select>    
+            </div>
 
                 <div class="previa">
-                    <label for="prev_termino">Previa de Término: </label>
-                <input class="input5" size="40" required placeholder="Digite aqui a previa de término" name="prev_termino" id="prev_termino" type="date">
+                    <label for="prev_termino">Previa de Termino: </label>
+                <input class="input5" size="40" required name="prev_termino" id="prev_termino" type="date">
                 </div>
-
-                <div class="situ">
-                    <label for="situacao">Situação: </label>
-                    <input class="input2" size="40" required placeholder="Digite aqui a situação do TCC" name="situacao" id="situacao" type="text">
-                </div>
-
-                
-
-                
 
             </fieldset>
 
@@ -92,12 +99,11 @@
                     <th>Aluno</th>
                     <th>Orientador</th>
                     <th>Tema</th>
-                    <th>Situação</th>
-                    <th>Data de ínicio</th>
-                    <th>Prévia de término</th>
+                    <th>Data de Ínicio</th>
+                    <th>Previa de término</th>
+                    <th>Status</th>
                     <th colspan="2">Ações</th>
                 </tr>
-
                 <?php
                 $tccs = getTCCS();
                 foreach($tccs as $tcc){
@@ -106,12 +112,12 @@
                     echo '<td>'.$tcc->id_aluno.'</td> ';
                     echo '<td>'.$tcc->id_orientador.'</td> ';
                     echo '<td>'.$tcc->tema.'</td> ';
-                    echo '<td>'.$tcc->situacao.'</td> ';
-                    echo '<td>'.$tcc->data_inicio.'</td> ';
                     echo '<td>'.$tcc->prev_termino.'</td> ';
+                    echo '<td>'.$tcc->data_inicio.'</td> ';
+                    echo '<td>'.$tcc->situacao.'</td> ';
 
-                    echo '<td> <a class="editar"  href="editar_tcc.php? id_tcc='.$tcc->getIdTCC().'">Editar</a></td> ';  
-                    echo '<td> <a class="excluir"  href="excluir_tcc.php?id_tcc='.$tcc->getIdTCC().'">Excluir</a></td> '; 
+                    echo '<td> <a class="editar"  href="editar_tcc.php?id_tcc='.$tcc->getIdTCC().'">Editar</a></td> ';  
+                    echo '<td> <a class="excluir"  href="excluir_tcc.php?id_tcc='.$tcc->getIdTCC().'">Concluir</a></td> '; 
                     echo '</tr> ';
                 }
                 ?> 

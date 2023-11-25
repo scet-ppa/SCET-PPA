@@ -1,3 +1,9 @@
+<?php
+    include_once "../php/comp/tccHelper.php";
+    include_once "../php/comp/estagioHelper.php";
+    include_once "../php/cad-usuario/professorHelper.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +17,7 @@
 </head>
 
 <body>
-    <div class="barrinha">
+<div class="container">
         <div class="navegacao">
             <ul>
                 <li class="list">
@@ -27,50 +33,56 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_coord.html">
+                    <a href="../html/mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_coord.html">
+                    <a href="../html/notificacoes_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-coord.html">
+                    <a href="../html/prof-coord.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_coord.html">
-                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                    <a href="../html/estagio_coord.php">
+                        <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_coord.html">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_coord.html">
+                    <a href="cad_empresa.php">
+                        <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                        <span class="list">Empresas</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/pendente_coord.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
+        </div>
    
 
     <div class="content">
@@ -79,26 +91,29 @@
             <span class="icon"></span>
     </div>
        
-        <fieldset>
-            <legend>Professores Orientadores</legend>
-            <table class="estudantes">
-                <tr class="info">
-                    <th>Nome</th>
-                    <th>Curso</th>
-                    <th>TCC</th>
-                    <th>Estágio</th>
-                    <th>Disponibilidade</th>
-                </tr>
-    
-                <tr>
-                    <td>......</td>
-                    <td>......</td>
-                    <td>......</td>
-                    <td>......</td>
-                    <td>......</td>
-                </tr>
-            </table>
-        </fieldset>
+    <fieldset>
+        <legend>Professores Orientadores</legend>
+        <table class="estudantes">
+            <tr class="info">
+                <th>Identificação</th>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Email</th>
+                
+            </tr>
+        <?php 
+        $professores = getProfessores();
+        foreach($professores as $professor){
+            echo '<tr>'; 
+            echo '<td>'.$professor->id_professor.'</td> ';
+            echo '<td>'.$professor->nome.'</td> ';
+            echo '<td>'.$professor->matricula.'</td> ';
+            echo '<td>'.$professor->email.'</td> ';
+            echo '</tr>';
+        }
+            ?>
+        </table>
+    </fieldset>
    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

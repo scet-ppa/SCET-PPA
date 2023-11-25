@@ -42,7 +42,11 @@ include_once "../php/cad-usuario/alunoHelper.php";
                     </a>
                 </li>
                 <li class="list">
+<<<<<<< HEAD
                     <a href="../html/prof-aluno.html">
+=======
+                    <a href="../html/prof-aluno.php">
+>>>>>>> 140bddf90ba1a137294694b698740ff1bf75c638
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>

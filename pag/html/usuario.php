@@ -13,7 +13,7 @@
  
         <div class="cont">
             <img src="../img/logo-scet.jpg" alt="logo-scet"  width="342" height="250">
-            <a href="../html/login.html"><button>VOLTAR</button></a>
+            <a href="../html/login.php"><button>VOLTAR</button></a>
         </div>
  
         <h1>Escolha o usuário</h1>
