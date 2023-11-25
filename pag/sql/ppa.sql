@@ -78,9 +78,16 @@ create table tcc(
     foreign key (id_aluno) references aluno(id_aluno),
     id_professor integer,
     foreign key (id_professor) references professor(id_professor),
+    id_tema integer,
+    foreign key (id_tema) references tema(id_tema),
     situacao varchar (20) not null,
-    tema varchar (50),
-    relatorio varchar (40)
+    data_inicio date, 
+    prev_termino date
+);
+
+create table tema (
+	id_tema integer auto_increment primary key,
+    nome varchar (50)
 );
 
 create table apresentacao(
@@ -158,7 +165,9 @@ select * from aluno;
 select * from professor; 
 select * from turma;
 select * from empresa;
-select * from estagio; 
+select * from estagio;
+select * from tcc;
+select * from tema; 
 
 alter table turma drop column id_curso; 
 
