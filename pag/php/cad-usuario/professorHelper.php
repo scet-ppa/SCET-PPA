@@ -8,7 +8,7 @@ if(isset($_POST['tipo'])){
     if($tipo === 'cad_professor'){
         cadastrarProfessor();
         echo 
-        header('Location:../../html/home_prof.php');
+        header('Location:../../html/login.php');
     }/*else if($tipo === 'excluir_prof'){
         excluir_prof();
         header('Location:index.php');

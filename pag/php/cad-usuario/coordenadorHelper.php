@@ -7,7 +7,7 @@
         if($tipo === 'cad_coordenador'){
             cadastrarCoordenador();
           
-            header('Location:../../html/home_coord.php');
+            header('Location:../../html/login.php');
         }/*else if($tipo === 'excluir_aluno'){
             excluir_aluno();
             header('Location:index.php');
