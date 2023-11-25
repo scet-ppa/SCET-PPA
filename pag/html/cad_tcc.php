@@ -2,6 +2,7 @@
    include_once "../php/comp/tccHelper.php";
    include_once "../php/cad-usuario/professorHelper.php";
    include_once "../php/cad-usuario/alunoHelper.php";
+   include_once "../php/comp/temaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,11 @@
 
                 <div class="situ">
                     <label for="situacao">Situação: </label>
-                <input class="input2" size="40" required placeholder="Digite aqui a situação do TCC" name="situacao" id="situacao" type="text">
+                    <select name="situacao" id="situacao">
+                        <option value="iniciado">Iniciado</option>
+                        <option value="em andamento">Em andamento</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select>
                 </div>
 
                 <div>
@@ -56,17 +61,25 @@
 
                 <div class="data">
                     <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" size="40" required placeholder="Prévia de inicio" name="data_inicio" id="data_inicio" type="date">
+                <input class="input3" size="40" required name="data_inicio" id="data_inicio" type="date">
                 </div>
 
                 <div>
-                    <label for="empresas">Tema: </label>
-                <input class="input3" size="40" required placeholder="Título do TCC" name="tema" id="tema" type="text">
-                </div>
+                    <label for="temas">Tema: </label>
+                    <select name="tema" id="tema">
+                       <?php
+                        $temas = getTemas();
+                        foreach($temas as $tema){
+                            echo '<option value="'.$tema->getIdTema().'">
+                            '.$tema->nome.'</option>';
+                        }
+                       ?> 
+                </select>    
+            </div>
 
                 <div class="previa">
                     <label for="prev_termino">Previa de Termino: </label>
-                <input class="input5" size="40" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
+                <input class="input5" size="40" required name="prev_termino" id="prev_termino" type="date">
                 </div>
 
             </fieldset>
@@ -83,12 +96,12 @@
             <table id="mover">
                 <tr>
                     <th>Código</th>
-                    <th>Professor</th>
                     <th>Aluno</th>
+                    <th>Orientador</th>
                     <th>Tema</th>
                     <th>Data de Ínicio</th>
                     <th>Previa de término</th>
-                    <th>Situação</th>
+                    <th>Status</th>
                     <th colspan="2">Ações</th>
                 </tr>
                 <?php
