@@ -1,0 +1,240 @@
+.nav{
+    margin-bottom: 2%;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.nav li {
+    float: left;
+}
+  
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.nav .active {
+    background-color: #04AA6D;
+}
+
+.custom {
+    font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom td, .custom th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .custom tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .custom tr:hover {background-color: #ddd;}
+  
+  .custom th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/*CSS DOS CAMPOS DE PREENCHIMENTO =*/
+.dados label{
+    margin-left: 0.5%;
+}
+
+.dados #curso{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #nome{
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #celular{
+    width: 36%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #fixo{
+    width: 36%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #email{
+    margin-right: 5%;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #empresa{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #endereco-emp{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #num-endereco{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #complemento{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #bairro{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #municipio{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #uf{
+    width: 8%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cep{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #area-estagio{
+    margin-left: 10%;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #carga-horario{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #nome-supervisor{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #cargo{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+
+
+.dados #modalidade{
+    width: 37%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+/*CSS DA TABELA*/
+th, td {
+    font-size: 19px;
+    border-bottom: 1px solid #ddd;
+  }
+
+.numeracao{
+    margin-right: 0;
+}
+
+.table{
+    text-align: center;
+}

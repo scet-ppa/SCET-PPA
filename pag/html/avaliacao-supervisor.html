@@ -4,101 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/avaliacao-supervisor.css">
     <title>Document</title>
 </head>
 
 <body>
     <fieldset>
         <form action="" method="post">
+            <div class="dados">
             <fieldset>
                 <legend>Avaliação do Estudante - Supervisor</legend>
+
                 <label for="nome">Nome do Estagiário:</label>
                 <input type="text" name="nome" value="" id="nome">
-                <label for="celular">Telefone/Celular (Estagiário): DDD</label>
+
+                <label for="celular">Telefone(Estagiário): DDD</label>
                 <input type="int" name="celular" value="" id="celular">
+
+                <label for="celular">Celular(Estagiário): DDD</label>
+                <input type="int" name="celular" value="" id="fixo">
+
                 <label for="email">Endereço Eletrônico:</label>
                 <input type="email" name="email" value="" id="email">
-                <label for="curso">Curso</label>
+
+                <label for="curso"><br/>Curso</label>
                 <input type="text" name="curso" value="" id="curso">
-                <label for="email">Modalidade:</label>
-                <input type="checkbox" name="tipocurso" value="" id="tipocurso">
+
+                <form action="">
+                    <label for="email">Modalidade:</label>
+                    <input type="radio" name="tipocurso" value="integrado" id="integrado">
+                    <label for="integrado">INTEGRADO</label>
+                    <input type="radio" name="tipocurso" value="subsequente" id="subsequente">
+                    <label for="subsequente">SUBSEQUENTE</label>
+                    <input type="radio" name="tipocurso" value="eja" id="eja">
+                    <label for="eja">EJA</label>
+                    <input type="radio" name="tipocurso" value="superior" id="superior">
+                    <label for="superior">SUPERIOR</label>
+                </form>
+
+                <br>
                 <label for="email">Nome da Instituição/Empresa:</label>
                 <input type="text" name="empresa" value="" id="empresa">
-                <label for="celular">Telefone/Celular (Empresa): DDD</label>
-                <input type="int" name="telefone" value="" id="telefone">
-                <h3>Inserir campos do formulário original de avaliação...............</h3>
-    
-            </fieldset>
 
+                <label for="celular">Telefone/Celular (Empresa): DDD</label>
+                <input type="int" name="telefone" value="" id="celular">
+
+                <label for="endereco-emp">Endereço(Empresa)</label>
+                <input type="text" name="endereco-emp" value="" id="endereco-emp">
+
+                <label for="celular">Nº: </label>
+                <input type="number" name="num-endereco" value="" id="num-endereco">
+                
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" value="" id="complemento">
+
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" value="" id="bairro">
+
+                <label for="municipio">Município</label>
+                <input type="text" name="municipio" value="" id="municipio">
+
+                <label for="uf">UF: </label>
+                <input type="int" name="uf" value="" id="uf">
+
+                <label for="cep">CEP: </label>
+                <input type="int" name="cep" value="" id="cep">
+
+                <label for="area-estagio"><br />Área/Setor do estágio: </label>
+                <input type="text" name="area-estagio" value="" id="area-estagio">
+
+                <label for="carga-horario">Carga Horária: </label>
+                <input type="number" name="carga-horario" value="" id="carga-horario">
+
+                <label for="nome-supervisor"><br />Nome do Supervisor: </label>
+                <input type="text" name="nome-supervisor" value="" id="nome-supervisor">
+
+                <label for="cargo">Cargo: </label>
+                <input type="text" name="cargo" value="" id="cargo">
+
+            </fieldset>
+        </div>
+        </form>
+        </fieldset>
 
             <fieldset>
                 <legend>Avaliação do Estagiário com notas 1 - Insuficiente e 5 - Excelente</legend>
                 <fieldset>
                     <legend>Grupo 1 - Aspectos Profissionais</legend>
-                    <table>
+                    <table class="custom">
                         <thead>
-                            <tr>
-                                <td>Aspecto....</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
+                            <tr class="numeracao">
+                                <td class="table"></td>
+                                    <td class="table">1</td>
+                                    <td class="table">2</td>
+                                    <td class="table">3</td>
+                                    <td class="table">4</td>
+                                    <td class="table">5</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1. Qualidade no trabalho (organização, segurança, dedicação e apresentação do trabalho).
                                 </td>
-                                <td><input type="radio" value="1" name="n1"></td>
-                                <td><input type="radio" value="2" name="n1"></td>
-                                <td><input type="radio" value="3" name="n1"></td>
-                                <td><input type="radio" value="4" name="n1"></td>
-                                <td><input type="radio" value="5" name="n1"></td>
+                                    <td class="table"><input type="radio" value="1" name="n1"></td>
+                                    <td class="table"><input type="radio" value="2" name="n1"></td>
+                                    <td class="table"><input type="radio" value="3" name="n1"></td>
+                                    <td class="table"><input type="radio" value="4" name="n1"></td>
+                                    <td class="table"><input type="radio" value="5" name="n1"></td>
+
                             </tr>
                             <tr>
                                 <td>2. Criatividade (capacidade de encontrar novas e melhores formas no desempenho das atividades).
-                                </td>
-                                <td><input type="radio" value="1" name="n2"></td>
-                                <td><input type="radio" value="2" name="n2"></td>
-                                <td><input type="radio" value="3" name="n2"></td>
-                                <td><input type="radio" value="4" name="n2"></td>
-                                <td><input type="radio" value="5" name="n2"></td>
-                            </tr>
+                                        <td class="table"><input type="radio" value="1" name="n2"></td>
+                                        <td class="table"><input type="radio" value="2" name="n2"></td>
+                                        <td class="table"><input type="radio" value="3" name="n2"></td>
+                                        <td class="table"><input type="radio" value="4" name="n2"></td>
+                                        <td class="table"><input type="radio" value="5" name="n2"></td>
+
                            
                             <tr>
                                 <td>3. Conhecimentos (nível de conhecimento demonstrado no desenvolvimento das atividades).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                        <td class="table"><input type="radio" value="1" name="n3"></td>
+                                        <td class="table"><input type="radio" value="2" name="n3"></td>
+                                        <td class="table"><input type="radio" value="3" name="n3"></td>
+                                        <td class="table"><input type="radio" value="4" name="n3"></td>
+                                        <td class="table"><input type="radio" value="5" name="n3"></td>
+
                             </tr>
                             <tr>
                                 <td>4. Cumprimento das tarefas (capacidade de executar tarefas de acordo com as metas e prazos
                                     estabelecidos).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                    <td class="table"><input type="radio" value="1" name="n4"></td>
+                                    <td class="table"><input type="radio" value="2" name="n4"></td>
+                                    <td class="table"><input type="radio" value="3" name="n4"></td>
+                                    <td class="table"><input type="radio" value="4" name="n4"></td>
+                                    <td class="table"><input type="radio" value="5" name="n4"></td>
                             </tr>
                             <tr>
                                 <td>5. Espírito Inquisitivo (disposição demonstrada na aprendizagem de novos conhecimentos).
                                 </td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                    <td class="table"><input type="radio" value="1" name="n4"></td>
+                                    <td class="table"><input type="radio" value="2" name="n5"></td>
+                                    <td class="table"><input type="radio" value="3" name="n5"></td>
+                                    <td class="table"><input type="radio" value="4" name="n5"></td>
+                                    <td class="table"><input type="radio" value="5" name="n5"></td>
                             </tr>
                             <tr>
                                 <td>6. Iniciativa (autonomia no desempenho de suas atividades).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                    <td class="table"><input type="radio" value="1" name="n6"></td>
+                                    <td class="table"><input type="radio" value="2" name="n6"></td>
+                                    <td class="table"><input type="radio" value="3" name="n6"></td>
+                                    <td class="table"><input type="radio" value="4" name="n6"></td>
+                                    <td class="table"><input type="radio" value="5" name="n6"></td>
                             </tr>
                         </tbody>
 
@@ -107,69 +164,71 @@
 
                 <fieldset>
                     <legend>Grupo 2 - Aspectos Humanos</legend>
-                    <table>
+                    <table class="custom">
                         <thead>
                             <tr>
-                                <td>Aspecto....</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
+                                <td class="table"></td>
+                                <td class="table">1</td>
+                                <td class="table">2</td>
+                                <td class="table">3</td>
+                                <td class="table">4</td>
+                                <td class="table">5</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1. Assiduidade (presença constante no local de trabalho)
-                                </td>
-                                <td><input type="radio" value="1" name="n1"></td>
-                                <td><input type="radio" value="2" name="n1"></td>
-                                <td><input type="radio" value="3" name="n1"></td>
-                                <td><input type="radio" value="4" name="n1"></td>
-                                <td><input type="radio" value="5" name="n1"></td>
-                            </tr>
+                                    <td class="table"><input type="radio" value="1" name="d1"></td>
+                                    <td class="table"><input type="radio" value="2" name="d1"></td>
+                                    <td class="table"><input type="radio" value="3" name="d1"></td>
+                                    <td class="table"><input type="radio" value="4" name="d1"></td>
+                                    <td class="table"><input type="radio" value="5" name="d1"></td>
+                                </tr>
                             <tr>
                                 <td>2. Cooperação (disposição para contribuir espontaneamente no trabalho de equipe, para atingir os
                                     objetivos).
                                 </td>
-                                <td><input type="radio" value="1" name="n2"></td>
-                                <td><input type="radio" value="2" name="n2"></td>
-                                <td><input type="radio" value="3" name="n2"></td>
-                                <td><input type="radio" value="4" name="n2"></td>
-                                <td><input type="radio" value="5" name="n2"></td>
+                                <td class="table"><input type="radio" value="1" name="d2"></td>
+                                <td class="table"><input type="radio" value="2" name="d2"></td>
+                                <td class="table"><input type="radio" value="3" name="d2"></td>
+                                <td class="table"><input type="radio" value="4" name="d2"></td>
+                                <td class="table"><input type="radio" value="5" name="d2"></td>
+                            </tr>
                             </tr>
                            
                             <tr>
                                 <td>3. Responsabilidade (zelo pelo material, equipamento, bens da empresa).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                <td class="table"><input type="radio" value="1" name="d3"></td>
+                                <td class="table"><input type="radio" value="2" name="d3"></td>
+                                <td class="table"><input type="radio" value="3" name="d3"></td>
+                                <td class="table"><input type="radio" value="4" name="d3"></td>
+                                <td class="table"><input type="radio" value="5" name="d3"></td>
+                            </tr>
                             </tr>
                             <tr>
                                 <td>4. Sociabilidade (facilidade de se integrar com os colegas em ambiente de trabalho).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                <td class="table"><input type="radio" value="1" name="d4"></td>
+                                <td class="table"><input type="radio" value="2" name="d4"></td>
+                                <td class="table"><input type="radio" value="3" name="d4"></td>
+                                <td class="table"><input type="radio" value="4" name="d4"></td>
+                                <td class="table"><input type="radio" value="5" name="d4"></td>
                             </tr>
                             <tr>
                                 <td>5. Disciplina (observância e cumprimento das normas e regulamentos da empresa).</td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                <td class="table"><input type="radio" value="1" name="d5"></td>
+                                <td class="table"><input type="radio" value="2" name="d5"></td>
+                                <td class="table"><input type="radio" value="3" name="d5"></td>
+                                <td class="table"><input type="radio" value="4" name="d5"></td>
+                                <td class="table"><input type="radio" value="5" name="d5"></td>
                             </tr>
                             <tr>
                                 <td>6. Autocrítica (capacidade de reconhecer seus próprios erros e limitações).                                </td>
-                                <td><input type="radio" value="1" name="n3"></td>
-                                <td><input type="radio" value="2" name="n3"></td>
-                                <td><input type="radio" value="3" name="n3"></td>
-                                <td><input type="radio" value="4" name="n3"></td>
-                                <td><input type="radio" value="5" name="n3"></td>
+                                <td class="table"><input type="radio" value="1" name="d6"></td>
+                                <td class="table"><input type="radio" value="2" name="d6"></td>
+                                <td class="table"><input type="radio" value="3" name="d6"></td>
+                                <td class="table"><input type="radio" value="4" name="d6"></td>
+                                <td class="table"><input type="radio" value="5" name="d6"></td>
+                            </tr>
                             </tr>
                         </tbody>
                     </table>
