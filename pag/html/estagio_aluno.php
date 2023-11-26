@@ -75,9 +75,11 @@
 
     <div class="content">
         <div id="busca">
-            <input type="text" id="txtBusca" placeholder="Pesquisar"/>
-            <span class="icon"></span>
-    </div>
+           <form action=""> 
+            <!--     <span class="bu"><ion-icon name="search"></ion-icon></span>!-->
+                <input type="text" id="txtBusca" placeholder="Pesquisar"/>    
+            </form>
+        </div>
        
         <fieldset>
             <legend>Informações sobre o estágio</legend>
@@ -88,6 +90,7 @@
                     <th>Empresa</th>
                     <th>Situação</th>
                     <th>Data de iniciação</th>
+                    <th>Documentação</th>
                 </tr>
     
                 <tr>
@@ -96,6 +99,7 @@
                     <td>IFBA</td>
                     <td>Aprovado</td>
                     <td>22/12/2000</td>
+                    <td><a href="avaliacao-aluno.html">Documentação</a></td>
                 </tr>
             </table>
         </fieldset>

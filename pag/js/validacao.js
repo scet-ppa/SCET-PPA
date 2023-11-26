@@ -37,9 +37,6 @@ function validateForm() {
 
 }   
 
-
-
-
 /*const form = document.querySelector("formCad"); 
 const nameInput = document.querySelector("#nome");
 const emailInput = document.querySelector("email");

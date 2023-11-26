@@ -20,7 +20,7 @@ body{
     'navegacao content content content content content content content content content'
     'navegacao content content content content content content content content content';*/
   
-    background-color: #b9bed6a6;
+    background-color: #ffff;
 }
 
 
@@ -60,13 +60,34 @@ body{
     color: white;
   }
   
-  #busca{
+#busca{
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+/*background-color: #ffff;*/
   }
+
+#txtBusca{
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/buscar.jpg');
+    background-size: 25px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  #txtBusca:focus {
+    width: 100%;
+  }
+
+
 
   fieldset{
     border-radius: 5px;
