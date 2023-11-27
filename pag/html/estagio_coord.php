@@ -1,5 +1,7 @@
 <?php
-include_once"../php/comp/estagioHelper.php";
+session_start(); 
+include_once '../php/cad-usuario/alunoHelper.php'; 
+include_once '../php/comp/estagioHelper.php';
 ?>
 
 <!DOCTYPE html>
@@ -93,7 +95,7 @@ include_once"../php/comp/estagioHelper.php";
     <a class="cad-tcc" href="../html/cad_tcc.php">CADASTRAR</a>
        
         <fieldset>
-            <legend>Estágios Cadastrado</legend>
+            <legend>Estágios Cadastrados</legend>
             <table class="estudantes">
                 <tr class="info">
                     <th>Aluno</th>
@@ -117,9 +119,9 @@ include_once"../php/comp/estagioHelper.php";
     }
     ?>
                   <!-- <td> <a class="doc" href="#">Documentação</a></td>--> 
-                    <td> <a class="editar" href="#">Editar</a></td>
-                    <td> <a class="excluir" href="#">Excluir</a></td>
-                    <td> <a class="concluir" href="#">Concluir </a></td>
+                    <td> <a class="editar" href="../html/cad_tcc.php">Editar</a></td>
+                    <td> <a class="excluir" href="../html/cad_tcc.php">Excluir</a></td>
+                    <td> <a class="concluir" href="../html/cad_tcc.php">Concluir </a></td>
     
                 </tr>
             </table>

@@ -36,31 +36,31 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_coord.html">
+                    <a href="../html/mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_coord.html">
+                    <a href="../html/notificacoes_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-coord.html">
+                    <a href="../html/prof-coord.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_coord.html">
+                    <a href="../html/estagio_coord.php">
                         <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.html">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
@@ -72,7 +72,7 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_coord.html">
+                    <a href="../html/pendente_coord.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>

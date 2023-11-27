@@ -1,9 +1,15 @@
+<?php
+session_start(); 
+include_once '../php/cad-usuario/alunoHelper.php'; 
+include_once "../php/comp/tccHelper.php";
+?>
+
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCET - TCC</title>
+    <title>TCC</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQ3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
@@ -15,49 +21,49 @@
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="#">
+                    <a href="../html/usuario.php">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="home_coord.php">
+                    <a href="../html/home_aluno.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="notificacoes_coord.php">
+                    <a href="../html/mensagens_aluno.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="notificacoes_coord.php">
+                    <a href="../html/notificacoes_aluno.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="prof-coord.php">
+                    <a href="../html/prof-aluno.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="estagio_coord.php">
+                    <a href="../html/estagio_aluno.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.html">
+                    <a href="../html/aluno-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="pendente_coord.php">
+                    <a href="../html/pendente_aluno.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
@@ -75,37 +81,27 @@
 
     <div class="content">
         <div id="busca">
-           <form action=""> 
-            <!--     <span class="bu"><ion-icon name="search"></ion-icon></span>!-->
-                <input type="text" id="txtBusca" placeholder="Pesquisar"/>    
-            </form>
-        </div>
-    
-    <a class="cad-tcc" href="../html/cad_tcc.php">CADASTRAR</a>
+            <input type="text" id="txtBusca" placeholder="Pesquisar"/>
+            <span class="icon"></span>
+    </div>
        
         <fieldset>
-            <legend>TCC Cadastrado</legend>
+            <legend>Informações sobre o Trabalho de Conclusão de Curso</legend>
             <table class="estudantes">
                 <tr class="info">
-                    <th>Nome</th>
-                    <th>Tema</th>
+                    <th>Aluno</th>
                     <th>Orientador</th>
-                    <th>Curso</th>
-                    <th>Turma</th>
-                    <th colspan="3">Ações</th>
+                    <th>Tema</th>
+                    <th>Situação</th>
+                    <th>Data de iniciação</th>
                 </tr>
     
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                    <td> <a class="editar" href="../html/cad_tcc.php">Editar</a></td>
-                    <td> <a class="excluir" href="../html/">Excluir</a></td>
-                    <td> <a class="concluir" href="#">Concluir </a></td>
-    
+                    <td>Ricardo de Carvalho Sena</td>
+                    <td>Djalma Almeida Filho</td>
+                    <td>Sistema de Controle de Estágio e TCC</td>
+                    <td>Aprovado</td>
+                    <td>22/12/2000</td>
                 </tr>
             </table>
         </fieldset>

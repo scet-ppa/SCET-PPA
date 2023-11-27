@@ -1,12 +1,18 @@
+<?php
+session_start(); 
+include_once '../php/cad-usuario/alunoHelper.php'; 
+include_once '../php/comp/estagioHelper.php';
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estágio - Aluno</title>
+    <title>Estágio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQ3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/aluno-tcc.css">
+    <link rel="stylesheet" type="text/css" href="../css/estagio_prof.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 
@@ -21,49 +27,43 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/home_aluno.php">
+                    <a href="../html/home_prof.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_prof.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_prof.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-aluno.html">
-                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                        <span class="list">Professores</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="../html/estagio_aluno.html">
+                    <a href="../html/estagio_prof.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.html">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_aluno.html">
+                    <a href="../html/pendente_prof.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>
@@ -77,25 +77,31 @@
         <div id="busca">
             <input type="text" id="txtBusca" placeholder="Pesquisar"/>
             <span class="icon"></span>
-    </div>
+        </div>
        
         <fieldset>
-            <legend>Informações sobre o Trabalho de Conclusão de Curso</legend>
+            <legend>TCC Cadastrado</legend>
             <table class="estudantes">
                 <tr class="info">
-                    <th>Aluno</th>
-                    <th>Orientador</th>
+                    <th>Nome</th>
                     <th>Tema</th>
-                    <th>Situação</th>
-                    <th>Data de iniciação</th>
+                    <th>Orientador</th>
+                    <th>Curso</th>
+                    <th>Turma</th>
+                    <th colspan="3">Ações</th>
                 </tr>
     
                 <tr>
-                    <td>Ricardo de Carvalho Sena</td>
-                    <td>Djalma Almeida Filho</td>
-                    <td>Sistema de Controle de Estágio e TCC</td>
-                    <td>Aprovado</td>
-                    <td>22/12/2000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td> <a class="editar" href="#">Editar</a></td>
+                    <td> <a class="excluir" href="#">Excluir</a></td>
+                    <td> <a class="concluir" href="#">Concluir </a></td>
+    
                 </tr>
             </table>
         </fieldset>

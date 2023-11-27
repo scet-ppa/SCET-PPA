@@ -56,49 +56,49 @@ if(isset($_POST['send'])){
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/home_aluno.php">
+                    <a href="../html/home_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-aluno.html">
+                    <a href="../html/prof-coord.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_aluno.html">
+                    <a href="../html/estagio_coord.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/aluno-tcc.html">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_aluno.html">
+                    <a href="../html/pendente_coord.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/inicio.php">
+                    <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="list">Sair</span>
                     </a>
