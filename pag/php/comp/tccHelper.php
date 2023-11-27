@@ -55,10 +55,7 @@
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("select
-            tcc.id_tcc,
-            tcc.id_aluno,
-            tcc.docente as id_professor,
+            $stmt = $conn->prepare("select tcc.id_tcc, tcc.id_aluno, tcc.docente as id_professor, 
             date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio,
             date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino,
             tcc.situacao,
