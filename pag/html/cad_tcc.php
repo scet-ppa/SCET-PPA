@@ -83,13 +83,13 @@
 </fieldset>
     <div>
         <fieldset>
-            <legend>tcc Cadastrados</legend>
+            <legend>TCC's Cadastrados</legend>
             <table id="mover">
                 <tr>
                     <th>ID</th>
                     <th>Docente</th>
                     <th>Aluno</th>
-                    <th>Empresa</th>
+                    <th>Tema</th>
                     <th>Ínicio</th>
                     <th>Término</th>
                     <th>Status</th>

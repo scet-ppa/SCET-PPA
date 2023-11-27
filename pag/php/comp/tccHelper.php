@@ -55,11 +55,24 @@
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("");
+            $stmt = $conn->prepare("select
+            tcc.id_tcc,
+            tcc.id_aluno,
+            tcc.docente as id_professor,
+            date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio,
+            date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino,
+            tcc.situacao,
+            tcc.tema
+        from
+            tcc
+            inner join aluno on tcc.id_aluno = aluno.id_aluno
+            inner join professor on tcc.docente = professor.id_professor
+        where
+            tcc.id_tcc = id_tcc;");
             $stmt->execute();
             $tccs = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $tcc = new TCC($value['situacao'], $value['orientador'], $value['id_aluno'], $value['id_tcc'], $value['id_tema'],
+                $tcc = new TCC($value['situacao'], $value['orientador'], $value['id_aluno'], $value['id_tcc'], $value['tema'],
                 $value['data_inicio'], $value['prev_termino']);
                 $tcc->setIdTCC( $value['id_tcc']);
                 $tcc->nome_aluno = $value['estudante'];
