@@ -11,8 +11,10 @@ include_once "../php/cad-usuario/alunoHelper.php";
     <title>Usuário: Aluno</title>
     <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
     <link rel="stylesheet" type="text/css" href="../css/calendario.css">
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 </head>
 <body>
     
@@ -120,7 +122,22 @@ include_once "../php/cad-usuario/alunoHelper.php";
         <ul class="days"></ul>
       </div>
     </div>
+
+    
+    <div class="conta">
+        <div class="input-field">
+            <textarea placeholder="Escreva sua nova tarefa"></textarea>
+            <i class="uil uil-notes note-icon"></i>
         </div>
+
+        <ul class="todoLists"></ul>
+
+        <div class="pending-tasks">
+            <span>Você tem <span class="pending-num"> tarefas sem </span> pendência.</span>
+            <button class="clear-button">Limpar Tudo</button>
+        </div>
+        </div>
+    </div>
 </div>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -136,5 +153,6 @@ include_once "../php/cad-usuario/alunoHelper.php";
                 item.addEventListener('click', activeLink));
         </script>
         <script src="../js/calendario.js" defer></script>
+        <script src="../js/list.js"></script>
 </body>
 </html>
