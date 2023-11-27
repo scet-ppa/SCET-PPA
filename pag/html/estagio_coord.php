@@ -1,5 +1,7 @@
 <?php
-include_once"../php/comp/estagioHelper.php";
+session_start(); 
+include_once '../php/cad-usuario/alunoHelper.php'; 
+include_once '../php/comp/estagioHelper.php';
 ?>
 
 <!DOCTYPE html>
