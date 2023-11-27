@@ -133,17 +133,19 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
               
            <div class="calendar">
         <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
+          <li>Dom</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sab</li>
         </ul>
         <ul class="days"></ul>
       </div>
     </div>
+
+    
         </div>
         </div>
 

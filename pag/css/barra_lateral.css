@@ -112,10 +112,10 @@
     box-shadow: 15px -15px 0 #065959;
 }
 
-li:nth-child(10){
+.navegacao li:nth-child(10){
     bottom: -50px;
 }
 
-li:nth-child(1){
+.navegacao li:nth-child(1){
     margin-bottom: 40px;
 }
