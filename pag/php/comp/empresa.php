@@ -10,9 +10,9 @@ class Empresa{
     public $bairro;
     public $municipio;
     public $endereco;
+    public $uf;
 
-    function __construct($nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco)
-    {
+    function __construct($nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco, $uf){
         $this->nome = $nome;
         $this->cep = $cep;
         $this->numero = $numero;
@@ -20,6 +20,7 @@ class Empresa{
         $this->bairro = $bairro;
         $this->municipio = $municipio;
         $this->endereco = $endereco;
+        $this->uf = $uf;
     }
 
     function getIdEmpresa(){
@@ -35,14 +36,15 @@ class Empresa{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("update empresa set 
-            nome=:nome, endereco=:endereco, cep=:cep, numero=:numero, complemento=:complemento, bairro=:bairro, municipio=:municipio, endereco=:endereco  where id_empresa=:id_empresa");
+            nome=:nome, endereco=:endereco, cep=:cep, numero=:numero, complemento=:complemento, bairro=:bairro, municipio=:municipio, endereco=:endereco, uf=:uf  where id_empresa=:id_empresa");
             $stmt->bindParam(':nome',$this->nome);
             $stmt->bindParam(':endereco',$this->endereco);
-            $stmt->bindParam(':nome',$this->complemento);
-            $stmt->bindParam(':nome',$this->bairro);
-            $stmt->bindParam(':nome',$this->cep);
-            $stmt->bindParam(':nome',$this->numero);
+            $stmt->bindParam(':complemento',$this->complemento);
+            $stmt->bindParam(':bairrp',$this->bairro);
+            $stmt->bindParam(':cep',$this->cep);
+            $stmt->bindParam(':numero',$this->numero);
             $stmt->bindParam(':municipio',$this->municipio);
+            $stmt->bindParam(':uf',$this->uf);
             $stmt->bindParam(':id_empresa',$this->id_empresa);
           //  $stmt->bindParam(':empresa',$this->empresa);
             $stmt->execute();
@@ -69,15 +71,17 @@ class Empresa{
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
+            //$nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco
             $stmt = $conn->prepare("insert into empresa 
-            (nome, complemento, numero, cep, bairro, endereco, municipio) values (:nome, :complemento, :numero, :cep, :bairro, :endereco, :municipio)");
+            (nome, cep, numero, complemento, bairro,  municipio, endereco, uf) values (:nome, :cep, :numero, :complemento, :bairro, :municipio, :endereco, :uf)");
             $stmt->bindParam(':nome',$this->nome);
-            $stmt->bindParam(':complemento',$this->complemento);
-            $stmt->bindParam(':numero',$this->numero);
             $stmt->bindParam(':cep',$this->cep);
+            $stmt->bindParam(':numero',$this->numero);
+            $stmt->bindParam(':complemento',$this->complemento);
             $stmt->bindParam(':bairro',$this->bairro);
-            $stmt->bindParam(':endereco',$this->endereco);
             $stmt->bindParam(':municipio',$this->municipio);
+            $stmt->bindParam(':endereco',$this->endereco);
+            $stmt->bindParam(':uf',$this->uf);
             $stmt->execute();
         }catch(PDOException $e){
             echo $e->getMessage();
@@ -95,7 +99,7 @@ class Empresa{
             $empresa = null;
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
-                $empresa = new Empresa($value['nome'], $value['complemento'], $value['numero'], $value['cep'], $value['bairro'], $value['endereco'], $value['municipio']);
+                $empresa = new Empresa($value['nome'], $value['complemento'], $value['numero'], $value['cep'], $value['bairro'], $value['endereco'], $value['municipio'], $value['uf']);
                 $empresa->setIdEmpresa( $value['id_empresa']);
              }
             return $empresa;

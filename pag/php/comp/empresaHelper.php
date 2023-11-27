@@ -21,6 +21,14 @@ if(isset($_POST['tipo'])){
 function editar_empresa(){
     $empresa = Empresa::carregar($_POST['id_empresa']);
     $empresa->nome = $_POST['nome'];
+    $empresa->nome = $_POST['cep'];
+    $empresa->nome = $_POST['numero'];
+    $empresa->nome = $_POST['complemento'];
+    $empresa->nome = $_POST['bairro'];
+    $empresa->nome = $_POST['municipio'];
+    $empresa->nome = $_POST['endereco'];
+    $empresa->nome = $_POST['uf'];
+
    // $empresa = $_POST['empresa'];
     $empresa->editar();
 }
@@ -38,7 +46,8 @@ function cadastrarEmpresa(){
     $bairro = $_POST['bairro'];
     $municipio = $_POST['municipio'];
     $endereco = $_POST['endereco'];
-    $empresa = new Empresa($nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco);
+    $uf = $_POST['uf'];
+    $empresa = new Empresa($nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco, $uf);
     $empresa->inserir();
 }
 
@@ -52,7 +61,7 @@ function getEmpresas(){
        // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $empresas = array();
         foreach($stmt->fetchAll() as $v => $value){
-            $empresa = new Empresa($value['nome'], $value['complemento'], $value['numero'], $value['cep'], $value['bairro'], $value['endereco'], $value['municipio']);
+            $empresa = new Empresa($value['nome'], $value['cep'],  $value['numero'], $value['complemento'], $value['bairro'], $value['municipio'], $value['endereco'], $value['uf']);
             $empresa->setIdEmpresa($value['id_empresa']);
             array_push($empresas,$empresa);
         }

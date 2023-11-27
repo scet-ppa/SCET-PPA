@@ -9,8 +9,12 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: Coordenador</title>
+
     <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/calendario.css">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
 </head>
 <body>
     
@@ -117,10 +121,37 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
        
             </fieldset>   
 
+            <div class="teste">
+            <div class="wrapper">
+      <div class="header">
+      <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </div>
+              
+           <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+        </div>
         </div>
 
         <a class="curso" href="cad_curso.php">CURSO</a>
         <a class="emp" href="cad-turma.php">TURMA</a>
+
+        
+
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -134,6 +165,6 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
             list.forEach((item) =>
                 item.addEventListener('click', activeLink));
         </script>
-
+        <script src="../js/calendario.js" defer></script>
 </body>
 </html>
