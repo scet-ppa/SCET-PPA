@@ -48,7 +48,7 @@ include_once "../php/cad-usuario/alunoHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_aluno.html">
+                    <a href="../html/estagio_aluno.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>

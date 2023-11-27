@@ -2,7 +2,75 @@ body{
     width: 80%;
     margin-left: 10%;
 }
+.dados label{
+  margin-left: 0.5%;
+}
 
+.dados #nome{
+    width: 88%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #endereco{
+    width: 27%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 2%;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #numero{
+    width: 8%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 2%;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #complemento{
+    width: 23.2%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #bairro{
+    width: 88%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #municipio{
+    width: 47%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 2%;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
+
+  .dados #cep{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+  }
 .mover{
     flex: 2;
     margin-left: 5%;

@@ -16,10 +16,29 @@
         <legend>Formulário de Cadastro</legend>
         <form name="formCad" method="POST" action="../php/comp/empresaHelper.php">
             <fieldset>
+                <div class="dados">
+               
                 <input style="display: none" name="tipo" id="tipo" type="text" value="cad_empresa">
                 <legend>Dados da Empresa</legend>
                 <label for="nome">Nome: </label>
                 <input size="40" required placeholder="Digite aqui o nome da empresa" name="nome" id="nome" type="text">
+                <br>
+                <label for="endereco">Endereço: </label>
+                <input size="40" required placeholder="Digite aqui o endereço da empresa" name="endereco" id="endereco" type="text">
+                <label for="numero">Número: </label>
+                <input size="40" required placeholder="Digite aqui o nome da empresa" name="numero" id="numero" type="int">
+                <label for="complemento">Complemento: </label>
+                <input size="40" required placeholder="Digite aqui o nome da empresa" name="complemento" id="complemento" type="text">
+                <br>
+                <label for="bairro">Bairro: </label>
+                <input size="40" required placeholder="Digite aqui o nome do bairro" name="bairro" id="bairro" type="text">
+                <br>
+                <label for="municipio">Municipio: </label>
+                <input size="40" required placeholder="Digite aqui o nome da empresa" name="municipio" id="municipio" type="text">
+                <label for="cep">CEP: </label>
+                <input size="40" required placeholder="Digite aqui o CEP da empresa" name="cep" id="cep" type="text">
+                </div>
+                
             </fieldset>
 
             <a class="botao" href="home_coord.php">Voltar</a>

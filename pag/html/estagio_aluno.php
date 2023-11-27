@@ -1,3 +1,9 @@
+<?php
+session_start(); 
+include_once '../php/cad-usuario/alunoHelper.php'; 
+include_once '../php/comp/estagioHelper.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,14 +99,23 @@
                     <th>Documentação</th>
                 </tr>
     
-                <tr>
-                    <td>Ricardo de Carvalho Sena</td>
+                
+                <?php
+                    echo '<tr>';
+                    echo '<td>'.$_SESSION["nome"].'</td>';
+                    echo '<td>'./*.*/'</td>';
+                    /*echo $_SESSION["name"] . ".<br>";
+                            echo $_SESSION["email"] . ".<br>";*/
+                   
+                    echo '</tr>'
+        
+                ?>
                     <td>Djalma Almeida Filho</td>
                     <td>IFBA</td>
                     <td>Aprovado</td>
                     <td>22/12/2000</td>
                     <td><a href="avaliacao-aluno.html">Documentação</a></td>
-                </tr>
+
             </table>
         </fieldset>
     

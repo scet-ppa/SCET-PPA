@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <div class="nav">
+        <ul>
+            <li><a href="avaliacao-aluno.html">Avaliação do Aluno</a></li>
+            <li><a href="avaliacao-supervisor.html">Avaliação da Empresa</a></li>
+            <li><a href="#contact">Avaliação do Orientador</a></li>
+            <li style="float:right"><a class="active" href="home_aluno.php">Voltar</a></li>
+          </ul>
+    </div>
+    
+
     <fieldset>
         <form action="" method="post">
             <div class="dados">
@@ -17,17 +27,19 @@
 
                 <label for="nome">Nome do Estagiário:</label>
                 <input type="text" name="nome" value="" id="nome">
-
+                <br>
                 <label for="celular">Telefone(Estagiário): DDD</label>
-                <input type="int" name="celular" value="" id="celular">
+                <input type="int" name="celular" value="" id="fixo">
 
                 <label for="celular">Celular(Estagiário): DDD</label>
-                <input type="int" name="celular" value="" id="fixo">
+                <input type="int" name="celular" value="" id="celular">
+                <br>
 
                 <label for="email">Endereço Eletrônico:</label>
                 <input type="email" name="email" value="" id="email">
+                <br>
 
-                <label for="curso"><br/>Curso</label>
+                <label for="curso">Curso</label>
                 <input type="text" name="curso" value="" id="curso">
 
                 <form action="">
@@ -48,6 +60,7 @@
 
                 <label for="celular">Telefone/Celular (Empresa): DDD</label>
                 <input type="int" name="telefone" value="" id="celular">
+                <br>
 
                 <label for="endereco-emp">Endereço(Empresa)</label>
                 <input type="text" name="endereco-emp" value="" id="endereco-emp">
@@ -57,6 +70,7 @@
                 
                 <label for="complemento">Complemento</label>
                 <input type="text" name="complemento" value="" id="complemento">
+                <br>
 
                 <label for="bairro">Bairro</label>
                 <input type="text" name="bairro" value="" id="bairro">
@@ -69,14 +83,16 @@
 
                 <label for="cep">CEP: </label>
                 <input type="int" name="cep" value="" id="cep">
+                <br>
 
-                <label for="area-estagio"><br />Área/Setor do estágio: </label>
+                <label for="area-estagio">Área/Setor do estágio: </label>
                 <input type="text" name="area-estagio" value="" id="area-estagio">
 
                 <label for="carga-horario">Carga Horária: </label>
                 <input type="number" name="carga-horario" value="" id="carga-horario">
+                <br>
 
-                <label for="nome-supervisor"><br />Nome do Supervisor: </label>
+                <label for="nome-supervisor">Nome do Supervisor: </label>
                 <input type="text" name="nome-supervisor" value="" id="nome-supervisor">
 
                 <label for="cargo">Cargo: </label>
@@ -84,6 +100,8 @@
 
             </fieldset>
         </div>
+
+        <h1>Avaliação da Empresa</h1>
         </form>
         </fieldset>
 
