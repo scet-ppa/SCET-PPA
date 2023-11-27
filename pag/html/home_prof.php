@@ -10,7 +10,9 @@ include_once "../php/cad-usuario/professorHelper.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: professor</title>
     <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
+    <link rel="stylesheet" type="text/css" href="../css/calendario.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
     
@@ -92,6 +94,34 @@ include_once "../php/cad-usuario/professorHelper.php";
                     ?>
             </table>
             </fieldset>   
+
+            
+<div class="teste">
+            <div class="wrapper">
+      <div class="header">
+      <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </div>
+              
+           <div class="calendar">
+        <ul class="weeks">
+          <li>Dom</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sab</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+       
+
+
         </div>
 
     
@@ -111,6 +141,6 @@ include_once "../php/cad-usuario/professorHelper.php";
             list.forEach((item) =>
                 item.addEventListener('click', activeLink));
         </script>
-
+        <script src="../js/calendario.js" defer></script>
 </body>
 </html>

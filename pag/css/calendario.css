@@ -18,7 +18,7 @@ body{
 
 .teste{
     margin-top: 2%;
-
+    display: flex;
 }
 
 .wrapper{
@@ -108,7 +108,7 @@ body{
   transform: translate(-50%, -50%);
 }
 .days li.active::before{
-  background: #9B59B6;
+  background: #008080;;
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;

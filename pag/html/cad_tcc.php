@@ -86,10 +86,10 @@
             <legend>TCC's Cadastrados</legend>
             <table id="mover">
                 <tr>
-                    <th>ID</th>
+                    <th>Tema</th>
                     <th>Docente</th>
                     <th>Aluno</th>
-                    <th>Tema</th>
+                    
                     <th>Ínicio</th>
                     <th>Término</th>
                     <th>Status</th>
@@ -99,9 +99,10 @@
                 $tccs = getTCCS();
                 foreach($tccs as $tcc){
                     echo '<tr>'; 
-                    echo '<td>'.$tcc->id_tcc.'</td>  ';
-                    echo '<td>'.$tcc->nome_professor.'</td> ';
+                    echo '<td>'.$tcc->tema.'</td>  ';
                     echo '<td>'.$tcc->nome_aluno.'</td> ';
+                    echo '<td>'.$tcc->nome_professor.'</td> ';
+                  
                     echo '<td>'.$tcc->nome_tema.'</td> ';
                     echo '<td>'.$tcc->data_inicio.'</td> ';
                     echo '<td>'.$tcc->prev_termino.'</td> ';
