@@ -1,9 +1,13 @@
+<?php
+include_once"../php/comp/estagioHelper.php";
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCET - Estágio</title>
+    <title>Estágio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQ3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
@@ -27,31 +31,31 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_coord.html">
+                    <a href="../html/mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_coord.html">
+                    <a href="../html/notificacoes_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-coord.html">
+                    <a href="../html/prof-coord.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_coord.html">
+                    <a href="../html/estagio_coord.php">
                         <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.html">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
@@ -63,7 +67,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_coord.html">
+                    <a href="../html/pendente_coord.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
@@ -89,24 +93,29 @@
     <a class="cad-tcc" href="../html/cad_tcc.php">CADASTRAR</a>
        
         <fieldset>
-            <legend>TCC Cadastrado</legend>
+            <legend>Estágios Cadastrado</legend>
             <table class="estudantes">
                 <tr class="info">
-                    <th>Nome</th>
+                    <th>Aluno</th>
                     <th>Empresa</th>
                     <th>Orientador</th>
-                    <th>Curso</th>
-                    <th>Turma</th>
+                    <th>Data de ínico</th>
+                    <th>Prévia de término</th>
+                    <th>Status</th>
                     <th colspan="3">Ações</th>
                 </tr>
-    
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
+    <?php
+    $estagios = getEstagios();
+    foreach($estagios as $estagio){
+        echo '<tr>'; 
+        echo '<td>'.$estagio->nome_aluno.'</td> ';
+        echo '<td>'.$estagio->nome_empresa.'</td> ';
+        echo '<td>'.$estagio->nome_professor.'</td> ';
+        echo '<td>'.$estagio->data_inicio.'</td> ';
+        echo '<td>'.$estagio->prev_termino.'</td> ';
+        echo '<td>'.$estagio->situacao.'</td> ';
+    }
+    ?>
                   <!-- <td> <a class="doc" href="#">Documentação</a></td>--> 
                     <td> <a class="editar" href="#">Editar</a></td>
                     <td> <a class="excluir" href="#">Excluir</a></td>
