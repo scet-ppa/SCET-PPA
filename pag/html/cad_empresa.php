@@ -52,17 +52,21 @@
             <legend>Empresas Cadastradas</legend>
             <table id="mover">
                 <tr>
-                    <th>Código</th>
                     <th>Nome</th>
+                    <th>Municipio</th>
+                    <th>Bairro</th>
+                    <th>CEP</th>
                     <th colspan="2">Ações</th>
                 </tr>
                 <?php
                 $empresas = getEmpresas();
                 foreach($empresas as $empresa){
                     echo '<tr>'; 
-                    echo '<td>'.$empresa->id_empresa.'</td>  ';
                     echo '<td>'.$empresa->nome.'</td> '; 
-
+                    echo '<td>'.$empresa->municipio.'</td>  ';
+                    echo '<td>'.$empresa->bairro.'</td>  ';
+                    echo '<td>'.$empresa->cep.'</td>  ';
+                
                     echo '<td> <a class="editar"  href="editar-empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Editar</a></td> ';  
                     echo '<td> <a class="excluir"  href="excluir-empresa.php?id_empresa='.$empresa->getIdEmpresa().'">Excluir</a></td> '; 
                     echo '</tr> ';

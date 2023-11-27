@@ -63,6 +63,9 @@ create table curso(
 	id_curso integer auto_increment primary key,
     descricao varchar(25)
 );
+select * from empresa;
+alter table curso add column ano_letivo int(4);
+alter table curso drop column ano_letivo; 
 
 create table curso_coord( 
 	id_curso_coord integer auto_increment primary key, 
@@ -78,17 +81,12 @@ create table tcc(
     foreign key (id_aluno) references aluno(id_aluno),
     id_professor integer,
     foreign key (id_professor) references professor(id_professor),
-    id_tema integer,
-    foreign key (id_tema) references tema(id_tema),
     situacao varchar (20) not null,
     data_inicio date, 
     prev_termino date
 );
 
-create table tema (
-	id_tema integer auto_increment primary key,
-    nome varchar (50)
-);
+alter table tcc add column tema varchar(80);
 
 create table apresentacao(
 	id_apresentacao integer auto_increment primary key,
@@ -146,7 +144,15 @@ create table avaliacao_empresa(
 
 create table empresa(
 	id_empresa integer auto_increment primary key, 
-    nome varchar(50)
+    nome varchar(50),
+    uf varchar(2), 
+    municipio varchar(50),
+    endereco varchar (50), 
+    numero int(4), 
+    complemento varchar(50), 
+    bairro varchar(50), 
+    cep varchar(20), 
+    telefone int(20)
 );
 
 create table turma(

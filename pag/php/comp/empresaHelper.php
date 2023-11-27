@@ -32,7 +32,13 @@ function excluir_empresa(){
 
 function cadastrarEmpresa(){
     $nome = $_POST['nome'];
-    $empresa = new Empresa($nome);
+    $cep = $_POST['cep'];
+    $numero = $_POST['numero'];
+    $complemento = $_POST['complemento'];
+    $bairro = $_POST['bairro'];
+    $municipio = $_POST['municipio'];
+    $endereco = $_POST['endereco'];
+    $empresa = new Empresa($nome, $cep, $numero, $complemento, $bairro, $municipio, $endereco);
     $empresa->inserir();
 }
 
@@ -46,7 +52,7 @@ function getEmpresas(){
        // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $empresas = array();
         foreach($stmt->fetchAll() as $v => $value){
-            $empresa = new Empresa($value['nome']);
+            $empresa = new Empresa($value['nome'], $value['complemento'], $value['numero'], $value['cep'], $value['bairro'], $value['endereco'], $value['municipio']);
             $empresa->setIdEmpresa($value['id_empresa']);
             array_push($empresas,$empresa);
         }

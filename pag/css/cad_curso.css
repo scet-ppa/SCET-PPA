@@ -139,3 +139,22 @@ body{
 .botao:active {
   background-color: rgb(217, 141, 0);
 }
+
+.dados #descricao{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 2%;
+    box-sizing: border-box;
+    border: 2px solid #065f5f;
+    border-radius: 4px;
+}
+
+.dados #ano_letivo{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #065f5f;
+  border-radius: 4px;
+}

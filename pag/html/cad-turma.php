@@ -16,15 +16,18 @@
         <legend>Formulário de Cadastro</legend>
         <form name="formCad" method="POST" action="../php/cad-usuario/turmaHelper.php">
             <fieldset>
+                <div class="dados">
                 <input style="display: none" name="tipo" id="tipo" type="text" value="cad_turma">
                 <legend>Dados da Turma:</legend>
-                <label for="nome">Descrição: </label>
+                <label for="nome">Turma: </label>
                 <!-- COmentário -->
                 <input size="40" required placeholder="Digite aqui o nome do curso" name="descricao" id="descricao" type="text">
 
                 <label for="nome">Ano Letivo: </label>
                 <!-- COmentário -->
                 <input size="40" required placeholder="Digite aqui o ano letivo" name="ano_letivo" id="ano_letivo" type="text">
+                </div>
+                
             </fieldset>
 
             <a class="botao" href="home_coord.php">Voltar</a>
@@ -38,8 +41,8 @@
             <legend>Turma Cadastradas</legend>
             <table id="mover">
                 <tr>
-                    <th>Código</th>
-                    <th>Descrição</th>
+                    <!-- <th>Código</th>-->
+                    <th>Turma</th>
                     <th>Ano Letivo</th>
                     <th colspan="2">Ações</th>
                 </tr>
@@ -47,7 +50,7 @@
                 $turmas = getTurmas();
                 foreach($turmas as $turma){
                     echo '<tr>'; 
-                    echo '<td>'.$turma->id_turma.'</td>  ';
+                    //echo '<td>'.$turma->id_turma.'</td>  ';
                     echo '<td>'.$turma->descricao.'</td> '; 
                     echo '<td>'.$turma->ano_letivo.'</td> '; 
                     echo '<td> <a class="editar"  href="editar_turma.php?id_curso='.$turma->getIdTurma().'">Editar</a></td> ';  
