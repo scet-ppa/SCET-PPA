@@ -19,7 +19,7 @@
         }
    }
 
-   function  editar_tcc(){
+   function editar_tcc(){
         $tcc = TCC::carregar($_POST['id_tcc']);
         $tcc->id_professor = $_POST['id_professor'];
         $tcc->data_inicio = $_POST['data_inicio'];
@@ -27,7 +27,6 @@
         $tcc->tema = $_POST['tema'];
         $tcc->id_aluno = $_POST['id_aluno'];
         $tcc->situacao = $_POST['situacao'];
-        
         $tcc->editar();
    }
 
@@ -58,13 +57,9 @@
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("select tcc.id_tcc, tcc.id_aluno, tcc.id_professor as id_professor, 
-            date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio,
-            date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino,
-            tcc.situacao,
-            tcc.tema from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.id_professor = professor.id_professor
-        where
-            tcc.id_tcc = id_tcc;");
+            $stmt = $conn->prepare("select tcc.id_tcc, tcc.id_aluno, tcc.id_professor, professor.nome as 'professor',  aluno.nome as 'estudante', date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio, date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino, tcc.situacao, tcc.tema
+            from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.id_professor = professor.id_professor
+            where tcc.id_tcc = id_tcc;");
             $stmt->execute();
             $tccs = array();
 //            $situacao, $id_professor, $id_aluno, $tema, $data_inicio, $prev_termino
@@ -77,6 +72,10 @@
                 $tcc->data_inicio = $value['data_inicio'];
                 $tcc->prev_termino = $value['prev_termino'];*/
                 $tcc->setIdTCC($value["id_tcc"]);
+                $tcc->nome_aluno = $value['estudante'];
+                $tcc->nome_professor = $value['professor'];
+                $tcc->data_inicio = $value['data_inicio'];
+                $tcc->prev_termino = $value['prev_termino'];
                 array_push($tccs,$tcc);
             }
            return $tccs;

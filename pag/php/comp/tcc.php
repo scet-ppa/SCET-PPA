@@ -7,6 +7,8 @@ class TCC{
     public $id_tcc;
     public $id_professor;
     public $id_aluno;
+    public $nome_professor;
+    public $nome_aluno;
     public $tema;
     public $data_inicio;
     public $prev_termino;

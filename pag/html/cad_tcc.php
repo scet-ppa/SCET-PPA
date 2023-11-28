@@ -39,9 +39,9 @@
                 <div class="situ">
                     <label for="situacao">Situação: </label>
                     <select name="situacao" id="situacao"> 
-                        <option value="iniciado">Iniciado</option>
-                        <option value="em andamento">Em andamento</option>
-                        <option value="finalizado">Finalizado</option>
+                        <option value="Iniciado">Iniciado</option>
+                        <option value="Em andamento">Em andamento</option>
+                        <option value="Finalizado">Finalizado</option>
                     </select>
                 </div>
 
@@ -101,15 +101,14 @@
                 foreach($tccs as $tcc){
                     echo '<tr>'; 
                     echo '<td>'.$tcc->id_tcc.'</td>  ';
-                    echo '<td>'.$tcc->id_aluno.'</td>  ';
-                    echo '<td>'.$tcc->id_professor.'</td>';
+                    echo '<td>'.$tcc->nome_professor.'</td>  ';
+                    echo '<td>'.$tcc->nome_aluno.'</td>';
                     echo '<td>'.$tcc->tema.'</td>';
                     echo '<td>'.$tcc->data_inicio.'</td> ';
                     echo '<td>'.$tcc->prev_termino.'</td> ';
                     echo '<td>'.$tcc->situacao.'</td> ';
 
                     echo '<td> <a class="editar"  href="editar_tcc.php?id_tcc='.$tcc->getIdTCC().'">Editar</a></td> ';  
-                    echo '<td> <a class="excluir"  href="excluir_tcc.php?id_tcc='.$tcc->getIdTCC().'">Excluir</a></td> '; 
                     echo '</tr> ';
                 }
                 ?> 
