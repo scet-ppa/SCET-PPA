@@ -92,7 +92,7 @@ include_once '../php/comp/estagioHelper.php';
             <span class="icon"></span>
         </div>
     
-    <a class="cad-tcc" href="../html/cad_tcc.php">CADASTRAR</a>
+    <a class="cad-tcc" href="../html/cad_estagio.php">CADASTRAR</a>
        
         <fieldset>
             <legend>Estágios Cadastrados</legend>

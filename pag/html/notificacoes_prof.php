@@ -38,12 +38,7 @@
                         <span class="list">Notificações</span>
                     </a>
                 </li>
-                <li class="list">
-                    <a href="../html/prof-prof.php">
-                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                        <span class="list">Professores</span>
-                    </a>
-                </li>
+
                 <li class="list">
                     <a href="../html/estagio_prof.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>

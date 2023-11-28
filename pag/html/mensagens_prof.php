@@ -74,12 +74,6 @@ if(isset($_POST['send'])){
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-coord.php">
-                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                        <span class="list">Professores</span>
-                    </a>
-                </li>
-                <li class="list">
                     <a href="../html/estagio_coord.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>

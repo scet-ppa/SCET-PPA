@@ -5,18 +5,18 @@ class Aluno{
     public $id_aluno;
     public $nome;
     public $id_curso;
-    public $turma;
+    public $id_turma;
     public $matricula;
     public $email;
     public $senha;
 
-    function __construct($nome, $id_curso, $matricula, $email, $senha){
+    function __construct($nome, $id_curso, $matricula, $email, $senha, $id_turma){
         $this->nome = $nome;
-      
         $this->id_curso = $id_curso;
         $this->matricula = $matricula;
         $this->email = $email;
         $this->senha = $senha;
+        $this->id_turma = $id_turma;
     }
 
     function inserir(){
@@ -28,7 +28,7 @@ class Aluno{
             $stmt->bindParam(':nome',$this->nome);
             $stmt->bindParam(':id_curso',$this->id_curso);
             $stmt->bindParam(':matricula',$this->matricula);
-            $stmt->bindParam(':id_turma',$this->turma);
+            $stmt->bindParam(':id_turma',$this->id_turma);
             $stmt->bindParam(':email',$this->email);
             $stmt->bindParam(':senha',$this->senha);
             $stmt->execute();

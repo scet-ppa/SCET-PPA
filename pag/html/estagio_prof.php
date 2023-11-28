@@ -51,7 +51,7 @@ include_once '../php/comp/estagioHelper.php';
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.php">
+                    <a href="../html/prof-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
@@ -80,7 +80,7 @@ include_once '../php/comp/estagioHelper.php';
         </div>
        
         <fieldset>
-            <legend>TCC Cadastrado</legend>
+            <legend>Estágio </legend>
             <table class="estudantes">
                 <tr class="info">
                     <th>Nome</th>

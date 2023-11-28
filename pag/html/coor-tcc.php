@@ -109,9 +109,9 @@ include_once "../php/comp/tccHelper.php";
                     $tccs = getTCCS();
                     foreach($tccs as $tcc){
                         echo '<tr>'; 
-                        echo '<td>'.$tcc->nome_aluno.'</td> ';
+                        echo '<td>'.$tcc->id_aluno.'</td> ';
                         echo '<td>'.$tcc->tema.'</td> ';
-                        echo '<td>'.$tcc->nome_professor.'</td> ';
+                        echo '<td>'.$tcc->id_professor.'</td> ';
                         echo '<td>'.$tcc->data_inicio.'</td> ';
                         echo '<td>'.$tcc->prev_termino.'</td> ';
                         echo '<td>'.$tcc->situacao.'</td> ';

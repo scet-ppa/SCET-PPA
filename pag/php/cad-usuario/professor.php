@@ -42,7 +42,7 @@ class Professor{
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("select * from coordenador where email=:email and senha=:senha");
+            $stmt = $conn->prepare("select * from professor where email=:email and senha=:senha");
             $stmt->bindParam(":email", $email); 
             $stmt->bindParam(":senha", $senha); 
             $stmt->execute();
@@ -50,8 +50,8 @@ class Professor{
             $coord = null;
             
             foreach($stmt->fetchAll() as $v => $value){
-                $coord = new Coordenador($value['nome'], $value['email'], $value['senha'],  $value['matricula']);
-                $coord->setIdCoordenador( $value['id_coordenador']);
+                $coord = new Professor($value['nome'], $value['matricula'], $value['email'],  $value['senha'],  $value['matricula']);
+                $coord->setIdProfessor( $value['id_professor']);
                
             }
 
