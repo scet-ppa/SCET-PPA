@@ -187,7 +187,7 @@ insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino,
 insert into coordenador(nome, email, senha) values("nicholas", "nick@gmail.com", "123"); 
 insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica");
 
-select tcc.id_tcc, tcc.id_aluno, tcc.id_professor as id_professor, date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio, date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino, tcc.situacao, tcc.tema
+select tcc.id_tcc, professor.nome as 'professor',  aluno.nome as 'estudante', date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio, date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino, tcc.situacao, tcc.tema
 from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.id_professor = professor.id_professor
 where tcc.id_tcc = id_tcc;
 

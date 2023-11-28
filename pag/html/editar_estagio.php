@@ -69,7 +69,7 @@ $es = Estagio::carregar($id_estagio);
 
                 <div class="data">
                 <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" size="40" value="<?php echo $es->data_inicio; ?> required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                <input class="input3" size="40" value="<?php echo $es->data_inicio; ?>" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
                 </div>
 
                 <div>
@@ -87,7 +87,7 @@ $es = Estagio::carregar($id_estagio);
 
                 <div class="previa">
                 <label for="prev_termino">Previa de Termino: </label>
-                <input class="input5" size="40" value="<?php echo $es->prev_termino; ?> required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
+                <input class="input5" size="40" value="<?php echo $es->prev_termino; ?>" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
                 </div>
 
                 </fieldset>
