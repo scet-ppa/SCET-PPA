@@ -97,7 +97,7 @@ include_once "../php/comp/tccHelper.php";
                 </tr>
     
                 <tr>
-                    <td>Ricardo de Carvalho Sena</td>
+                    <td>Gabriel Vieira Campos</td>
                     <td>Djalma Almeida Filho</td>
                     <td>Sistema de Controle de Estágio e TCC</td>
                     <td>Aprovado</td>

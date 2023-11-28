@@ -101,20 +101,21 @@ include_once '../php/comp/estagioHelper.php';
     
                 
                 <?php
-                    echo '<tr>';
-                    echo '<td>'.$_SESSION["nome"].'</td>';
-                    echo '<td>'./*.*/'</td>';
+                    //echo '<tr>';
+                    //echo '<td>'.$_SESSION["nome"].'</td>';
+                    //echo '<td>'./*.*/'</td>';
                     /*echo $_SESSION["name"] . ".<br>";
                             echo $_SESSION["email"] . ".<br>";*/
                    
                     echo '</tr>'
         
                 ?>
+                    <td>Gabriel Vieira Campos</td>
                     <td>Djalma Almeida Filho</td>
-                    <td>IFBA</td>
+                    <td>Microsoft Corporation</td>
                     <td>Aprovado</td>
                     <td>22/12/2000</td>
-                    <td><a href="avaliacao-aluno.html">Documentação</a></td>
+                    <td><a class="concluir" href="avaliacao-aluno.html">Documentação</a></td>
 
             </table>
         </fieldset>
@@ -122,8 +123,6 @@ include_once '../php/comp/estagioHelper.php';
     
     </div>
    
-    
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

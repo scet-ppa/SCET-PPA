@@ -63,7 +63,12 @@ include_once "../php/cad-usuario/alunoHelper.php";
                         <span class="list">TCC</span>
                     </a>
                 </li>
-
+                <li class="list">
+                    <a href="../html/pendente_aluno.php">
+                        <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                        <span class="list">Pendentes</span>
+                    </a>
+                </li>
                 <li class="list">
                     <a href="../php/usar/logout.php">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
