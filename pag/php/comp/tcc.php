@@ -3,13 +3,13 @@
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class TCC{
+    public $situacao;
     public $id_tcc;
     public $id_professor;
     public $id_aluno;
     public $tema;
     public $data_inicio;
     public $prev_termino;
-    public $situacao;
 
     function __construct($situacao, $id_professor, $id_aluno, $tema, $data_inicio, $prev_termino)
     {
@@ -35,15 +35,15 @@ class TCC{
         try{
             $stmt = $conn->prepare("update tcc set 
             situacao=:situacao, id_professor=:id_professor, data_inicio=:data_inicio, 
-            prev_termino=:prev_termino, id_tema=:id_tema, id_aluno=:id_aluno 
+            prev_termino=:prev_termino, tema=:tema, id_aluno=:id_aluno 
             where id_tcc=:id_tcc");
             $stmt->bindParam(':situacao',$this->situacao);
             $stmt->bindParam(':id_professor',$this->id_professor);
-            $stmt->bindParam(':tema',$this->tema);
-            $stmt->bindParam(':id_aluno',$this->id_aluno);
-            $stmt->bindParam(':situacao',$this->situacao);
             $stmt->bindParam(':data_inicio',$this->data_inicio);
             $stmt->bindParam(':prev_termino',$this->prev_termino);
+            $stmt->bindParam(':tema',$this->tema);
+            $stmt->bindParam(':id_aluno',$this->id_aluno);
+            
             $stmt->execute();
         }catch(PDOException $e){
             echo $e->getMessage();
@@ -51,7 +51,7 @@ class TCC{
         $banco->fecharConexao();
     }
 
-    /*function excluir_tcc(){
+    function excluir_tcc(){
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
@@ -62,12 +62,13 @@ class TCC{
             echo $e->getMessage();
         }
         $banco->fecharConexao();
-    }*/
+    }
 
     function inserir(){
         $banco = new Banco();
         $conn = $banco->conectar();
         try{
+            
             $stmt = $conn->prepare("insert into tcc
             (id_professor, id_aluno, tema, data_inicio, prev_termino, situacao) 
             values( :id_professor, :id_aluno, :tema, :data_inicio, :prev_termino,:situacao)");

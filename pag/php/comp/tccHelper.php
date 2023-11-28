@@ -5,8 +5,11 @@
    if(isset($_POST['tipo'])){
         $tipo = $_POST['tipo'];
         if($tipo === 'cad_tcc'){
+            
+            //echo var_dump($_POST);
             cadastrarTCC();
-            header('Location:../../html/cad_tcc.php');
+
+        header('Location:../../html/cad_tcc.php');
         }else if($tipo === 'editar_tcc'){
             editar_tcc();
             header('Location:../../html/cad_tcc.php');

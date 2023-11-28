@@ -2,7 +2,7 @@
    include_once "../php/comp/tccHelper.php";
    include_once "../php/cad-usuario/professorHelper.php";
    include_once "../php/cad-usuario/alunoHelper.php";
-   include_once "../php/comp/temaHelper.php";
+   //include_once "../php/comp/temaHelper.php";
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
 
                 <div>
                 <label for="professores">Nome do Professor: </label>
-                <select name="orientador" id="orientador">
+                <select name="id_professor" id="id_professor">
                     <?php
                         $professores = getProfessores();
                         foreach($professores as $professor){
@@ -64,8 +64,8 @@
                 </div>
 
                 <div>
-                <label for="temas">Título do TCC: </label>
-                <input class="input3" size="40" required placeholder="Digite o título do TCC" id="data_inicio" type="text">
+                <label for="tema">Título do TCC: </label>
+                <input class="input3" size="40" required placeholder="Digite o título do TCC" id="tema" type="text">
                 </div>
 
                 <div class="previa">
@@ -86,20 +86,24 @@
             <legend>TCC's Cadastrados</legend>
             <table id="mover">
                 <tr>
-                    <th>Tema</th>
-                    <th>Docente</th>
+                    <th>Código</th>
                     <th>Aluno</th>
-                    
+                    <th>Professor</th>
+                    <th>Tema</th>
                     <th>Ínicio</th>
                     <th>Término</th>
                     <th>Status</th>
                     <th colspan="2">Ações</th>
                 </tr>
                 <?php
+                
                 $tccs = getTCCS();
                 foreach($tccs as $tcc){
                     echo '<tr>'; 
-                    echo '<td>'.$tcc->tema.'</td>  ';
+                    echo '<td>'.$tcc->id_tcc.'</td>  ';
+                    echo '<td>'.$tcc->id_aluno.'</td>  ';
+                    echo '<td>'.$tcc->id_professor.'</td>';
+                    echo '<td>'.$tcc->tema.'</td>';
                     echo '<td>'.$tcc->data_inicio.'</td> ';
                     echo '<td>'.$tcc->prev_termino.'</td> ';
                     echo '<td>'.$tcc->situacao.'</td> ';
