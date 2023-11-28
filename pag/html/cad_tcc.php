@@ -86,7 +86,7 @@
             <legend>TCC's Cadastrados</legend>
             <table id="mover">
                 <tr>
-                    <th>Código</th>
+                    <!--<th>Código</th>-->
                     <th>Aluno</th>
                     <th>Professor</th>
                     <th>Tema</th>
@@ -100,7 +100,7 @@
                 $tccs = getTCCS();
                 foreach($tccs as $tcc){
                     echo '<tr>'; 
-                    echo '<td>'.$tcc->id_tcc.'</td>  ';
+                    //echo '<td>'.$tcc->id_tcc.'</td>  ';
                     echo '<td>'.$tcc->id_aluno.'</td>  ';
                     echo '<td>'.$tcc->id_professor.'</td>';
                     echo '<td>'.$tcc->tema.'</td>';
