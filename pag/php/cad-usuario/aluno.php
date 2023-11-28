@@ -76,7 +76,7 @@ class Aluno{
             $aluno = null;
             
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['matricula'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'],  $value['email'], $value['matricula'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
 //                $nome, $id_curso, $turma, $matricula, $email, $senha
@@ -102,7 +102,7 @@ class Aluno{
             $aluno = null;
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['matricula'], $value['email'],
+                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['email'], $value['matricula'],
                 $value['senha']);
                 $aluno->setIdAluno( $value['id_aluno']);
              }

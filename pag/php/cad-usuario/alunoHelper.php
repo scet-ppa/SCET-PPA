@@ -33,12 +33,12 @@
       //  echo "oi";
         $nome = $_POST['nome'];
         $curso = $_POST['curso'];
-        $turma = $_POST['id_turma'];
+        $id_turma = $_POST['id_turma'];
         $matricula = $_POST['matricula'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        $aluno = new Aluno($nome,$curso,$turma,$matricula, $email,$senha);
+        $aluno = new Aluno($nome,$curso,$id_turma,$matricula, $email,$senha);
         $aluno->inserir();
 
     }
@@ -57,7 +57,7 @@
            // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $alunos = array();
             foreach($stmt->fetchAll() as $v => $value){
-                $aluno = new Aluno($value['nome'], $value['id_curso'], $value['matricula'], $value['email'],$value['senha'], $value['id_turma']);
+                $aluno = new Aluno($value['nome'], $value['id_curso'],$value['id_turma'], $value['matricula'], $value['email'],$value['senha'] );
                 $aluno->setIdAluno( $value['id_aluno']);
                 array_push($alunos,$aluno);
             }
