@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="../html/pendente_prof.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>

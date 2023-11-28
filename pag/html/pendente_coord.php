@@ -94,15 +94,15 @@
                 </tr>
     
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Adam Smith de Albuquerque</td>
+                    <td>20201910015</td>
+                    <td>Alimentos</td>
+                    <td>632</td>
+                    <td>Kaline Benevides dos Santos</td>
 
-                    <td> <a class="editar" href="#">Editar</a></td>
-                    <td> <a class="excluir" href="#">Excluir</a></td>
-                    <td> <a class="concluir" href="#">Concluir </a></td>
+                    <!--<td> <a class="editar" href="#">Editar</a></td>-->
+                    <td> <a class="excluir" href="../html/cad_estagio.php">Estágio</a></td>
+                    <td> <a class="concluir" href="../html/cad_tcc.php">TCC</a></td>
     
                 </tr>
             </table>
