@@ -100,10 +100,6 @@
                 foreach($tccs as $tcc){
                     echo '<tr>'; 
                     echo '<td>'.$tcc->tema.'</td>  ';
-                    echo '<td>'.$tcc->nome_aluno.'</td> ';
-                    echo '<td>'.$tcc->nome_professor.'</td> ';
-                  
-                    echo '<td>'.$tcc->nome_tema.'</td> ';
                     echo '<td>'.$tcc->data_inicio.'</td> ';
                     echo '<td>'.$tcc->prev_termino.'</td> ';
                     echo '<td>'.$tcc->situacao.'</td> ';

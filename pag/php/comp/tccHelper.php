@@ -18,7 +18,7 @@
 
    function  editar_tcc(){
         $tcc = TCC::carregar($_POST['id_tcc']);
-        $tcc->docente = $_POST['docente'];
+        $tcc->id_professor = $_POST['id_professor'];
         $tcc->data_inicio = $_POST['data_inicio'];
         $tcc->prev_termino = $_POST['prev_termino'];
         $tcc->tema = $_POST['tema'];
@@ -35,13 +35,13 @@
 
     function cadastrarTCC(){
         $situacao = $_POST['situacao'];
-        $docente = $_POST['docente'];
+        $id_professor = $_POST['id_professor'];
         $id_aluno = $_POST['id_aluno'];
         $tema = $_POST['tema'];
         $data_inicio = $_POST['data_inicio'];
         $prev_termino = $_POST['prev_termino'];
 
-        $tcc = new TCC($situacao,$docente,$id_aluno,$tema,$data_inicio,$prev_termino);
+        $tcc = new TCC($situacao,$id_professor,$id_aluno,$tema,$data_inicio,$prev_termino);
         $tcc->inserir();
 
     }
@@ -55,21 +55,21 @@
         try{
             $banco = new Banco();
             $conn = $banco->conectar();
-            $stmt = $conn->prepare("select tcc.id_tcc, tcc.id_aluno, tcc.docente as id_professor, 
+            $stmt = $conn->prepare("select tcc.id_tcc, tcc.id_aluno, tcc.id_professor as id_professor, 
             date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio,
             date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino,
             tcc.situacao,
-            tcc.tema from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.docente = professor.id_professor
+            tcc.tema from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.id_professor = professor.id_professor
         where
             tcc.id_tcc = id_tcc;");
             $stmt->execute();
             $tccs = array();
-//            $situacao, $docente, $id_aluno, $tema, $data_inicio, $prev_termino
+//            $situacao, $id_professor, $id_aluno, $tema, $data_inicio, $prev_termino
             foreach($stmt->fetchAll() as $v => $value){
-                $tcc = new TCC ($value['situacao'], $value['docente'],
+                $tcc = new TCC ($value['situacao'], $value['id_professor'],
                 $value['id_aluno'],  $value['tema'], $value['data_inicio'], $value['prev_termino']);
               /*  $tcc->id_aluno = $value['id_aluno'];
-                $tcc->docente = $value['docente'];
+                $tcc->id_professor = $value['id_professor'];
                 $tcc->tema = $value['tema'];
                 $tcc->data_inicio = $value['data_inicio'];
                 $tcc->prev_termino = $value['prev_termino'];*/

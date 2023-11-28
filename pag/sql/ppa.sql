@@ -79,16 +79,16 @@ create table tcc(
 	id_tcc integer auto_increment primary key,
     id_aluno integer,
     foreign key (id_aluno) references aluno(id_aluno),
-    docente integer,
-    foreign key (docente) references professor(id_professor),
+    id_professor integer,
+    foreign key (id_professor) references professor(id_professor),
     situacao varchar (20) not null,
     data_inicio date, 
     prev_termino date
 );
 
-drop table tcc;
-
+insert into tcc (id_aluno, id_professor, situacao, data_inicio, prev_termino, tema) values(1, 1, "Não iniciado.", 01/01/2001, 02/02/2002, "Impacto da Mc Pipoquinha na Sociedade");
 alter table tcc add column tema varchar(80);
+select * from tcc; 
 
 create table apresentacao(
 	id_apresentacao integer auto_increment primary key,
@@ -175,6 +175,7 @@ select * from turma;
 select * from empresa;
 select * from estagio;
 select * from tcc;
+select * from tema; 
 
 alter table turma drop column id_curso; 
 
@@ -185,16 +186,6 @@ insert into aluno (nome, matricula, id_curso, email, senha) values ("Ricardo", 2
 insert into estagio(orientador, id_aluno, id_empresa, data_inicio, prev_termino, situacao) values(1, 2, 1, 12112023, 02022002, "em andamento");
 insert into coordenador(nome, email, senha) values("nicholas", "nick@gmail.com", "123"); 
 insert into curso(id_curso, id_coordenador, descricao) values( 1, 1, "Informatica");
-insert into tcc (id_aluno, professor, situacao, data_inicio, prev_termino, tema)  values (2, 1, 'Em Andamento', '20230101', '20231231', 'Sistema de Controle');
-
-select tcc.id_tcc, tcc.id_aluno, tcc.docente as id_professor, date_format(tcc.data_inicio, '%d/%m/%Y') as data_inicio, date_format(tcc.prev_termino, '%d/%m/%Y') as prev_termino, tcc.situacao, tcc.tema
-from tcc inner join aluno on tcc.id_aluno = aluno.id_aluno inner join professor on tcc.docente = professor.id_professor
-where tcc.id_tcc = id_tcc;
-
-select date_format(data_inicio, '%d/%m/%Y') from tcc;
-select date_format(prev_termino, '%d/%m/%Y') as prev_termino from tcc; 
-
-select * from tcc;
 
 select estagio.id_estagio, professor.nome as 'professor', aluno.nome as 'estudante', empresa.nome as 'empresa', date_format(estagio.data_inicio, '%d/%m/%Y') as data_inicio, date_format(estagio.prev_termino, '%d/%m/%Y') as prev_termino, estagio.situacao from estagio inner join aluno on (estagio.id_aluno = aluno.id_aluno)
 inner join professor on (estagio.orientador = professor.id_professor)
@@ -203,6 +194,10 @@ where estagio.id_estagio = id_estagio;
 
 select date_format(data_inicio, '%d/%m/%Y') from estagio;
 select date_format(prev_termino, '%d/%m/%Y') as prev_termino from estagio;
+select date_format(data_inicio, '%d/%m/%Y') from tcc;
+select date_format(prev_termino, '%d/%m/%Y') as prev_termino from tcc;
+
+
 
 select * from professor;
 
