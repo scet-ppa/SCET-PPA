@@ -102,19 +102,21 @@ include_once '../php/comp/estagioHelper.php';
                 
                 <?php
                     echo '<tr>';
-                    echo '<td>'.$_SESSION["nome"].'</td>';
-                    echo '<td>'./*.*/'</td>';
+                   // echo '<td>'.$_SESSION["nome"].'</td>';
+                    //echo '<td>'./*.*/'</td>';
                     /*echo $_SESSION["name"] . ".<br>";
                             echo $_SESSION["email"] . ".<br>";*/
                    
-                    echo '</tr>'
-        
-                ?>
-                    <td>Djalma Almeida Filho</td>
-                    <td>IFBA</td>
-                    <td>Aprovado</td>
-                    <td>22/12/2000</td>
-                    <td><a href="avaliacao-aluno.html">Documentação</a></td>
+                    
+                    $aluno = getAluno($_SESSION['email']);
+                    echo '<td>'.$aluno->nome.'</td>';
+                    echo '<td>'.$aluno->nome.'</td>'; 
+                    echo '<td>'.$aluno->nome.'</td>';
+                    echo '<td>'.$aluno->nome.'</td>';
+                    echo '<td><a href="avaliacao-aluno.php">Documentação</a></td>';
+                    echo '</tr>';
+               ?>
+                    
 
             </table>
         </fieldset>

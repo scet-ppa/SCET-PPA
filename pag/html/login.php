@@ -63,6 +63,7 @@
         // Set session variables
         $_SESSION["nome"] = "nome";
         $_SESSION["email"] = "email";
+        
         ;
         ?>
     </section>

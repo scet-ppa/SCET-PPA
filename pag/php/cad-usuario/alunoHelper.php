@@ -70,6 +70,28 @@
         }
     }
 
+    function getAluno($email){
+        try{
+            $banco = new Banco();
+            $conn = $banco->conectar();
+            $stmt = $conn->prepare("select * from aluno where email=:email");
+            $stmt->bindParam(':email', $email);
+            $stmt->execute();
+           // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $aluno = null;
+            foreach($stmt->fetchAll() as $v => $value){
+                $aluno = new Aluno($value['nome'], $value['id_curso'],$value['id_turma'], $value['matricula'], $value['email'],$value['senha'] );
+                $aluno->setIdAluno( $value['id_aluno']);
+                    }
+
+            //var_dump($alunos);
+            return $aluno;
+
+        }catch(PDOException $e){
+            echo "Erro " . $e->getMessage();
+        }
+    }
+
    // getAlunos();
 
 /*    $aluno = new Aluno('Pedro Carvalho','75 99147 8160',

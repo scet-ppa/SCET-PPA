@@ -1,3 +1,12 @@
+<?php
+session_start();
+include_once '../php/comp/estagioHelper.php'; 
+
+$email = $_SESSION['email'];
+$estagio = getAlunoEstagio($email);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,10 +22,10 @@
 <body>
     <div class="nav">
         <ul>
-            <li><a href="avaliacao-aluno.html">Avaliação do Aluno</a></li>
-            <li><a href="avaliacao-supervisor.html">Avaliação da Empresa</a></li>
-            <li><a href="avaliacao-orientador.html">Avaliação do Orientador</a></li>
-            <li><a href="frequencia.html">Frequência</a></li>
+            <li><a href="avaliacao-aluno.php">Avaliação do Aluno</a></li>
+            <li><a href="avaliacao-supervisor.php">Avaliação da Empresa</a></li>
+            <li><a href="avaliacao-orientador.php">Avaliação do Orientador</a></li>
+            <li><a href="frequencia.php">Frequência</a></li>
             <li style="float:right"><a class="active" href="home_aluno.php">Voltar</a></li>
           </ul>
     </div>
@@ -30,7 +39,7 @@
                 <div class="dados">
 
                     <label for="nome">Nome do Estagiário:</label>
-                    <input type="text" name="nome" value="" id="nome">
+                    <input type="text" readonly name="nome" value="<?php echo $estagio->aluno->nome;?>" id="nome">
                     <br>
 
                     <label for="celular">Telefone/Celular (Estagiário): DDD</label>
@@ -38,11 +47,11 @@
                     
                     
                     <label for="email">Endereço Eletrônico:</label>
-                    <input type="email" name="email" value="" id="email">
+                    <input type="email" readonly name="email" value="<?php echo $estagio->aluno->email;?>" id="email">
                     <br>
 
                     <label for="curso">Curso</label>
-                    <input type="text" name="curso" value="" id="curso">
+                    <input type="text" readonly name="curso" value="<?php echo $estagio->aluno->id_curso;?>" id="curso">
                     
                     <form action="">
                         <label for="email">Modalidade:</label>
@@ -59,34 +68,35 @@
                     <br>
 
                     <label for="empresa">Nome da Instituição/Empresa:</label>
-                    <input type="text" name="empresa" value="" id="empresa">
+                    
+                    <input type="text" readonly name="empresa" value="<?php echo $estagio->empresa->nome;?>" id="empresa">
                     
                     <label for="celular-emp">Telefone/Celular (Empresa): DDD</label>
                     <input type="int" name="celular-emp" value="" id="celular-emp">
                     <br>
 
                     <label for="end-emp">Endereço (Empresa):</label>
-                    <input type="text" name="end-emp" value="" id="end-emp">
+                    <input type="text" readonly name="end-emp" value="<?php echo $estagio->empresa->endereco;?>" id="end-emp">
                     
                     <label for="numero">Nº.:</label>
-                    <input type="int" name="numero" value="" id="numero">
+                    <input type="int" readonly name="numero" value="<?php echo $estagio->empresa->numero;?>" id="numero">
                     
                     <label for="complemento">Complemento:</label>
-                    <input type="text" name="complemento" value="" id="complemento">
+                    <input type="text" readonly name="complemento" value="<?php echo $estagio->empresa->complemento;?>" id="complemento">
                     <br>
                 
 
                     <label for="bairo">Bairro:</label>
-                    <input type="text" name="bairro" value="" id="bairro">
+                    <input type="text" readonly name="bairro" value="<?php echo $estagio->empresa->bairro;?>" id="bairro">
 
                     <label for="municipio">Município:</label>
-                    <input type="municipio" name="municipio" value="" id="municipio">
+                    <input type="municipio" readonly name="municipio" value="<?php echo $estagio->empresa->municipio;?>" id="municipio">
                     
                     <label for="uf">UF:</label>
-                    <input type="text" name="uf" value="" id="uf">
+                    <input type="text" readonly name="uf" value="<?php echo $estagio->empresa->uf;?>" id="uf">
 
                     <label for="cep">CEP:</label>
-                    <input type="int" name="cep" value="" id="cep">
+                    <input type="int" readonly name="cep" value="<?php echo $estagio->empresa->cep;?>" id="cep">
                     <br>
 
                     <label for="setor">Area/Setor do Estágio:</label>

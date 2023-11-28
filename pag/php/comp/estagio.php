@@ -1,6 +1,12 @@
 <?php
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/aluno.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/professor.php';
+//include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/aluno.php';
+//include_once '../cad-usuario/aluno.php';
+//include_once '../cad-usuario/professor.php';
+include_once 'empresa.php'; 
 
 class Estagio{
     public $id_estagio;
@@ -13,6 +19,13 @@ class Estagio{
     public $data_inicio;
     public $prev_termino;
     public $situacao;
+    
+    public $aluno;
+    public $empresa;
+    public $professor; 
+//    public $aluno;
+  //  public $aluno;
+
 
     function __construct($situacao, $orientador, $id_aluno, $id_empresa, $data_inicio, $prev_termino)
     {

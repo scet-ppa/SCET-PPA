@@ -10,10 +10,10 @@
 <body>
     <div class="nav">
         <ul>
-            <li><a href="avaliacao-aluno.html">Avaliação do Aluno</a></li>
-            <li><a href="avaliacao-supervisor.html">Avaliação da Empresa</a></li>
-            <li><a href="avaliacao-orientador.html">Avaliação do Orientador</a></li>
-            <li><a href="frequencia.html">Frequência</a></li>
+            <li><a href="avaliacao-aluno.php">Avaliação do Aluno</a></li>
+            <li><a href="avaliacao-supervisor.php">Avaliação da Empresa</a></li>
+            <li><a href="avaliacao-orientador.php">Avaliação do Orientador</a></li>
+            <li><a href="frequencia.php">Frequência</a></li>
             <li style="float:right"><a class="active" href="home_aluno.php">Voltar</a></li>
           </ul>
     </div>

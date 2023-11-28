@@ -1,6 +1,9 @@
 <?php
     include_once 'estagio.php';
     include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
+    include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/aluno.php';
+    include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/cad-usuario/professor.php';
+    include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/comp/empresa.php';
 
    if(isset($_POST['tipo'])){
         $tipo = $_POST['tipo'];
@@ -86,6 +89,49 @@
         }
     }
 
+    function getAlunoEstagio($email){
+        try{
+            $banco = new Banco();
+            $conn = $banco->conectar();
+            $stmt = $conn->prepare("select * from aluno inner join estagio on (aluno.id_aluno = estagio.id_aluno) inner join empresa on (estagio.id_empresa = empresa.id_empresa) 
+            inner join professor on (estagio.orientador = professor.id_professor) where aluno.email = :email");
+            $stmt->bindParam(':email', $email);
+            $stmt->execute();
+           // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $estagio = null;
+            foreach($stmt->fetchAll() as $v => $value){
+             //   var_dump($value);
+           ///     break;
+                $estagio = new Estagio($value['situacao'], $value['orientador'], $value['id_aluno'], $value['id_estagio'], $value['id_empresa'],
+                $value['data_inicio'], $value['prev_termino']);
+                $estagio->setIdEstagio( $value['id_estagio']);
+
+
+               // $aluno = new Aluno($value['nome'], $value['id_curso'], $value['id_turma'], $value['email'], $value['matricula'],
+                //$value['senha']);
+                $aluno = Aluno::carregar($value['id_aluno']);
+
+                $estagio->aluno = $aluno;
+                
+                //$professor = new Professor($value['nome'], $value['matricula'], $value['email'],  $value['senha'],  $value['matricula']);
+                $professor = Professor::carregar($value['orientador']);
+
+                $empresa = Empresa::carregar($value['id_empresa']);
+                
+                $estagio->empresa = $empresa;    
+
+                $estagio->professor = $professor;
+               
+                
+            }
+
+           // var_dump($alunos);
+           return $estagio;
+
+        }catch(PDOException $e){
+            echo "Erro " . $e->getMessage();
+        }
+    }
    // getAlunos();
 
 /*    $aluno = new Aluno('Pedro Carvalho','75 99147 8160',
