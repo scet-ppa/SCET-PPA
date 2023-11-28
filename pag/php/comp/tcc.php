@@ -4,22 +4,19 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/SCET-PPA/pag/php/banco.php';
 
 class TCC{
     public $id_tcc;
-    public $orientador;
+    public $docente;
     public $id_aluno;
-    public $nome_aluno;
-    public $nome_tema;
-    public $nome_professor;
     public $tema;
     public $data_inicio;
     public $prev_termino;
     public $situacao;
 
-    function __construct($situacao, $orientador, $id_aluno, $tema, $data_inicio, $prev_termino)
+    function __construct($situacao, $docente, $id_aluno, $tema, $data_inicio, $prev_termino)
     {
         $this->situacao = $situacao;
-        $this->tema = $tema;
-        $this->orientador = $orientador;
+        $this->docente = $docente;
         $this->id_aluno = $id_aluno;
+        $this->tema = $tema;
         $this->data_inicio = $data_inicio;
         $this->prev_termino = $prev_termino;
     }
@@ -37,7 +34,7 @@ class TCC{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("update tcc set 
-            situacao=:situacao, orientador=:orientador, data_inicio=:data_inicio, 
+            situacao=:situacao, docente=:docente, data_inicio=:data_inicio, 
             prev_termino=:prev_termino, id_tema=:id_empresa, id_aluno=:id_aluno 
             where id_tcc=:id_tcc");
             $stmt->bindParam(':situacao',$this->situacao);
@@ -72,10 +69,10 @@ class TCC{
         $conn = $banco->conectar();
         try{
             $stmt = $conn->prepare("insert into tcc
-            (orientador, id_aluno, tema, data_inicio, prev_termino, situacao) 
-            values( :orientador, :id_aluno, :tema, :data_inicio, :prev_termino,:situacao)");
+            (docente, id_aluno, tema, data_inicio, prev_termino, situacao) 
+            values( :docente, :id_aluno, :tema, :data_inicio, :prev_termino,:situacao)");
             $stmt->bindParam(':situacao',$this->situacao);
-            $stmt->bindParam(':orientador',$this->orientador);
+            $stmt->bindParam(':docente',$this->docente);
             $stmt->bindParam(':id_aluno',$this->id_aluno);
             $stmt->bindParam(':tema',$this->tema);
             $stmt->bindParam(':data_inicio',$this->data_inicio);
@@ -98,7 +95,7 @@ class TCC{
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach($stmt->fetchAll() as $v => $value){
                 $tcc = new TCC($value['situacao'],
-                $value['orientador'], $value['id_aluno'],
+                $value['docente'], $value['id_aluno'],
                 $value['id_empresa'], $value['data_inicio'],
                 $value['prev_termino']);
                 $tcc->setIdTCC( $value['id_tcc']);

@@ -10,9 +10,9 @@ class Aluno{
     public $email;
     public $senha;
 
-    function __construct($nome, $id_curso, $turma, $matricula, $email, $senha){
+    function __construct($nome, $id_curso, $matricula, $email, $senha){
         $this->nome = $nome;
-        $this->turma =  $turma;
+      
         $this->id_curso = $id_curso;
         $this->matricula = $matricula;
         $this->email = $email;
