@@ -21,43 +21,43 @@
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="../html/usuario.php">
+                    <a href="#">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
                 </li>
                 <li class="list">
                     <a href="../html/home_aluno.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_aluno.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_aluno.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-aluno.html">
+                    <a href="../html/prof-aluno.php">
                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                         <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_aluno.html">
+                    <a href="../html/estagio_aluno.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/coor-tcc.html">
+                    <a href="#">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>

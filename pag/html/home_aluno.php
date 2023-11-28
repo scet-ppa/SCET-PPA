@@ -29,18 +29,18 @@ include_once "../php/cad-usuario/alunoHelper.php";
                 </li>
                 <li class="list">
                     <a href="../html/home_aluno.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_aluno.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_aluno.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
@@ -58,7 +58,7 @@ include_once "../php/cad-usuario/alunoHelper.php";
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/aluno-tcc.html">
+                    <a href="../html/aluno-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>

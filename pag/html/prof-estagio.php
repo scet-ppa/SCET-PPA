@@ -20,49 +20,43 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
-                    <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                <a href="home_prof.php">
+                    <span class="icon"><ion-icon name="home"></ion-icon></span>
                     <span class="list">Home</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="mensagens_prof.php">
                     <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                     <span class="list">Mensagens</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="notificacoes_prof.php">
                     <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                     <span class="list">Notificações</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
-                    <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                    <span class="list">Professores</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
+                <a href="prof-estagio.php">
                     <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                     <span class="list">Estágio</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="prof-tcc.php">
                     <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                     <span class="list">TCC</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="pendente_prof.php">
                     <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                     <span class="list">Pendentes</span>
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="../php/usar/logout.php">
                     <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                     <span class="list">Sair</span>
                 </a>

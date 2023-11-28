@@ -31,12 +31,12 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                 </li>
                 <li class="list">
                     <a href="../html/home_coord.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_coord.php">
+                    <a href="mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
