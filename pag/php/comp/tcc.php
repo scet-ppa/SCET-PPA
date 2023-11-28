@@ -7,6 +7,8 @@ class TCC{
     public $id_tcc;
     public $id_professor;
     public $id_aluno;
+    public $nome_professor;
+    public $nome_aluno;
     public $tema;
     public $data_inicio;
     public $prev_termino;
@@ -43,6 +45,7 @@ class TCC{
             $stmt->bindParam(':prev_termino',$this->prev_termino);
             $stmt->bindParam(':tema',$this->tema);
             $stmt->bindParam(':id_aluno',$this->id_aluno);
+            $stmt->bindParam(':id_tcc',$this->id_tcc);
             
             $stmt->execute();
         }catch(PDOException $e){

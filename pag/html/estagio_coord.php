@@ -119,9 +119,9 @@ include_once '../php/comp/estagioHelper.php';
     }
     ?>
                   <!-- <td> <a class="doc" href="#">Documentação</a></td>--> 
-                    <td> <a class="editar" href="../html/cad_tcc.php">Editar</a></td>
-                    <td> <a class="excluir" href="../html/cad_tcc.php">Excluir</a></td>
-                    <td> <a class="concluir" href="../html/cad_tcc.php">Concluir </a></td>
+                    <td> <a class="editar" href="../html/cad_estagio.php">Editar</a></td>
+                    <!--<td> <a class="excluir" href="../html/cad_estagio.php">Excluir</a></td>-->
+                    <td> <a class="concluir" href="../html/cad_estagio.php">Concluir </a></td>
     
                 </tr>
             </table>

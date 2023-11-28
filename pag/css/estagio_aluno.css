@@ -154,7 +154,21 @@ body{
   }
 
   .concluir{
-    background-color: rgb(9, 144, 43);
+    background-color: #1083b4;
+  }
+
+  .concluir:link, .concluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .concluir{
+    background-color: rgb(22, 9, 144);
   }
 
   .concluir:link, .concluir:visited {

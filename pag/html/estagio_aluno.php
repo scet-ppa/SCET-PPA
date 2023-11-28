@@ -101,12 +101,18 @@ include_once '../php/comp/estagioHelper.php';
     
                 
                 <?php
+<<<<<<< HEAD
                     echo '<tr>';
                    // echo '<td>'.$_SESSION["nome"].'</td>';
+=======
+                    //echo '<tr>';
+                    //echo '<td>'.$_SESSION["nome"].'</td>';
+>>>>>>> 34d193b4e324dec518e78de9ae9af245abe46a2f
                     //echo '<td>'./*.*/'</td>';
                     /*echo $_SESSION["name"] . ".<br>";
                             echo $_SESSION["email"] . ".<br>";*/
                    
+<<<<<<< HEAD
                     
                     $aluno = getAluno($_SESSION['email']);
                     echo '<td>'.$aluno->nome.'</td>';
@@ -117,6 +123,17 @@ include_once '../php/comp/estagioHelper.php';
                     echo '</tr>';
                ?>
                     
+=======
+                    echo '</tr>'
+        
+                ?>
+                    <td>Gabriel Vieira Campos</td>
+                    <td>Djalma Almeida Filho</td>
+                    <td>Microsoft Corporation</td>
+                    <td>Aprovado</td>
+                    <td>22/12/2000</td>
+                    <td><a class="concluir" href="avaliacao-aluno.html">Documentação</a></td>
+>>>>>>> 34d193b4e324dec518e78de9ae9af245abe46a2f
 
             </table>
         </fieldset>
@@ -124,8 +141,6 @@ include_once '../php/comp/estagioHelper.php';
     
     </div>
    
-    
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
