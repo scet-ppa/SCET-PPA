@@ -45,6 +45,7 @@ class TCC{
             $stmt->bindParam(':prev_termino',$this->prev_termino);
             $stmt->bindParam(':tema',$this->tema);
             $stmt->bindParam(':id_aluno',$this->id_aluno);
+            $stmt->bindParam(':id_tcc',$this->id_tcc);
             
             $stmt->execute();
         }catch(PDOException $e){
