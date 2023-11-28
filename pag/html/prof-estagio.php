@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor: TCC</title>
-    <link rel="stylesheet" type="text/css" href="../css/prof-tcc.css">
+    <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>

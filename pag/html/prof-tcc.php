@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor: TCC</title>
-    <link rel="stylesheet" type="text/css" href="../css/prof-tcc.css">
+    <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 <body>
@@ -54,6 +54,11 @@
                         <span class="list">TCC</span>
                     </a>
                 </li>
+                <li class="list">
+                    <a href="../html/pendente_prof.php">
+                        <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                        <span class="list">Pendentes</span>
+                    </a>
 
                 <li class="list">
                     <a href="../php/usar/logout.php">

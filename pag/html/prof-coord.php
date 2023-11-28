@@ -12,7 +12,7 @@
     <title>Professores</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQ3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/prof-coord.css">
+    <link rel="stylesheet" type="text/css" href="../css/coor-tcc.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
 </head>
 
@@ -95,7 +95,7 @@
         <legend>Professores Orientadores</legend>
         <table class="estudantes">
             <tr class="info">
-                <th>Identificação</th>
+                <!--<th>Identificação</th>-->
                 <th>Nome</th>
                 <th>Matricula</th>
                 <th>Email</th>
@@ -105,7 +105,7 @@
         $professores = getProfessores();
         foreach($professores as $professor){
             echo '<tr>'; 
-            echo '<td>'.$professor->id_professor.'</td> ';
+            //echo '<td>'.$professor->id_professor.'</td> ';
             echo '<td>'.$professor->nome.'</td> ';
             echo '<td>'.$professor->matricula.'</td> ';
             echo '<td>'.$professor->email.'</td> ';
