@@ -13,7 +13,7 @@
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="../html/usuario.php">
+                    <a href="#">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
@@ -25,21 +25,15 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_aluno.html">
+                    <a href="../html/mensagens_prof.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_aluno.html">
+                    <a href="../html/notificacoes_prof.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="../html/prof-aluno.php">
-                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-                        <span class="list">Professores</span>
                     </a>
                 </li>
                 <li class="list">
@@ -49,7 +43,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/aluno-tcc.html">
+                    <a href="../html/prof-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>

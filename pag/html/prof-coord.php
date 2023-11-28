@@ -21,7 +21,7 @@
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="#">
+                    <a href="../html/usuario.php">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
