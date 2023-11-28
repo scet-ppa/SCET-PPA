@@ -39,10 +39,10 @@ class Estagio{
             $stmt = $conn->prepare("update estagio set 
             situacao=:situacao, orientador=:orientador, data_inicio=:data_inicio, prev_termino=:prev_termino, id_empresa=:id_empresa, id_aluno=:id_aluno where id_estagio=:id_estagio");
             $stmt->bindParam(':situacao',$this->situacao);
+            $stmt->bindParam(':orientador',$this->orientador);
             $stmt->bindParam(':id_estagio',$this->id_estagio);
             $stmt->bindParam(':id_empresa',$this->id_empresa);
             $stmt->bindParam(':id_aluno',$this->id_aluno);
-            $stmt->bindParam(':situacao',$this->situacao);
             $stmt->bindParam(':data_inicio',$this->data_inicio);
             $stmt->bindParam(':prev_termino',$this->prev_termino);
           //  $stmt->bindParam(':curso',$this->curso);

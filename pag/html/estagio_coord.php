@@ -28,7 +28,7 @@ include_once '../php/comp/estagioHelper.php';
                 </li>
                 <li class="list">
                     <a href="../html/home_coord.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>

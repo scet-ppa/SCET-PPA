@@ -27,8 +27,10 @@ $es = Estagio::carregar($id_estagio);
         <form name="formCad" method="POST" action="../php/comp/estagioHelper.php">
             <fieldset>
                
-            <input style="display: none" name="tipo" id="tipo" type="text" value="excluir_estagio">
+            <input style="display: none" name="tipo" id="tipo" type="text" value="editar_estagio">
                 <legend>Dados do Estagio</legend>
+                <label for="id_estagio">Código: </label>
+                <input type="number" readonly id="id_estagio" name="id_estagio" value="<?php echo $es->id_estagio; ?>">
 
                 <div>
                 <label for="professores">Nome do Professor: </label>
@@ -45,10 +47,10 @@ $es = Estagio::carregar($id_estagio);
 
                 <div class="situ">
                 <label for="situacao">Situação: </label>
-                <select readonly name="situacao" id="situacao"> 
-                <option value="iniciado">Iniciado</option>
-                <option value="em andamento">Em andamento</option>
-                <option value="finalizado">Finalizado</option>
+                <select name="situacao" id="situacao"> 
+                <option value="Iniciado">Iniciado</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Finalizado">Finalizado</option>
                 </select>
                 </div>
 
@@ -67,7 +69,7 @@ $es = Estagio::carregar($id_estagio);
 
                 <div class="data">
                 <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" value="<?php echo $es->data_inicio; ?> size="40" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                <input class="input3" size="40" value="<?php echo $es->data_inicio; ?> required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
                 </div>
 
                 <div>
@@ -85,7 +87,7 @@ $es = Estagio::carregar($id_estagio);
 
                 <div class="previa">
                 <label for="prev_termino">Previa de Termino: </label>
-                <input class="input5" value="<?php echo $es->prev_termino; ?> size="40" required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
+                <input class="input5" size="40" value="<?php echo $es->prev_termino; ?> required placeholder="Digite aqui a previa de termino" name="prev_termino" id="prev_termino" type="date">
                 </div>
 
                 </fieldset>

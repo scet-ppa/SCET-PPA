@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 @import url(../css/barra_lateral.css);
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,79 +9,160 @@
 }
 
 body{
-  display: flex;
-  background-color: #FFFFFf;
+    display: flex;
+    /*justify-content: left;
+    align-items: center;
+    min-height: 90px; */
+    /*grid-template-columns: 10% auto auto auto;*/
+   /* grid-template-columns: 1fr 2fr;*/
+    /*grid-template-areas: 
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content'
+    'navegacao content content content content content content content content content';*/
+  
+    background-color: #ffff;
 }
 
-.grid-container {
+
+.content{
   flex: 1;
   margin-left: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.grid-item {
-  flex: 1;
-  margin-left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#divBusca{
-  margin-left: 10%;
-  margin-bottom: 3%;
-  margin-top: 2%;
-  background-color:#bebfbf;
-  border:solid 1px;
-  width:70%;
-  height:6%;
-  border:none;
-}
+.estudantes {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    grid-area: content;
+  }
+  
+  .estudantes td,
+  .estudantes th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .estudantes tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .estudantes tr:hover {
+    background-color: #ddd;
+  }
+  
+  .estudantes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008080;
+    color: white;
+  }
+  
+#busca{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 #txtBusca{
-  background-color:transparent;
-  padding-left:5px;
-  font-size:18px;
-  border:none;
-  width:100%;
-  height:100%;
-}
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/buscar.jpg');
+    background-size: 25px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  #txtBusca:focus {
+    width: 100%;
+  }
 
-.search-btn {
-  align-items: first baseline;
-  left: 4%;
-}
 
-.table {
-  background-color: #e0e0e0;
-  padding: 10px;
-}
 
-#estudantes {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  fieldset{
+    border-radius: 5px;
+  }
+  
+  .cad-tcc:link, .cad-tcc:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-#estudantes td,
-#estudantes th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+ .cad-tcc{
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+    background-color: #008080;
+    width: 130px;
+    margin-left: 85%;
+    margin-bottom: 1.5%;
+  }
 
-#estudantes tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-#estudantes tr:hover {
-  background-color: #ddd;
-}
-
-#estudantes th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
+  .editar:link, .editar:visited {
   color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.cad-tcc:hover,
+  .cad-tcc:active {
+    background-color: #055151;
+  }
+
+  .editar{
+    background-color: #1083b4;
+  }
+
+  .editar:hover,
+  .editar:active {
+    background-color: rgb(21, 44, 199);
+  }
+
+  .excluir:link, .excluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .excluir{
+    background-color: #f44336;
+  }
+
+  .concluir{
+    background-color: rgb(9, 144, 43);
+  }
+
+  .concluir:link, .concluir:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

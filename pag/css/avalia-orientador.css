@@ -1,0 +1,122 @@
+label{
+    font-size: 19px;
+    font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+/*CSS DA BARRA DE NAVEGAÇÃO*/
+.nav{
+    margin-bottom: 2%;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.nav li {
+    float: left;
+}
+  
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.nav .active {
+    background-color: #04AA6D;
+}
+
+/*CSS DE CUSTOMIZAÇÃO DA TABELA*/
+.custom {
+    font-family: 'Franklin Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom td, .custom th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    justify-content: center;
+  }
+  
+  .custom td input{
+    display: flex;
+    border: 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .custom tr:hover {background-color: #ddd;}
+  
+  .custom th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  /*CSS DA TABELA*/
+th, td {
+    font-size: 19px;
+    border-bottom: 1px solid #ddd;
+  }
+
+.numeracao{
+    margin-right: 0;
+}
+
+.table{
+    text-align: center;
+}
+
+/*CSS DOS INPUTS*/ 
+.dados #curso{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #empresa{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 3%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}
+
+.dados #nome{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(6, 97, 52);
+}

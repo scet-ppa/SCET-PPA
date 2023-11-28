@@ -39,9 +39,9 @@
                 <div class="situ">
                 <label for="situacao">Situação: </label>
                 <select name="situacao" id="situacao"> 
-                <option value="iniciado">Iniciado</option>
-                <option value="em andamento">Em andamento</option>
-                <option value="finalizado">Finalizado</option>
+                <option value="Iniciado">Iniciado</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Finalizado">Finalizado</option>
                 </select>
                 </div>
 
@@ -101,7 +101,7 @@
                     <th>Ínicio</th>
                     <th>Término</th>
                     <th>Status</th>
-                    <th colspan="2">Ações</th>
+                    <th colspan="1">Ações</th>
                 </tr>
                 <?php
                 $estagios = getEstagios();
@@ -115,8 +115,7 @@
                     echo '<td>'.$estagio->prev_termino.'</td> ';
                     echo '<td>'.$estagio->situacao.'</td> ';
 
-                    echo '<td> <a class="editar"  href="editar_estagio.php?id_estagio='.$estagio->getIdEstagio().'">Editar</a></td> ';  
-                    echo '<td> <a class="excluir"  href="excluir_estagio.php?id_estagio='.$estagio->getIdEstagio().'">Excluir</a></td> '; 
+                    echo '<td> <a class="editar"  href="editar_estagio.php?id_estagio='.$estagio->getIdEstagio().'">Editar</a></td> ';   
                     echo '</tr> ';
                 }
                 ?> 

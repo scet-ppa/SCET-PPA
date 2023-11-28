@@ -21,14 +21,14 @@
         <div class="navegacao">
             <ul>
                 <li class="list">
-                    <a href="../html/usuario.php">
+                    <a href="#">
                         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
                         <span class="list">Usuario</span>
                     </a>
                 </li>
                 <li class="list">
                     <a href="../html/home_coord.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>

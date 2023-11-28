@@ -32,7 +32,7 @@ if(isset($_POST['send'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +46,6 @@ if(isset($_POST['send'])){
 </head>
 
 <body>
-
     <div class="barrinha">
         <div class="navegacao">
             <ul>
@@ -57,37 +56,43 @@ if(isset($_POST['send'])){
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/home_prof.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                    <a href="../html/home_coord.php">
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_prof.php">
+                    <a href="../html/mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/notificacoes_prof.php">
+                    <a href="../html/notificacoes_coord.php">
                         <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
                         <span class="list">Notificações</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/estagio_prof.php">
+                    <a href="../html/prof-coord.php">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="list">Professores</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../html/estagio_coord.php">
                         <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
                         <span class="list">Estágio</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/prof-tcc.php">
+                    <a href="../html/coor-tcc.php">
                         <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
                         <span class="list">TCC</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/pendente_prof.php">
+                    <a href="../html/pendente_coord.php">
                         <span class="icon"><ion-icon name="alert-circle-outline"></ion-icon></span>
                         <span class="list">Pendentes</span>
                     </a>
@@ -101,7 +106,20 @@ if(isset($_POST['send'])){
             </ul>
         </div>
     </div>
+   
 
+    <div class="container">
+        <form class="display-grid row-gap-1-rem" method="post">
+            <input class="box-shadow-primary" name="name" type="text" placeholder="Name" autocomplete="off" required />
+            <input class="box-shadow-primary" name="email" type="email" placeholder="Email" autocomplete="off" required />
+            <input class="box-shadow-primary" name="subject" type="text" placeholder="Subject" autocomplete="off" required />
+            <textarea class="box-shadow-primary" name="message" placeholder="Message..." required></textarea>
+            <button type="submit" name="send">
+              Send <i class="fa-solid fa-paper-plane color-white margin-left-1-rem"></i>
+            </button>
+          </form>
+    </div>
+   
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -117,7 +135,7 @@ if(isset($_POST['send'])){
             src="https://kit.fontawesome.com/1e8d61f212.js"
             
     </script>
-
+   
 
 </body>
 </html>

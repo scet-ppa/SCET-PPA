@@ -10,10 +10,12 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário: Coordenador</title>
 
-    <link rel="stylesheet" type="text/css" href="../css/home_aluno.css">
+    <link rel="stylesheet" type="text/css" href="../css/home_coord.css">
     <link rel="shortcut icon" type="imagex/png" href="../img/logo-scet.jpg">
     <link rel="stylesheet" type="text/css" href="../css/calendario.css">  
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
     
 </head>
 <body>
@@ -29,12 +31,12 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                 </li>
                 <li class="list">
                     <a href="../html/home_coord.php">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="list">Home</span>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="../html/mensagens_coord.php">
+                    <a href="mensagens_coord.php">
                         <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                         <span class="list">Mensagens</span>
                     </a>
@@ -145,9 +147,21 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
       </div>
     </div>
 
-    
+    <div class="conta">
+        <div class="input-field">
+            <textarea placeholder="Escreva sua nova tarefa"></textarea>
+            <i class="uil uil-notes note-icon"></i>
         </div>
+
+        <ul class="todoLists"></ul>
+
+            <div class="pending-tasks">
+                <span>Você tem <span class="pending-num"> tarefas sem </span> pendência.</span>
+                <button class="clear-button">Limpar Tudo</button>
+            </div>
+            </div>
         </div>
+    </div>
 
         <a class="curso" href="cad_curso.php">CURSO</a>
         <a class="emp" href="cad-turma.php">TURMA</a>
@@ -168,5 +182,6 @@ include_once "../php/cad-usuario/coordenadorHelper.php";
                 item.addEventListener('click', activeLink));
         </script>
         <script src="../js/calendario.js" defer></script>
+        <script src="../js/list.js"></script>
 </body>
 </html>

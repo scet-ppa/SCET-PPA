@@ -18,7 +18,11 @@ body{
 
 .teste{
     margin-top: 2%;
+    margin-left: 4%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper{
