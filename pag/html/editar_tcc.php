@@ -69,7 +69,7 @@ $tc = TCC::carregar($id_tcc);
 
                 <div class="data">
                 <label for="data_inicio">Data de inicio: </label>
-                <input class="input3" size="40" value="<?php echo $tc->data_inicio; ?>" required placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
+                <input class="input3" size="40" value="<?php echo $tc->data_inicio; ?>" placeholder="Digite aqui a data de inicio" name="data_inicio" id="data_inicio" type="date">
                 </div>
 
                 <div>
