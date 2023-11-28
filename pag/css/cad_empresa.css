@@ -179,6 +179,7 @@ body{
   float: right;
   margin-top: 2px;
   padding: 4%;
+  text-decoration: none;
 }
 
 .editar:hover,
